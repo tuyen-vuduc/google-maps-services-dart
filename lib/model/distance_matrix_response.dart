@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -16,23 +16,19 @@ part 'distance_matrix_response.g.dart';
 abstract class DistanceMatrixResponse implements Built<DistanceMatrixResponse, DistanceMatrixResponseBuilder> {
 
     /// An array of addresses as returned by the API from your original request. These are formatted by the geocoder and localized according to the language parameter passed with the request. This content is meant to be read as-is. Do not programatically parse the formatted addresses.
-    @nullable
     @BuiltValueField(wireName: r'origin_addresses')
-    BuiltList<String> get originAddresses;
+    BuiltList<String>? get originAddresses;
 
     /// An array of addresses as returned by the API from your original request. As with `origin_addresses`, these are localized if appropriate. This content is meant to be read as-is. Do not programatically parse the formatted addresses.
-    @nullable
     @BuiltValueField(wireName: r'destination_addresses')
-    BuiltList<String> get destinationAddresses;
+    BuiltList<String>? get destinationAddresses;
 
     /// An array of elements, which in turn each contain a `status`, `duration`, and `distance` element.
-    @nullable
     @BuiltValueField(wireName: r'rows')
-    BuiltList<DistanceMatrixRow> get rows;
+    BuiltList<DistanceMatrixRow>? get rows;
 
-    @nullable
     @BuiltValueField(wireName: r'status')
-    DistanceMatrixStatus get status;
+    DistanceMatrixStatus? get status;
     // enum statusEnum {  OK,  INVALID_REQUEST,  MAX_ELEMENTS_EXCEEDED,  MAX_DIMENSIONS_EXCEEDED,  OVER_DAILY_LIMIT,  OVER_QUERY_LIMIT,  REQUEST_DENIED,  UNKNOWN_ERROR,  };
 
     DistanceMatrixResponse._();
@@ -53,9 +49,9 @@ class _$DistanceMatrixResponseSerializer implements StructuredSerializer<Distanc
     final String wireName = r'DistanceMatrixResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DistanceMatrixResponse object,
+    Iterable<Object?> serialize(Serializers serializers, DistanceMatrixResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'origin_addresses')
             ..add(object.originAddresses == null ? null : serializers.serialize(object.originAddresses,
@@ -76,13 +72,13 @@ class _$DistanceMatrixResponseSerializer implements StructuredSerializer<Distanc
     }
 
     @override
-    DistanceMatrixResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    DistanceMatrixResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DistanceMatrixResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -100,7 +96,7 @@ class _$DistanceMatrixResponseSerializer implements StructuredSerializer<Distanc
                     break;
                 case r'status':
                     result.status = serializers.deserialize(value,
-                        specifiedType: const FullType(DistanceMatrixStatus)) as DistanceMatrixStatus;
+                        specifiedType: const FullType(DistanceMatrixStatus)) as DistanceMatrixStatus?;
                     break;
             }
         }

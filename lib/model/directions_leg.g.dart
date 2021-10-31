@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_leg.dart';
 
@@ -9,31 +9,31 @@ part of 'directions_leg.dart';
 
 class _$DirectionsLeg extends DirectionsLeg {
   @override
-  final String endAddress;
+  final String? endAddress;
   @override
-  final LatLngLiteral endLocation;
+  final LatLngLiteral? endLocation;
   @override
-  final String startAddress;
+  final String? startAddress;
   @override
-  final LatLngLiteral startLocation;
+  final LatLngLiteral? startLocation;
   @override
-  final BuiltList<DirectionsStep> steps;
+  final BuiltList<DirectionsStep>? steps;
   @override
-  final BuiltList<DirectionsTrafficSpeedEntry> trafficSpeedEntry;
+  final BuiltList<DirectionsTrafficSpeedEntry>? trafficSpeedEntry;
   @override
-  final BuiltList<DirectionsViaWaypoint> viaWaypoint;
+  final BuiltList<DirectionsViaWaypoint>? viaWaypoint;
   @override
-  final TimeZoneTextValueObject arrivalTime;
+  final TimeZoneTextValueObject? arrivalTime;
   @override
-  final TimeZoneTextValueObject departureTime;
+  final TimeZoneTextValueObject? departureTime;
   @override
-  final TextValueObject distance;
+  final TextValueObject? distance;
   @override
-  final TextValueObject duration;
+  final TextValueObject? duration;
   @override
-  final TextValueObject durationInTraffic;
+  final TextValueObject? durationInTraffic;
 
-  factory _$DirectionsLeg([void Function(DirectionsLegBuilder) updates]) =>
+  factory _$DirectionsLeg([void Function(DirectionsLegBuilder)? updates]) =>
       (new DirectionsLegBuilder()..update(updates)).build();
 
   _$DirectionsLeg._(
@@ -123,34 +123,34 @@ class _$DirectionsLeg extends DirectionsLeg {
 
 class DirectionsLegBuilder
     implements Builder<DirectionsLeg, DirectionsLegBuilder> {
-  _$DirectionsLeg _$v;
+  _$DirectionsLeg? _$v;
 
-  String _endAddress;
-  String get endAddress => _$this._endAddress;
-  set endAddress(String endAddress) => _$this._endAddress = endAddress;
+  String? _endAddress;
+  String? get endAddress => _$this._endAddress;
+  set endAddress(String? endAddress) => _$this._endAddress = endAddress;
 
-  LatLngLiteralBuilder _endLocation;
+  LatLngLiteralBuilder? _endLocation;
   LatLngLiteralBuilder get endLocation =>
       _$this._endLocation ??= new LatLngLiteralBuilder();
   set endLocation(LatLngLiteralBuilder endLocation) =>
       _$this._endLocation = endLocation;
 
-  String _startAddress;
-  String get startAddress => _$this._startAddress;
-  set startAddress(String startAddress) => _$this._startAddress = startAddress;
+  String? _startAddress;
+  String? get startAddress => _$this._startAddress;
+  set startAddress(String? startAddress) => _$this._startAddress = startAddress;
 
-  LatLngLiteralBuilder _startLocation;
+  LatLngLiteralBuilder? _startLocation;
   LatLngLiteralBuilder get startLocation =>
       _$this._startLocation ??= new LatLngLiteralBuilder();
   set startLocation(LatLngLiteralBuilder startLocation) =>
       _$this._startLocation = startLocation;
 
-  ListBuilder<DirectionsStep> _steps;
+  ListBuilder<DirectionsStep>? _steps;
   ListBuilder<DirectionsStep> get steps =>
       _$this._steps ??= new ListBuilder<DirectionsStep>();
   set steps(ListBuilder<DirectionsStep> steps) => _$this._steps = steps;
 
-  ListBuilder<DirectionsTrafficSpeedEntry> _trafficSpeedEntry;
+  ListBuilder<DirectionsTrafficSpeedEntry>? _trafficSpeedEntry;
   ListBuilder<DirectionsTrafficSpeedEntry> get trafficSpeedEntry =>
       _$this._trafficSpeedEntry ??=
           new ListBuilder<DirectionsTrafficSpeedEntry>();
@@ -158,35 +158,35 @@ class DirectionsLegBuilder
           ListBuilder<DirectionsTrafficSpeedEntry> trafficSpeedEntry) =>
       _$this._trafficSpeedEntry = trafficSpeedEntry;
 
-  ListBuilder<DirectionsViaWaypoint> _viaWaypoint;
+  ListBuilder<DirectionsViaWaypoint>? _viaWaypoint;
   ListBuilder<DirectionsViaWaypoint> get viaWaypoint =>
       _$this._viaWaypoint ??= new ListBuilder<DirectionsViaWaypoint>();
   set viaWaypoint(ListBuilder<DirectionsViaWaypoint> viaWaypoint) =>
       _$this._viaWaypoint = viaWaypoint;
 
-  TimeZoneTextValueObjectBuilder _arrivalTime;
+  TimeZoneTextValueObjectBuilder? _arrivalTime;
   TimeZoneTextValueObjectBuilder get arrivalTime =>
       _$this._arrivalTime ??= new TimeZoneTextValueObjectBuilder();
   set arrivalTime(TimeZoneTextValueObjectBuilder arrivalTime) =>
       _$this._arrivalTime = arrivalTime;
 
-  TimeZoneTextValueObjectBuilder _departureTime;
+  TimeZoneTextValueObjectBuilder? _departureTime;
   TimeZoneTextValueObjectBuilder get departureTime =>
       _$this._departureTime ??= new TimeZoneTextValueObjectBuilder();
   set departureTime(TimeZoneTextValueObjectBuilder departureTime) =>
       _$this._departureTime = departureTime;
 
-  TextValueObjectBuilder _distance;
+  TextValueObjectBuilder? _distance;
   TextValueObjectBuilder get distance =>
       _$this._distance ??= new TextValueObjectBuilder();
   set distance(TextValueObjectBuilder distance) => _$this._distance = distance;
 
-  TextValueObjectBuilder _duration;
+  TextValueObjectBuilder? _duration;
   TextValueObjectBuilder get duration =>
       _$this._duration ??= new TextValueObjectBuilder();
   set duration(TextValueObjectBuilder duration) => _$this._duration = duration;
 
-  TextValueObjectBuilder _durationInTraffic;
+  TextValueObjectBuilder? _durationInTraffic;
   TextValueObjectBuilder get durationInTraffic =>
       _$this._durationInTraffic ??= new TextValueObjectBuilder();
   set durationInTraffic(TextValueObjectBuilder durationInTraffic) =>
@@ -223,7 +223,7 @@ class DirectionsLegBuilder
   }
 
   @override
-  void update(void Function(DirectionsLegBuilder) updates) {
+  void update(void Function(DirectionsLegBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -246,7 +246,7 @@ class DirectionsLegBuilder
               duration: _duration?.build(),
               durationInTraffic: _durationInTraffic?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'endLocation';
         _endLocation?.build();

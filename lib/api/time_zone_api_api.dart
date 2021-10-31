@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -25,13 +25,13 @@ class TimeZoneAPIApi {
   Future<Response<TimeZoneResponse>> timezone(
     String location,
     num timestamp, { 
-    String language,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    String? language,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/maps/api/timezone/json',
@@ -88,7 +88,7 @@ class TimeZoneAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as TimeZoneResponse;
+    ) as TimeZoneResponse?;
 
     return Response<TimeZoneResponse>(
       data: _responseData,

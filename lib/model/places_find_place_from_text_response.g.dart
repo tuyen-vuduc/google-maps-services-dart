@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'places_find_place_from_text_response.dart';
 
@@ -10,16 +10,16 @@ part of 'places_find_place_from_text_response.dart';
 class _$PlacesFindPlaceFromTextResponse
     extends PlacesFindPlaceFromTextResponse {
   @override
-  final BuiltList<Place> candidates;
+  final BuiltList<Place>? candidates;
   @override
-  final PlacesSearchStatus status;
+  final PlacesSearchStatus? status;
   @override
-  final String errorMessage;
+  final String? errorMessage;
   @override
-  final BuiltList<String> infoMessages;
+  final BuiltList<String>? infoMessages;
 
   factory _$PlacesFindPlaceFromTextResponse(
-          [void Function(PlacesFindPlaceFromTextResponseBuilder) updates]) =>
+          [void Function(PlacesFindPlaceFromTextResponseBuilder)? updates]) =>
       (new PlacesFindPlaceFromTextResponseBuilder()..update(updates)).build();
 
   _$PlacesFindPlaceFromTextResponse._(
@@ -68,23 +68,23 @@ class PlacesFindPlaceFromTextResponseBuilder
     implements
         Builder<PlacesFindPlaceFromTextResponse,
             PlacesFindPlaceFromTextResponseBuilder> {
-  _$PlacesFindPlaceFromTextResponse _$v;
+  _$PlacesFindPlaceFromTextResponse? _$v;
 
-  ListBuilder<Place> _candidates;
+  ListBuilder<Place>? _candidates;
   ListBuilder<Place> get candidates =>
       _$this._candidates ??= new ListBuilder<Place>();
   set candidates(ListBuilder<Place> candidates) =>
       _$this._candidates = candidates;
 
-  PlacesSearchStatus _status;
-  PlacesSearchStatus get status => _$this._status;
-  set status(PlacesSearchStatus status) => _$this._status = status;
+  PlacesSearchStatus? _status;
+  PlacesSearchStatus? get status => _$this._status;
+  set status(PlacesSearchStatus? status) => _$this._status = status;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
-  ListBuilder<String> _infoMessages;
+  ListBuilder<String>? _infoMessages;
   ListBuilder<String> get infoMessages =>
       _$this._infoMessages ??= new ListBuilder<String>();
   set infoMessages(ListBuilder<String> infoMessages) =>
@@ -113,7 +113,7 @@ class PlacesFindPlaceFromTextResponseBuilder
   }
 
   @override
-  void update(void Function(PlacesFindPlaceFromTextResponseBuilder) updates) {
+  void update(void Function(PlacesFindPlaceFromTextResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -128,7 +128,7 @@ class PlacesFindPlaceFromTextResponseBuilder
               errorMessage: errorMessage,
               infoMessages: _infoMessages?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'candidates';
         _candidates?.build();

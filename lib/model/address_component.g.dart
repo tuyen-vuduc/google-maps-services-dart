@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'address_component.dart';
 
@@ -9,14 +9,14 @@ part of 'address_component.dart';
 
 class _$AddressComponent extends AddressComponent {
   @override
-  final String longName;
+  final String? longName;
   @override
-  final String shortName;
+  final String? shortName;
   @override
-  final BuiltList<String> types;
+  final BuiltList<String>? types;
 
   factory _$AddressComponent(
-          [void Function(AddressComponentBuilder) updates]) =>
+          [void Function(AddressComponentBuilder)? updates]) =>
       (new AddressComponentBuilder()..update(updates)).build();
 
   _$AddressComponent._({this.longName, this.shortName, this.types}) : super._();
@@ -56,17 +56,17 @@ class _$AddressComponent extends AddressComponent {
 
 class AddressComponentBuilder
     implements Builder<AddressComponent, AddressComponentBuilder> {
-  _$AddressComponent _$v;
+  _$AddressComponent? _$v;
 
-  String _longName;
-  String get longName => _$this._longName;
-  set longName(String longName) => _$this._longName = longName;
+  String? _longName;
+  String? get longName => _$this._longName;
+  set longName(String? longName) => _$this._longName = longName;
 
-  String _shortName;
-  String get shortName => _$this._shortName;
-  set shortName(String shortName) => _$this._shortName = shortName;
+  String? _shortName;
+  String? get shortName => _$this._shortName;
+  set shortName(String? shortName) => _$this._shortName = shortName;
 
-  ListBuilder<String> _types;
+  ListBuilder<String>? _types;
   ListBuilder<String> get types => _$this._types ??= new ListBuilder<String>();
   set types(ListBuilder<String> types) => _$this._types = types;
 
@@ -92,7 +92,7 @@ class AddressComponentBuilder
   }
 
   @override
-  void update(void Function(AddressComponentBuilder) updates) {
+  void update(void Function(AddressComponentBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -104,7 +104,7 @@ class AddressComponentBuilder
           new _$AddressComponent._(
               longName: longName, shortName: shortName, types: _types?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'types';
         _types?.build();

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geocoding_geometry.dart';
 
@@ -86,16 +86,16 @@ class _$GeocodingGeometryLocationTypeEnumSerializer
 
 class _$GeocodingGeometry extends GeocodingGeometry {
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final GeocodingGeometryLocationTypeEnum locationType;
+  final GeocodingGeometryLocationTypeEnum? locationType;
   @override
-  final Bounds viewport;
+  final Bounds? viewport;
   @override
-  final Bounds bounds;
+  final Bounds? bounds;
 
   factory _$GeocodingGeometry(
-          [void Function(GeocodingGeometryBuilder) updates]) =>
+          [void Function(GeocodingGeometryBuilder)? updates]) =>
       (new GeocodingGeometryBuilder()..update(updates)).build();
 
   _$GeocodingGeometry._(
@@ -141,23 +141,23 @@ class _$GeocodingGeometry extends GeocodingGeometry {
 
 class GeocodingGeometryBuilder
     implements Builder<GeocodingGeometry, GeocodingGeometryBuilder> {
-  _$GeocodingGeometry _$v;
+  _$GeocodingGeometry? _$v;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  GeocodingGeometryLocationTypeEnum _locationType;
-  GeocodingGeometryLocationTypeEnum get locationType => _$this._locationType;
-  set locationType(GeocodingGeometryLocationTypeEnum locationType) =>
+  GeocodingGeometryLocationTypeEnum? _locationType;
+  GeocodingGeometryLocationTypeEnum? get locationType => _$this._locationType;
+  set locationType(GeocodingGeometryLocationTypeEnum? locationType) =>
       _$this._locationType = locationType;
 
-  BoundsBuilder _viewport;
+  BoundsBuilder? _viewport;
   BoundsBuilder get viewport => _$this._viewport ??= new BoundsBuilder();
   set viewport(BoundsBuilder viewport) => _$this._viewport = viewport;
 
-  BoundsBuilder _bounds;
+  BoundsBuilder? _bounds;
   BoundsBuilder get bounds => _$this._bounds ??= new BoundsBuilder();
   set bounds(BoundsBuilder bounds) => _$this._bounds = bounds;
 
@@ -184,7 +184,7 @@ class GeocodingGeometryBuilder
   }
 
   @override
-  void update(void Function(GeocodingGeometryBuilder) updates) {
+  void update(void Function(GeocodingGeometryBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -199,7 +199,7 @@ class GeocodingGeometryBuilder
               viewport: _viewport?.build(),
               bounds: _bounds?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

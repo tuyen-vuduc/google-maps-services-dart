@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'plus_code.dart';
 
@@ -9,11 +9,11 @@ part of 'plus_code.dart';
 
 class _$PlusCode extends PlusCode {
   @override
-  final String globalCode;
+  final String? globalCode;
   @override
-  final String compoundCode;
+  final String? compoundCode;
 
-  factory _$PlusCode([void Function(PlusCodeBuilder) updates]) =>
+  factory _$PlusCode([void Function(PlusCodeBuilder)? updates]) =>
       (new PlusCodeBuilder()..update(updates)).build();
 
   _$PlusCode._({this.globalCode, this.compoundCode}) : super._();
@@ -48,15 +48,15 @@ class _$PlusCode extends PlusCode {
 }
 
 class PlusCodeBuilder implements Builder<PlusCode, PlusCodeBuilder> {
-  _$PlusCode _$v;
+  _$PlusCode? _$v;
 
-  String _globalCode;
-  String get globalCode => _$this._globalCode;
-  set globalCode(String globalCode) => _$this._globalCode = globalCode;
+  String? _globalCode;
+  String? get globalCode => _$this._globalCode;
+  set globalCode(String? globalCode) => _$this._globalCode = globalCode;
 
-  String _compoundCode;
-  String get compoundCode => _$this._compoundCode;
-  set compoundCode(String compoundCode) => _$this._compoundCode = compoundCode;
+  String? _compoundCode;
+  String? get compoundCode => _$this._compoundCode;
+  set compoundCode(String? compoundCode) => _$this._compoundCode = compoundCode;
 
   PlusCodeBuilder() {
     PlusCode._initializeBuilder(this);
@@ -79,7 +79,7 @@ class PlusCodeBuilder implements Builder<PlusCode, PlusCodeBuilder> {
   }
 
   @override
-  void update(void Function(PlusCodeBuilder) updates) {
+  void update(void Function(PlusCodeBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

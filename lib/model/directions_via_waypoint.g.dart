@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_via_waypoint.dart';
 
@@ -9,14 +9,14 @@ part of 'directions_via_waypoint.dart';
 
 class _$DirectionsViaWaypoint extends DirectionsViaWaypoint {
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final int stepIndex;
+  final int? stepIndex;
   @override
-  final num stepInterpolation;
+  final num? stepInterpolation;
 
   factory _$DirectionsViaWaypoint(
-          [void Function(DirectionsViaWaypointBuilder) updates]) =>
+          [void Function(DirectionsViaWaypointBuilder)? updates]) =>
       (new DirectionsViaWaypointBuilder()..update(updates)).build();
 
   _$DirectionsViaWaypoint._(
@@ -59,20 +59,20 @@ class _$DirectionsViaWaypoint extends DirectionsViaWaypoint {
 
 class DirectionsViaWaypointBuilder
     implements Builder<DirectionsViaWaypoint, DirectionsViaWaypointBuilder> {
-  _$DirectionsViaWaypoint _$v;
+  _$DirectionsViaWaypoint? _$v;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  int _stepIndex;
-  int get stepIndex => _$this._stepIndex;
-  set stepIndex(int stepIndex) => _$this._stepIndex = stepIndex;
+  int? _stepIndex;
+  int? get stepIndex => _$this._stepIndex;
+  set stepIndex(int? stepIndex) => _$this._stepIndex = stepIndex;
 
-  num _stepInterpolation;
-  num get stepInterpolation => _$this._stepInterpolation;
-  set stepInterpolation(num stepInterpolation) =>
+  num? _stepInterpolation;
+  num? get stepInterpolation => _$this._stepInterpolation;
+  set stepInterpolation(num? stepInterpolation) =>
       _$this._stepInterpolation = stepInterpolation;
 
   DirectionsViaWaypointBuilder() {
@@ -97,7 +97,7 @@ class DirectionsViaWaypointBuilder
   }
 
   @override
-  void update(void Function(DirectionsViaWaypointBuilder) updates) {
+  void update(void Function(DirectionsViaWaypointBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -111,7 +111,7 @@ class DirectionsViaWaypointBuilder
               stepIndex: stepIndex,
               stepInterpolation: stepInterpolation);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

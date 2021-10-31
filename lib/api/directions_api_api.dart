@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -25,24 +25,24 @@ class DirectionsAPIApi {
   Future<Response<DirectionsResponse>> directions(
     String destination,
     String origin, {
-    num arrivalTime,
-    num departureTime,
-    bool alternatives,
-    String avoid,
-    String units,
-    String waypoints,
-    String language,
-    TravelMode mode,
-    String region,
-    String trafficModel,
-    String transitMode,
-    String transitRoutingPreference,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    num? arrivalTime,
+    num? departureTime,
+    bool? alternatives,
+    String? avoid,
+    String? units,
+    String? waypoints,
+    String? language,
+    TravelMode? mode,
+    String? region,
+    String? trafficModel,
+    String? transitMode,
+    String? transitRoutingPreference,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/maps/api/directions/json',
@@ -115,7 +115,7 @@ class DirectionsAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as DirectionsResponse;
+    ) as DirectionsResponse?;
 
     return Response<DirectionsResponse>(
       data: _responseData,

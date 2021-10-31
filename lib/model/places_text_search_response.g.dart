@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'places_text_search_response.dart';
 
@@ -9,20 +9,20 @@ part of 'places_text_search_response.dart';
 
 class _$PlacesTextSearchResponse extends PlacesTextSearchResponse {
   @override
-  final BuiltList<String> htmlAttributions;
+  final BuiltList<String>? htmlAttributions;
   @override
-  final BuiltList<Place> results;
+  final BuiltList<Place>? results;
   @override
-  final PlacesSearchStatus status;
+  final PlacesSearchStatus? status;
   @override
-  final String errorMessage;
+  final String? errorMessage;
   @override
-  final BuiltList<String> infoMessages;
+  final BuiltList<String>? infoMessages;
   @override
-  final String nextPageToken;
+  final String? nextPageToken;
 
   factory _$PlacesTextSearchResponse(
-          [void Function(PlacesTextSearchResponseBuilder) updates]) =>
+          [void Function(PlacesTextSearchResponseBuilder)? updates]) =>
       (new PlacesTextSearchResponseBuilder()..update(updates)).build();
 
   _$PlacesTextSearchResponse._(
@@ -83,36 +83,36 @@ class _$PlacesTextSearchResponse extends PlacesTextSearchResponse {
 class PlacesTextSearchResponseBuilder
     implements
         Builder<PlacesTextSearchResponse, PlacesTextSearchResponseBuilder> {
-  _$PlacesTextSearchResponse _$v;
+  _$PlacesTextSearchResponse? _$v;
 
-  ListBuilder<String> _htmlAttributions;
+  ListBuilder<String>? _htmlAttributions;
   ListBuilder<String> get htmlAttributions =>
       _$this._htmlAttributions ??= new ListBuilder<String>();
   set htmlAttributions(ListBuilder<String> htmlAttributions) =>
       _$this._htmlAttributions = htmlAttributions;
 
-  ListBuilder<Place> _results;
+  ListBuilder<Place>? _results;
   ListBuilder<Place> get results =>
       _$this._results ??= new ListBuilder<Place>();
   set results(ListBuilder<Place> results) => _$this._results = results;
 
-  PlacesSearchStatus _status;
-  PlacesSearchStatus get status => _$this._status;
-  set status(PlacesSearchStatus status) => _$this._status = status;
+  PlacesSearchStatus? _status;
+  PlacesSearchStatus? get status => _$this._status;
+  set status(PlacesSearchStatus? status) => _$this._status = status;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
-  ListBuilder<String> _infoMessages;
+  ListBuilder<String>? _infoMessages;
   ListBuilder<String> get infoMessages =>
       _$this._infoMessages ??= new ListBuilder<String>();
   set infoMessages(ListBuilder<String> infoMessages) =>
       _$this._infoMessages = infoMessages;
 
-  String _nextPageToken;
-  String get nextPageToken => _$this._nextPageToken;
-  set nextPageToken(String nextPageToken) =>
+  String? _nextPageToken;
+  String? get nextPageToken => _$this._nextPageToken;
+  set nextPageToken(String? nextPageToken) =>
       _$this._nextPageToken = nextPageToken;
 
   PlacesTextSearchResponseBuilder() {
@@ -140,7 +140,7 @@ class PlacesTextSearchResponseBuilder
   }
 
   @override
-  void update(void Function(PlacesTextSearchResponseBuilder) updates) {
+  void update(void Function(PlacesTextSearchResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -157,7 +157,7 @@ class PlacesTextSearchResponseBuilder
               infoMessages: _infoMessages?.build(),
               nextPageToken: nextPageToken);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'htmlAttributions';
         _htmlAttributions?.build();

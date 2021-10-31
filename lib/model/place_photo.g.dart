@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_photo.dart';
 
@@ -9,15 +9,15 @@ part of 'place_photo.dart';
 
 class _$PlacePhoto extends PlacePhoto {
   @override
-  final num height;
+  final num? height;
   @override
-  final num width;
+  final num? width;
   @override
-  final BuiltList<String> htmlAttributions;
+  final BuiltList<String>? htmlAttributions;
   @override
-  final String photoReference;
+  final String? photoReference;
 
-  factory _$PlacePhoto([void Function(PlacePhotoBuilder) updates]) =>
+  factory _$PlacePhoto([void Function(PlacePhotoBuilder)? updates]) =>
       (new PlacePhotoBuilder()..update(updates)).build();
 
   _$PlacePhoto._(
@@ -61,25 +61,25 @@ class _$PlacePhoto extends PlacePhoto {
 }
 
 class PlacePhotoBuilder implements Builder<PlacePhoto, PlacePhotoBuilder> {
-  _$PlacePhoto _$v;
+  _$PlacePhoto? _$v;
 
-  num _height;
-  num get height => _$this._height;
-  set height(num height) => _$this._height = height;
+  num? _height;
+  num? get height => _$this._height;
+  set height(num? height) => _$this._height = height;
 
-  num _width;
-  num get width => _$this._width;
-  set width(num width) => _$this._width = width;
+  num? _width;
+  num? get width => _$this._width;
+  set width(num? width) => _$this._width = width;
 
-  ListBuilder<String> _htmlAttributions;
+  ListBuilder<String>? _htmlAttributions;
   ListBuilder<String> get htmlAttributions =>
       _$this._htmlAttributions ??= new ListBuilder<String>();
   set htmlAttributions(ListBuilder<String> htmlAttributions) =>
       _$this._htmlAttributions = htmlAttributions;
 
-  String _photoReference;
-  String get photoReference => _$this._photoReference;
-  set photoReference(String photoReference) =>
+  String? _photoReference;
+  String? get photoReference => _$this._photoReference;
+  set photoReference(String? photoReference) =>
       _$this._photoReference = photoReference;
 
   PlacePhotoBuilder() {
@@ -105,7 +105,7 @@ class PlacePhotoBuilder implements Builder<PlacePhoto, PlacePhotoBuilder> {
   }
 
   @override
-  void update(void Function(PlacePhotoBuilder) updates) {
+  void update(void Function(PlacePhotoBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -120,7 +120,7 @@ class PlacePhotoBuilder implements Builder<PlacePhoto, PlacePhotoBuilder> {
               htmlAttributions: _htmlAttributions?.build(),
               photoReference: photoReference);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'htmlAttributions';
         _htmlAttributions?.build();

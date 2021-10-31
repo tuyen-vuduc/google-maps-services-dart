@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,13 +13,11 @@ part 'bounds.g.dart';
 
 abstract class Bounds implements Built<Bounds, BoundsBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'northeast')
-    LatLngLiteral get northeast;
+    LatLngLiteral? get northeast;
 
-    @nullable
     @BuiltValueField(wireName: r'southwest')
-    LatLngLiteral get southwest;
+    LatLngLiteral? get southwest;
 
     Bounds._();
 
@@ -39,9 +37,9 @@ class _$BoundsSerializer implements StructuredSerializer<Bounds> {
     final String wireName = r'Bounds';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, Bounds object,
+    Iterable<Object?> serialize(Serializers serializers, Bounds object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'northeast')
             ..add(object.northeast == null ? null : serializers.serialize(object.northeast,
@@ -54,13 +52,13 @@ class _$BoundsSerializer implements StructuredSerializer<Bounds> {
     }
 
     @override
-    Bounds deserialize(Serializers serializers, Iterable<Object> serialized,
+    Bounds deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = BoundsBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

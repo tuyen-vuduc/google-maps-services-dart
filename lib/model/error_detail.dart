@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,20 +14,17 @@ part 'error_detail.g.dart';
 abstract class ErrorDetail implements Built<ErrorDetail, ErrorDetailBuilder> {
 
     /// A short description of the error.
-    @nullable
     @BuiltValueField(wireName: r'message')
-    String get message;
+    String? get message;
 
     /// A reason for the error.
-    @nullable
     @BuiltValueField(wireName: r'reason')
-    ErrorDetailReasonEnum get reason;
+    ErrorDetailReasonEnum? get reason;
     // enum reasonEnum {  badRequest,  dailyLimitExceeded,  invalid,  keyInvalid,  notFound,  parseError,  userRateLimitExceeded,  };
 
     /// The domain in which the error occurred.
-    @nullable
     @BuiltValueField(wireName: r'domain')
-    ErrorDetailDomainEnum get domain;
+    ErrorDetailDomainEnum? get domain;
     // enum domainEnum {  global,  geolocation,  usageLimits,  };
 
     ErrorDetail._();
@@ -48,9 +45,9 @@ class _$ErrorDetailSerializer implements StructuredSerializer<ErrorDetail> {
     final String wireName = r'ErrorDetail';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, ErrorDetail object,
+    Iterable<Object?> serialize(Serializers serializers, ErrorDetail object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'message')
             ..add(object.message == null ? null : serializers.serialize(object.message,
@@ -69,27 +66,27 @@ class _$ErrorDetailSerializer implements StructuredSerializer<ErrorDetail> {
     }
 
     @override
-    ErrorDetail deserialize(Serializers serializers, Iterable<Object> serialized,
+    ErrorDetail deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = ErrorDetailBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'message':
                     result.message = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'reason':
                     result.reason = serializers.deserialize(value,
-                        specifiedType: const FullType(ErrorDetailReasonEnum)) as ErrorDetailReasonEnum;
+                        specifiedType: const FullType(ErrorDetailReasonEnum)) as ErrorDetailReasonEnum?;
                     break;
                 case r'domain':
                     result.domain = serializers.deserialize(value,
-                        specifiedType: const FullType(ErrorDetailDomainEnum)) as ErrorDetailDomainEnum;
+                        specifiedType: const FullType(ErrorDetailDomainEnum)) as ErrorDetailDomainEnum?;
                     break;
             }
         }

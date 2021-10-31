@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'distance_matrix_response.dart';
 
@@ -9,16 +9,16 @@ part of 'distance_matrix_response.dart';
 
 class _$DistanceMatrixResponse extends DistanceMatrixResponse {
   @override
-  final BuiltList<String> originAddresses;
+  final BuiltList<String>? originAddresses;
   @override
-  final BuiltList<String> destinationAddresses;
+  final BuiltList<String>? destinationAddresses;
   @override
-  final BuiltList<DistanceMatrixRow> rows;
+  final BuiltList<DistanceMatrixRow>? rows;
   @override
-  final DistanceMatrixStatus status;
+  final DistanceMatrixStatus? status;
 
   factory _$DistanceMatrixResponse(
-          [void Function(DistanceMatrixResponseBuilder) updates]) =>
+          [void Function(DistanceMatrixResponseBuilder)? updates]) =>
       (new DistanceMatrixResponseBuilder()..update(updates)).build();
 
   _$DistanceMatrixResponse._(
@@ -67,28 +67,28 @@ class _$DistanceMatrixResponse extends DistanceMatrixResponse {
 
 class DistanceMatrixResponseBuilder
     implements Builder<DistanceMatrixResponse, DistanceMatrixResponseBuilder> {
-  _$DistanceMatrixResponse _$v;
+  _$DistanceMatrixResponse? _$v;
 
-  ListBuilder<String> _originAddresses;
+  ListBuilder<String>? _originAddresses;
   ListBuilder<String> get originAddresses =>
       _$this._originAddresses ??= new ListBuilder<String>();
   set originAddresses(ListBuilder<String> originAddresses) =>
       _$this._originAddresses = originAddresses;
 
-  ListBuilder<String> _destinationAddresses;
+  ListBuilder<String>? _destinationAddresses;
   ListBuilder<String> get destinationAddresses =>
       _$this._destinationAddresses ??= new ListBuilder<String>();
   set destinationAddresses(ListBuilder<String> destinationAddresses) =>
       _$this._destinationAddresses = destinationAddresses;
 
-  ListBuilder<DistanceMatrixRow> _rows;
+  ListBuilder<DistanceMatrixRow>? _rows;
   ListBuilder<DistanceMatrixRow> get rows =>
       _$this._rows ??= new ListBuilder<DistanceMatrixRow>();
   set rows(ListBuilder<DistanceMatrixRow> rows) => _$this._rows = rows;
 
-  DistanceMatrixStatus _status;
-  DistanceMatrixStatus get status => _$this._status;
-  set status(DistanceMatrixStatus status) => _$this._status = status;
+  DistanceMatrixStatus? _status;
+  DistanceMatrixStatus? get status => _$this._status;
+  set status(DistanceMatrixStatus? status) => _$this._status = status;
 
   DistanceMatrixResponseBuilder() {
     DistanceMatrixResponse._initializeBuilder(this);
@@ -113,7 +113,7 @@ class DistanceMatrixResponseBuilder
   }
 
   @override
-  void update(void Function(DistanceMatrixResponseBuilder) updates) {
+  void update(void Function(DistanceMatrixResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -128,7 +128,7 @@ class DistanceMatrixResponseBuilder
               rows: _rows?.build(),
               status: status);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'originAddresses';
         _originAddresses?.build();

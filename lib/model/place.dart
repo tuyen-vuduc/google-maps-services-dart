@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -20,137 +20,110 @@ part 'place.g.dart';
 abstract class Place implements Built<Place, PlaceBuilder> {
 
     /// An array containing the separate components applicable to this address.
-    @nullable
     @BuiltValueField(wireName: r'address_components')
-    BuiltList<AddressComponent> get addressComponents;
+    BuiltList<AddressComponent>? get addressComponents;
 
     /// A representation of the place's address in the [adr microformat](http://microformats.org/wiki/adr).
-    @nullable
     @BuiltValueField(wireName: r'adr_address')
-    String get adrAddress;
+    String? get adrAddress;
 
     /// Indicates the operational status of the place, if it is a business. If no data exists, `business_status` is not returned. 
-    @nullable
     @BuiltValueField(wireName: r'business_status')
-    PlaceBusinessStatusEnum get businessStatus;
+    PlaceBusinessStatusEnum? get businessStatus;
     // enum businessStatusEnum {  OPERATIONAL,  CLOSED_TEMPORARILY,  CLOSED_PERMANENTLY,  };
 
     /// A string containing the human-readable address of this place.  Often this address is equivalent to the postal address. Note that some countries, such as the United Kingdom, do not allow distribution of true postal addresses due to licensing restrictions.  The formatted address is logically composed of one or more address components. For example, the address \"111 8th Avenue, New York, NY\" consists of the following components: \"111\" (the street number), \"8th Avenue\" (the route), \"New York\" (the city) and \"NY\" (the US state).  Do not parse the formatted address programmatically. Instead you should use the individual address components, which the API response includes in addition to the formatted address field.       
-    @nullable
     @BuiltValueField(wireName: r'formatted_address')
-    String get formattedAddress;
+    String? get formattedAddress;
 
     /// Contains the place's phone number in its [local format](http://en.wikipedia.org/wiki/Local_conventions_for_writing_telephone_numbers).
-    @nullable
     @BuiltValueField(wireName: r'formatted_phone_number')
-    String get formattedPhoneNumber;
+    String? get formattedPhoneNumber;
 
-    @nullable
     @BuiltValueField(wireName: r'geometry')
-    Geometry get geometry;
+    Geometry? get geometry;
 
     /// Contains the URL of a suggested icon which may be displayed to the user when indicating this result on a map.
-    @nullable
     @BuiltValueField(wireName: r'icon')
-    String get icon;
+    String? get icon;
 
     /// Contains the default HEX color code for the place's category.
-    @nullable
     @BuiltValueField(wireName: r'icon_background_color')
-    String get iconBackgroundColor;
+    String? get iconBackgroundColor;
 
     /// Contains the URL of a recommended icon, minus the `.svg` or `.png` file type extension.
-    @nullable
     @BuiltValueField(wireName: r'icon_mask_base_uri')
-    String get iconMaskBaseUri;
+    String? get iconMaskBaseUri;
 
     /// Contains the place's phone number in international format. International format includes the country code, and is prefixed with the plus, +, sign. For example, the international_phone_number for Google's Sydney, Australia office is `+61 2 9374 4000`.
-    @nullable
     @BuiltValueField(wireName: r'international_phone_number')
-    String get internationalPhoneNumber;
+    String? get internationalPhoneNumber;
 
     /// Contains the human-readable name for the returned result. For `establishment` results, this is usually the canonicalized business name.
-    @nullable
     @BuiltValueField(wireName: r'name')
-    String get name;
+    String? get name;
 
-    @nullable
     @BuiltValueField(wireName: r'opening_hours')
-    PlaceOpeningHours get openingHours;
+    PlaceOpeningHours? get openingHours;
 
     /// Deprecated. The field `permanently_closed` is deprecated, and should not be used. Instead, use `business_status` to get the operational status of businesses.
-    @nullable
     @BuiltValueField(wireName: r'permanently_closed')
-    bool get permanentlyClosed;
+    bool? get permanentlyClosed;
 
     /// An array of photo objects, each containing a reference to an image. A request may return up to ten photos. More information about place photos and how you can use the images in your application can be found in the [Place Photos](https://developers.google.com/maps/documentation/places/web-service/photos) documentation.
-    @nullable
     @BuiltValueField(wireName: r'photos')
-    BuiltList<PlacePhoto> get photos;
+    BuiltList<PlacePhoto>? get photos;
 
     /// A textual identifier that uniquely identifies a place. To retrieve information about the place, pass this identifier in the `place_id` field of a Places API request. For more information about place IDs, see the [place ID overview](https://developers.google.com/maps/documentation/places/web-service/place-id).
-    @nullable
     @BuiltValueField(wireName: r'place_id')
-    String get placeId;
+    String? get placeId;
 
-    @nullable
     @BuiltValueField(wireName: r'plus_code')
-    PlusCode get plusCode;
+    PlusCode? get plusCode;
 
     /// The price level of the place, on a scale of 0 to 4. The exact amount indicated by a specific value will vary from region to region. Price levels are interpreted as follows: - 0 Free - 1 Inexpensive - 2 Moderate - 3 Expensive - 4 Very Expensive 
-    @nullable
     @BuiltValueField(wireName: r'price_level')
-    num get priceLevel;
+    num? get priceLevel;
 
     /// Contains the place's rating, from 1.0 to 5.0, based on aggregated user reviews.
-    @nullable
     @BuiltValueField(wireName: r'rating')
-    num get rating;
+    num? get rating;
 
     /// Deprecated
-    @nullable
     @BuiltValueField(wireName: r'reference')
-    String get reference;
+    String? get reference;
 
     /// A JSON array of up to five reviews. If a language parameter was specified in the request, the service will bias the results to prefer reviews written in that language.
-    @nullable
     @BuiltValueField(wireName: r'reviews')
-    BuiltList<PlaceReview> get reviews;
+    BuiltList<PlaceReview>? get reviews;
 
     /// Deprecated.
-    @nullable
     @BuiltValueField(wireName: r'scope')
-    String get scope;
+    String? get scope;
 
     /// Contains an array of feature types describing the given result. See the list of [supported types](https://developers.google.com/maps/documentation/places/web-service/supported_types#table2).
-    @nullable
     @BuiltValueField(wireName: r'types')
-    BuiltList<String> get types;
+    BuiltList<String>? get types;
 
     /// Contains the URL of the official Google page for this place. This will be the Google-owned page that contains the best available information about the place. Applications must link to or embed this page on any screen that shows detailed results about the place to the user.
-    @nullable
     @BuiltValueField(wireName: r'url')
-    String get url;
+    String? get url;
 
     /// The total number of reviews, with or without text, for this place.
-    @nullable
     @BuiltValueField(wireName: r'user_ratings_total')
-    num get userRatingsTotal;
+    num? get userRatingsTotal;
 
     /// Contains the number of minutes this place’s current timezone is offset from UTC. For example, for places in Sydney, Australia during daylight saving time this would be 660 (+11 hours from UTC), and for places in California outside of daylight saving time this would be -480 (-8 hours from UTC).
-    @nullable
     @BuiltValueField(wireName: r'utc_offset')
-    num get utcOffset;
+    num? get utcOffset;
 
     /// For establishment (`types:[\"establishment\", ...])` results only, the `vicinity` field contains a simplified address for the place, including the street name, street number, and locality, but not the province/state, postal code, or country.  For all other results, the `vicinity` field contains the name of the narrowest political (`types:[\"political\", ...]`) feature that is present in the address of the result.  This content is meant to be read as-is. Do not programmatically parse the formatted address. 
-    @nullable
     @BuiltValueField(wireName: r'vicinity')
-    String get vicinity;
+    String? get vicinity;
 
     /// The authoritative website for this place, such as a business' homepage.
-    @nullable
     @BuiltValueField(wireName: r'website')
-    String get website;
+    String? get website;
 
     Place._();
 
@@ -170,9 +143,9 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
     final String wireName = r'Place';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, Place object,
+    Iterable<Object?> serialize(Serializers serializers, Place object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.addressComponents != null) {
             result
                 ..add(r'address_components')
@@ -339,13 +312,13 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
     }
 
     @override
-    Place deserialize(Serializers serializers, Iterable<Object> serialized,
+    Place deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -355,19 +328,19 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'adr_address':
                     result.adrAddress = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'business_status':
                     result.businessStatus = serializers.deserialize(value,
-                        specifiedType: const FullType(PlaceBusinessStatusEnum)) as PlaceBusinessStatusEnum;
+                        specifiedType: const FullType(PlaceBusinessStatusEnum)) as PlaceBusinessStatusEnum?;
                     break;
                 case r'formatted_address':
                     result.formattedAddress = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'formatted_phone_number':
                     result.formattedPhoneNumber = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'geometry':
                     result.geometry.replace(serializers.deserialize(value,
@@ -375,23 +348,23 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'icon':
                     result.icon = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'icon_background_color':
                     result.iconBackgroundColor = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'icon_mask_base_uri':
                     result.iconMaskBaseUri = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'international_phone_number':
                     result.internationalPhoneNumber = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'name':
                     result.name = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'opening_hours':
                     result.openingHours.replace(serializers.deserialize(value,
@@ -399,7 +372,7 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'permanently_closed':
                     result.permanentlyClosed = serializers.deserialize(value,
-                        specifiedType: const FullType(bool)) as bool;
+                        specifiedType: const FullType(bool)) as bool?;
                     break;
                 case r'photos':
                     result.photos.replace(serializers.deserialize(value,
@@ -407,7 +380,7 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'place_id':
                     result.placeId = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'plus_code':
                     result.plusCode.replace(serializers.deserialize(value,
@@ -415,15 +388,15 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'price_level':
                     result.priceLevel = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'rating':
                     result.rating = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'reference':
                     result.reference = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'reviews':
                     result.reviews.replace(serializers.deserialize(value,
@@ -431,7 +404,7 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'scope':
                     result.scope = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'types':
                     result.types.replace(serializers.deserialize(value,
@@ -439,23 +412,23 @@ class _$PlaceSerializer implements StructuredSerializer<Place> {
                     break;
                 case r'url':
                     result.url = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'user_ratings_total':
                     result.userRatingsTotal = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'utc_offset':
                     result.utcOffset = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'vicinity':
                     result.vicinity = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'website':
                     result.website = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

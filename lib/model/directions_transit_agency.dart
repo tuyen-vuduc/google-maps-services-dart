@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,19 +13,16 @@ part 'directions_transit_agency.g.dart';
 abstract class DirectionsTransitAgency implements Built<DirectionsTransitAgency, DirectionsTransitAgencyBuilder> {
 
     /// The name of this transit agency.
-    @nullable
     @BuiltValueField(wireName: r'name')
-    String get name;
+    String? get name;
 
     /// The transit agency's URL.
-    @nullable
     @BuiltValueField(wireName: r'phone')
-    String get phone;
+    String? get phone;
 
     /// The transit agency's phone number.
-    @nullable
     @BuiltValueField(wireName: r'url')
-    String get url;
+    String? get url;
 
     DirectionsTransitAgency._();
 
@@ -45,9 +42,9 @@ class _$DirectionsTransitAgencySerializer implements StructuredSerializer<Direct
     final String wireName = r'DirectionsTransitAgency';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTransitAgency object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTransitAgency object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.name != null) {
             result
                 ..add(r'name')
@@ -70,27 +67,27 @@ class _$DirectionsTransitAgencySerializer implements StructuredSerializer<Direct
     }
 
     @override
-    DirectionsTransitAgency deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTransitAgency deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTransitAgencyBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'name':
                     result.name = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'phone':
                     result.phone = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'url':
                     result.url = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

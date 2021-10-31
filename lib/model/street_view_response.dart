@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,29 +14,24 @@ part 'street_view_response.g.dart';
 
 abstract class StreetViewResponse implements Built<StreetViewResponse, StreetViewResponseBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'status')
-    StreetViewStatus get status;
+    StreetViewStatus? get status;
     // enum statusEnum {  OK,  INVALID_REQUEST,  NOT_FOUND,  ZERO_RESULTS,  OVER_QUERY_LIMIT,  REQUEST_DENIED,  UNKNOWN_ERROR,  };
 
     /// An array of snapped points.
-    @nullable
     @BuiltValueField(wireName: r'copyright')
-    String get copyright;
+    String? get copyright;
 
     /// A string indicating year and month that the panorama was captured.
-    @nullable
     @BuiltValueField(wireName: r'date')
-    String get date;
+    String? get date;
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// A specific panorama ID. These are generally stable, though panoramas may change ID over time as imagery is refreshed.
-    @nullable
     @BuiltValueField(wireName: r'pano_id')
-    String get panoId;
+    String? get panoId;
 
     StreetViewResponse._();
 
@@ -56,9 +51,9 @@ class _$StreetViewResponseSerializer implements StructuredSerializer<StreetViewR
     final String wireName = r'StreetViewResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, StreetViewResponse object,
+    Iterable<Object?> serialize(Serializers serializers, StreetViewResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'status')
             ..add(object.status == null ? null : serializers.serialize(object.status,
@@ -91,27 +86,27 @@ class _$StreetViewResponseSerializer implements StructuredSerializer<StreetViewR
     }
 
     @override
-    StreetViewResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    StreetViewResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = StreetViewResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'status':
                     result.status = serializers.deserialize(value,
-                        specifiedType: const FullType(StreetViewStatus)) as StreetViewStatus;
+                        specifiedType: const FullType(StreetViewStatus)) as StreetViewStatus?;
                     break;
                 case r'copyright':
                     result.copyright = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'date':
                     result.date = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'location':
                     result.location.replace(serializers.deserialize(value,
@@ -119,7 +114,7 @@ class _$StreetViewResponseSerializer implements StructuredSerializer<StreetViewR
                     break;
                 case r'pano_id':
                     result.panoId = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

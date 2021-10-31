@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_step.dart';
 
@@ -189,27 +189,27 @@ class _$DirectionsStepManeuverEnumSerializer
 
 class _$DirectionsStep extends DirectionsStep {
   @override
-  final TextValueObject duration;
+  final TextValueObject? duration;
   @override
-  final LatLngLiteral endLocation;
+  final LatLngLiteral? endLocation;
   @override
-  final String htmlInstructions;
+  final String? htmlInstructions;
   @override
-  final DirectionsPolyline polyline;
+  final DirectionsPolyline? polyline;
   @override
-  final LatLngLiteral startLocation;
+  final LatLngLiteral? startLocation;
   @override
-  final TravelMode travelMode;
+  final TravelMode? travelMode;
   @override
-  final TextValueObject distance;
+  final TextValueObject? distance;
   @override
-  final DirectionsStepManeuverEnum maneuver;
+  final DirectionsStepManeuverEnum? maneuver;
   @override
-  final DirectionsTransitDetails transitDetails;
+  final DirectionsTransitDetails? transitDetails;
   @override
-  final JsonObject steps;
+  final JsonObject? steps;
 
-  factory _$DirectionsStep([void Function(DirectionsStepBuilder) updates]) =>
+  factory _$DirectionsStep([void Function(DirectionsStepBuilder)? updates]) =>
       (new DirectionsStepBuilder()..update(updates)).build();
 
   _$DirectionsStep._(
@@ -290,59 +290,59 @@ class _$DirectionsStep extends DirectionsStep {
 
 class DirectionsStepBuilder
     implements Builder<DirectionsStep, DirectionsStepBuilder> {
-  _$DirectionsStep _$v;
+  _$DirectionsStep? _$v;
 
-  TextValueObjectBuilder _duration;
+  TextValueObjectBuilder? _duration;
   TextValueObjectBuilder get duration =>
       _$this._duration ??= new TextValueObjectBuilder();
   set duration(TextValueObjectBuilder duration) => _$this._duration = duration;
 
-  LatLngLiteralBuilder _endLocation;
+  LatLngLiteralBuilder? _endLocation;
   LatLngLiteralBuilder get endLocation =>
       _$this._endLocation ??= new LatLngLiteralBuilder();
   set endLocation(LatLngLiteralBuilder endLocation) =>
       _$this._endLocation = endLocation;
 
-  String _htmlInstructions;
-  String get htmlInstructions => _$this._htmlInstructions;
-  set htmlInstructions(String htmlInstructions) =>
+  String? _htmlInstructions;
+  String? get htmlInstructions => _$this._htmlInstructions;
+  set htmlInstructions(String? htmlInstructions) =>
       _$this._htmlInstructions = htmlInstructions;
 
-  DirectionsPolylineBuilder _polyline;
+  DirectionsPolylineBuilder? _polyline;
   DirectionsPolylineBuilder get polyline =>
       _$this._polyline ??= new DirectionsPolylineBuilder();
   set polyline(DirectionsPolylineBuilder polyline) =>
       _$this._polyline = polyline;
 
-  LatLngLiteralBuilder _startLocation;
+  LatLngLiteralBuilder? _startLocation;
   LatLngLiteralBuilder get startLocation =>
       _$this._startLocation ??= new LatLngLiteralBuilder();
   set startLocation(LatLngLiteralBuilder startLocation) =>
       _$this._startLocation = startLocation;
 
-  TravelMode _travelMode;
-  TravelMode get travelMode => _$this._travelMode;
-  set travelMode(TravelMode travelMode) => _$this._travelMode = travelMode;
+  TravelMode? _travelMode;
+  TravelMode? get travelMode => _$this._travelMode;
+  set travelMode(TravelMode? travelMode) => _$this._travelMode = travelMode;
 
-  TextValueObjectBuilder _distance;
+  TextValueObjectBuilder? _distance;
   TextValueObjectBuilder get distance =>
       _$this._distance ??= new TextValueObjectBuilder();
   set distance(TextValueObjectBuilder distance) => _$this._distance = distance;
 
-  DirectionsStepManeuverEnum _maneuver;
-  DirectionsStepManeuverEnum get maneuver => _$this._maneuver;
-  set maneuver(DirectionsStepManeuverEnum maneuver) =>
+  DirectionsStepManeuverEnum? _maneuver;
+  DirectionsStepManeuverEnum? get maneuver => _$this._maneuver;
+  set maneuver(DirectionsStepManeuverEnum? maneuver) =>
       _$this._maneuver = maneuver;
 
-  DirectionsTransitDetailsBuilder _transitDetails;
+  DirectionsTransitDetailsBuilder? _transitDetails;
   DirectionsTransitDetailsBuilder get transitDetails =>
       _$this._transitDetails ??= new DirectionsTransitDetailsBuilder();
   set transitDetails(DirectionsTransitDetailsBuilder transitDetails) =>
       _$this._transitDetails = transitDetails;
 
-  JsonObject _steps;
-  JsonObject get steps => _$this._steps;
-  set steps(JsonObject steps) => _$this._steps = steps;
+  JsonObject? _steps;
+  JsonObject? get steps => _$this._steps;
+  set steps(JsonObject? steps) => _$this._steps = steps;
 
   DirectionsStepBuilder() {
     DirectionsStep._initializeBuilder(this);
@@ -373,7 +373,7 @@ class DirectionsStepBuilder
   }
 
   @override
-  void update(void Function(DirectionsStepBuilder) updates) {
+  void update(void Function(DirectionsStepBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -394,7 +394,7 @@ class DirectionsStepBuilder
               transitDetails: _transitDetails?.build(),
               steps: steps);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'duration';
         _duration?.build();

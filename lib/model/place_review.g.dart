@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_review.dart';
 
@@ -9,23 +9,23 @@ part of 'place_review.dart';
 
 class _$PlaceReview extends PlaceReview {
   @override
-  final String authorName;
+  final String? authorName;
   @override
-  final num rating;
+  final num? rating;
   @override
-  final String relativeTimeDescription;
+  final String? relativeTimeDescription;
   @override
-  final num time;
+  final num? time;
   @override
-  final String authorUrl;
+  final String? authorUrl;
   @override
-  final String profilePhotoUrl;
+  final String? profilePhotoUrl;
   @override
-  final String language;
+  final String? language;
   @override
-  final String text;
+  final String? text;
 
-  factory _$PlaceReview([void Function(PlaceReviewBuilder) updates]) =>
+  factory _$PlaceReview([void Function(PlaceReviewBuilder)? updates]) =>
       (new PlaceReviewBuilder()..update(updates)).build();
 
   _$PlaceReview._(
@@ -92,41 +92,41 @@ class _$PlaceReview extends PlaceReview {
 }
 
 class PlaceReviewBuilder implements Builder<PlaceReview, PlaceReviewBuilder> {
-  _$PlaceReview _$v;
+  _$PlaceReview? _$v;
 
-  String _authorName;
-  String get authorName => _$this._authorName;
-  set authorName(String authorName) => _$this._authorName = authorName;
+  String? _authorName;
+  String? get authorName => _$this._authorName;
+  set authorName(String? authorName) => _$this._authorName = authorName;
 
-  num _rating;
-  num get rating => _$this._rating;
-  set rating(num rating) => _$this._rating = rating;
+  num? _rating;
+  num? get rating => _$this._rating;
+  set rating(num? rating) => _$this._rating = rating;
 
-  String _relativeTimeDescription;
-  String get relativeTimeDescription => _$this._relativeTimeDescription;
-  set relativeTimeDescription(String relativeTimeDescription) =>
+  String? _relativeTimeDescription;
+  String? get relativeTimeDescription => _$this._relativeTimeDescription;
+  set relativeTimeDescription(String? relativeTimeDescription) =>
       _$this._relativeTimeDescription = relativeTimeDescription;
 
-  num _time;
-  num get time => _$this._time;
-  set time(num time) => _$this._time = time;
+  num? _time;
+  num? get time => _$this._time;
+  set time(num? time) => _$this._time = time;
 
-  String _authorUrl;
-  String get authorUrl => _$this._authorUrl;
-  set authorUrl(String authorUrl) => _$this._authorUrl = authorUrl;
+  String? _authorUrl;
+  String? get authorUrl => _$this._authorUrl;
+  set authorUrl(String? authorUrl) => _$this._authorUrl = authorUrl;
 
-  String _profilePhotoUrl;
-  String get profilePhotoUrl => _$this._profilePhotoUrl;
-  set profilePhotoUrl(String profilePhotoUrl) =>
+  String? _profilePhotoUrl;
+  String? get profilePhotoUrl => _$this._profilePhotoUrl;
+  set profilePhotoUrl(String? profilePhotoUrl) =>
       _$this._profilePhotoUrl = profilePhotoUrl;
 
-  String _language;
-  String get language => _$this._language;
-  set language(String language) => _$this._language = language;
+  String? _language;
+  String? get language => _$this._language;
+  set language(String? language) => _$this._language = language;
 
-  String _text;
-  String get text => _$this._text;
-  set text(String text) => _$this._text = text;
+  String? _text;
+  String? get text => _$this._text;
+  set text(String? text) => _$this._text = text;
 
   PlaceReviewBuilder() {
     PlaceReview._initializeBuilder(this);
@@ -155,7 +155,7 @@ class PlaceReviewBuilder implements Builder<PlaceReview, PlaceReviewBuilder> {
   }
 
   @override
-  void update(void Function(PlaceReviewBuilder) updates) {
+  void update(void Function(PlaceReviewBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

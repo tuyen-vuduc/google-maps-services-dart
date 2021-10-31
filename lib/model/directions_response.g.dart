@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_response.dart';
 
@@ -9,18 +9,18 @@ part of 'directions_response.dart';
 
 class _$DirectionsResponse extends DirectionsResponse {
   @override
-  final BuiltList<DirectionsRoute> routes;
+  final BuiltList<DirectionsRoute>? routes;
   @override
-  final DirectionsStatus status;
+  final DirectionsStatus? status;
   @override
-  final BuiltList<DirectionsGeocodedWaypoint> geocodedWaypoints;
+  final BuiltList<DirectionsGeocodedWaypoint>? geocodedWaypoints;
   @override
-  final BuiltList<TravelMode> availableTravelModes;
+  final BuiltList<TravelMode>? availableTravelModes;
   @override
-  final String errorMessage;
+  final String? errorMessage;
 
   factory _$DirectionsResponse(
-          [void Function(DirectionsResponseBuilder) updates]) =>
+          [void Function(DirectionsResponseBuilder)? updates]) =>
       (new DirectionsResponseBuilder()..update(updates)).build();
 
   _$DirectionsResponse._(
@@ -75,18 +75,18 @@ class _$DirectionsResponse extends DirectionsResponse {
 
 class DirectionsResponseBuilder
     implements Builder<DirectionsResponse, DirectionsResponseBuilder> {
-  _$DirectionsResponse _$v;
+  _$DirectionsResponse? _$v;
 
-  ListBuilder<DirectionsRoute> _routes;
+  ListBuilder<DirectionsRoute>? _routes;
   ListBuilder<DirectionsRoute> get routes =>
       _$this._routes ??= new ListBuilder<DirectionsRoute>();
   set routes(ListBuilder<DirectionsRoute> routes) => _$this._routes = routes;
 
-  DirectionsStatus _status;
-  DirectionsStatus get status => _$this._status;
-  set status(DirectionsStatus status) => _$this._status = status;
+  DirectionsStatus? _status;
+  DirectionsStatus? get status => _$this._status;
+  set status(DirectionsStatus? status) => _$this._status = status;
 
-  ListBuilder<DirectionsGeocodedWaypoint> _geocodedWaypoints;
+  ListBuilder<DirectionsGeocodedWaypoint>? _geocodedWaypoints;
   ListBuilder<DirectionsGeocodedWaypoint> get geocodedWaypoints =>
       _$this._geocodedWaypoints ??=
           new ListBuilder<DirectionsGeocodedWaypoint>();
@@ -94,15 +94,15 @@ class DirectionsResponseBuilder
           ListBuilder<DirectionsGeocodedWaypoint> geocodedWaypoints) =>
       _$this._geocodedWaypoints = geocodedWaypoints;
 
-  ListBuilder<TravelMode> _availableTravelModes;
+  ListBuilder<TravelMode>? _availableTravelModes;
   ListBuilder<TravelMode> get availableTravelModes =>
       _$this._availableTravelModes ??= new ListBuilder<TravelMode>();
   set availableTravelModes(ListBuilder<TravelMode> availableTravelModes) =>
       _$this._availableTravelModes = availableTravelModes;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
   DirectionsResponseBuilder() {
     DirectionsResponse._initializeBuilder(this);
@@ -128,7 +128,7 @@ class DirectionsResponseBuilder
   }
 
   @override
-  void update(void Function(DirectionsResponseBuilder) updates) {
+  void update(void Function(DirectionsResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -144,7 +144,7 @@ class DirectionsResponseBuilder
               availableTravelModes: _availableTravelModes?.build(),
               errorMessage: errorMessage);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'routes';
         _routes?.build();

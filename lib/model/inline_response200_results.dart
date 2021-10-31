@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,17 +13,14 @@ part 'inline_response200_results.g.dart';
 
 abstract class InlineResponse200Results implements Built<InlineResponse200Results, InlineResponse200ResultsBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'elevation')
-    num get elevation;
+    num? get elevation;
 
-    @nullable
     @BuiltValueField(wireName: r'resolution')
-    num get resolution;
+    num? get resolution;
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     InlineResponse200Results._();
 
@@ -43,9 +40,9 @@ class _$InlineResponse200ResultsSerializer implements StructuredSerializer<Inlin
     final String wireName = r'InlineResponse200Results';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, InlineResponse200Results object,
+    Iterable<Object?> serialize(Serializers serializers, InlineResponse200Results object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.elevation != null) {
             result
                 ..add(r'elevation')
@@ -68,23 +65,23 @@ class _$InlineResponse200ResultsSerializer implements StructuredSerializer<Inlin
     }
 
     @override
-    InlineResponse200Results deserialize(Serializers serializers, Iterable<Object> serialized,
+    InlineResponse200Results deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = InlineResponse200ResultsBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'elevation':
                     result.elevation = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'resolution':
                     result.resolution = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'location':
                     result.location.replace(serializers.deserialize(value,

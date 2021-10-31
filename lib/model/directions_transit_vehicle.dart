@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,25 +14,21 @@ part 'directions_transit_vehicle.g.dart';
 abstract class DirectionsTransitVehicle implements Built<DirectionsTransitVehicle, DirectionsTransitVehicleBuilder> {
 
     /// The name of this vehicle, capitalized.
-    @nullable
     @BuiltValueField(wireName: r'name')
-    String get name;
+    String? get name;
 
     /// The type of vehicle used.  * `BUS` - Bus. * `CABLE_CAR` - A vehicle that operates on a cable, usually on the ground. Aerial cable cars may be of the type GONDOLA_LIFT. * `COMMUTER_TRAIN` - Commuter rail. * `FERRY` - Ferry. * `FUNICULAR` - A vehicle that is pulled up a steep incline by a cable. A Funicular typically consists of two cars, with each car acting as a counterweight for the other. * `GONDOLA_LIFT` - An aerial cable car. * `HEAVY_RAIL` - Heavy rail. * `HIGH_SPEED_TRAIN` - High speed train. * `INTERCITY_BUS` - Intercity bus. * `LONG_DISTANCE_TRAIN` - Long distance train. * `METRO_RAIL` - Light rail transit. * `MONORAIL` - Monorail. * `OTHER` - All other vehicles will return this type. * `RAIL` - Rail. * `SHARE_TAXI` - Share taxi is a kind of bus with the ability to drop off and pick up passengers anywhere on its route. * `SUBWAY` - Underground light rail. * `TRAM` - Above ground light rail. * `TROLLEYBUS` - Trolleybus. 
-    @nullable
     @BuiltValueField(wireName: r'type')
-    DirectionsTransitVehicleTypeEnum get type;
+    DirectionsTransitVehicleTypeEnum? get type;
     // enum typeEnum {  BUS,  CABLE_CAR,  COMMUTER_TRAIN,  FERRY,  FUNICULAR,  GONDOLA_LIFT,  HEAVY_RAIL,  HIGH_SPEED_TRAIN,  INTERCITY_BUS,  LONG_DISTANCE_TRAIN,  METRO_RAIL,  MONORAIL,  OTHER,  RAIL,  SHARE_TAXI,  SUBWAY,  TRAM,  TROLLEYBUS,  };
 
     /// Contains the URL for an icon associated with this vehicle type.
-    @nullable
     @BuiltValueField(wireName: r'icon')
-    String get icon;
+    String? get icon;
 
     /// Contains the URL for the icon associated with this vehicle type, based on the local transport signage.
-    @nullable
     @BuiltValueField(wireName: r'local_icon')
-    String get localIcon;
+    String? get localIcon;
 
     DirectionsTransitVehicle._();
 
@@ -52,9 +48,9 @@ class _$DirectionsTransitVehicleSerializer implements StructuredSerializer<Direc
     final String wireName = r'DirectionsTransitVehicle';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTransitVehicle object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTransitVehicle object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'name')
             ..add(object.name == null ? null : serializers.serialize(object.name,
@@ -79,31 +75,31 @@ class _$DirectionsTransitVehicleSerializer implements StructuredSerializer<Direc
     }
 
     @override
-    DirectionsTransitVehicle deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTransitVehicle deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTransitVehicleBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'name':
                     result.name = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'type':
                     result.type = serializers.deserialize(value,
-                        specifiedType: const FullType(DirectionsTransitVehicleTypeEnum)) as DirectionsTransitVehicleTypeEnum;
+                        specifiedType: const FullType(DirectionsTransitVehicleTypeEnum)) as DirectionsTransitVehicleTypeEnum?;
                     break;
                 case r'icon':
                     result.icon = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'local_icon':
                     result.localIcon = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

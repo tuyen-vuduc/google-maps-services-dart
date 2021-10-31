@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_autocomplete_structured_format.dart';
 
@@ -10,17 +10,17 @@ part of 'place_autocomplete_structured_format.dart';
 class _$PlaceAutocompleteStructuredFormat
     extends PlaceAutocompleteStructuredFormat {
   @override
-  final String mainText;
+  final String? mainText;
   @override
-  final BuiltList<PlaceAutocompleteMatchedSubstring> mainTextMatchedSubstrings;
+  final BuiltList<PlaceAutocompleteMatchedSubstring>? mainTextMatchedSubstrings;
   @override
-  final String secondaryText;
+  final String? secondaryText;
   @override
-  final BuiltList<PlaceAutocompleteMatchedSubstring>
+  final BuiltList<PlaceAutocompleteMatchedSubstring>?
       secondaryTextMatchedSubstrings;
 
   factory _$PlaceAutocompleteStructuredFormat(
-          [void Function(PlaceAutocompleteStructuredFormatBuilder) updates]) =>
+          [void Function(PlaceAutocompleteStructuredFormatBuilder)? updates]) =>
       (new PlaceAutocompleteStructuredFormatBuilder()..update(updates)).build();
 
   _$PlaceAutocompleteStructuredFormat._(
@@ -73,13 +73,13 @@ class PlaceAutocompleteStructuredFormatBuilder
     implements
         Builder<PlaceAutocompleteStructuredFormat,
             PlaceAutocompleteStructuredFormatBuilder> {
-  _$PlaceAutocompleteStructuredFormat _$v;
+  _$PlaceAutocompleteStructuredFormat? _$v;
 
-  String _mainText;
-  String get mainText => _$this._mainText;
-  set mainText(String mainText) => _$this._mainText = mainText;
+  String? _mainText;
+  String? get mainText => _$this._mainText;
+  set mainText(String? mainText) => _$this._mainText = mainText;
 
-  ListBuilder<PlaceAutocompleteMatchedSubstring> _mainTextMatchedSubstrings;
+  ListBuilder<PlaceAutocompleteMatchedSubstring>? _mainTextMatchedSubstrings;
   ListBuilder<PlaceAutocompleteMatchedSubstring>
       get mainTextMatchedSubstrings => _$this._mainTextMatchedSubstrings ??=
           new ListBuilder<PlaceAutocompleteMatchedSubstring>();
@@ -88,12 +88,12 @@ class PlaceAutocompleteStructuredFormatBuilder
               mainTextMatchedSubstrings) =>
       _$this._mainTextMatchedSubstrings = mainTextMatchedSubstrings;
 
-  String _secondaryText;
-  String get secondaryText => _$this._secondaryText;
-  set secondaryText(String secondaryText) =>
+  String? _secondaryText;
+  String? get secondaryText => _$this._secondaryText;
+  set secondaryText(String? secondaryText) =>
       _$this._secondaryText = secondaryText;
 
-  ListBuilder<PlaceAutocompleteMatchedSubstring>
+  ListBuilder<PlaceAutocompleteMatchedSubstring>?
       _secondaryTextMatchedSubstrings;
   ListBuilder<PlaceAutocompleteMatchedSubstring>
       get secondaryTextMatchedSubstrings =>
@@ -128,7 +128,7 @@ class PlaceAutocompleteStructuredFormatBuilder
   }
 
   @override
-  void update(void Function(PlaceAutocompleteStructuredFormatBuilder) updates) {
+  void update(void Function(PlaceAutocompleteStructuredFormatBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -144,7 +144,7 @@ class PlaceAutocompleteStructuredFormatBuilder
               secondaryTextMatchedSubstrings:
                   _secondaryTextMatchedSubstrings?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'mainTextMatchedSubstrings';
         _mainTextMatchedSubstrings?.build();

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'nearest_roads_error.dart';
 
@@ -9,14 +9,14 @@ part of 'nearest_roads_error.dart';
 
 class _$NearestRoadsError extends NearestRoadsError {
   @override
-  final num code;
+  final num? code;
   @override
-  final String message;
+  final String? message;
   @override
-  final String status;
+  final String? status;
 
   factory _$NearestRoadsError(
-          [void Function(NearestRoadsErrorBuilder) updates]) =>
+          [void Function(NearestRoadsErrorBuilder)? updates]) =>
       (new NearestRoadsErrorBuilder()..update(updates)).build();
 
   _$NearestRoadsError._({this.code, this.message, this.status}) : super._();
@@ -56,19 +56,19 @@ class _$NearestRoadsError extends NearestRoadsError {
 
 class NearestRoadsErrorBuilder
     implements Builder<NearestRoadsError, NearestRoadsErrorBuilder> {
-  _$NearestRoadsError _$v;
+  _$NearestRoadsError? _$v;
 
-  num _code;
-  num get code => _$this._code;
-  set code(num code) => _$this._code = code;
+  num? _code;
+  num? get code => _$this._code;
+  set code(num? code) => _$this._code = code;
 
-  String _message;
-  String get message => _$this._message;
-  set message(String message) => _$this._message = message;
+  String? _message;
+  String? get message => _$this._message;
+  set message(String? message) => _$this._message = message;
 
-  String _status;
-  String get status => _$this._status;
-  set status(String status) => _$this._status = status;
+  String? _status;
+  String? get status => _$this._status;
+  set status(String? status) => _$this._status = status;
 
   NearestRoadsErrorBuilder() {
     NearestRoadsError._initializeBuilder(this);
@@ -92,7 +92,7 @@ class NearestRoadsErrorBuilder
   }
 
   @override
-  void update(void Function(NearestRoadsErrorBuilder) updates) {
+  void update(void Function(NearestRoadsErrorBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

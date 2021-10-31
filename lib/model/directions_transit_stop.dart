@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'directions_transit_stop.g.dart';
 
 abstract class DirectionsTransitStop implements Built<DirectionsTransitStop, DirectionsTransitStopBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// The name of the transit stop.
-    @nullable
     @BuiltValueField(wireName: r'name')
-    String get name;
+    String? get name;
 
     DirectionsTransitStop._();
 
@@ -40,9 +38,9 @@ class _$DirectionsTransitStopSerializer implements StructuredSerializer<Directio
     final String wireName = r'DirectionsTransitStop';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTransitStop object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTransitStop object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'location')
             ..add(object.location == null ? null : serializers.serialize(object.location,
@@ -55,13 +53,13 @@ class _$DirectionsTransitStopSerializer implements StructuredSerializer<Directio
     }
 
     @override
-    DirectionsTransitStop deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTransitStop deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTransitStopBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -71,7 +69,7 @@ class _$DirectionsTransitStopSerializer implements StructuredSerializer<Directio
                     break;
                 case r'name':
                     result.name = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

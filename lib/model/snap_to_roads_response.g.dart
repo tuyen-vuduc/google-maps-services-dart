@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'snap_to_roads_response.dart';
 
@@ -9,12 +9,12 @@ part of 'snap_to_roads_response.dart';
 
 class _$SnapToRoadsResponse extends SnapToRoadsResponse {
   @override
-  final BuiltList<SnappedPoint> snappedPoints;
+  final BuiltList<SnappedPoint>? snappedPoints;
   @override
-  final String warningMessage;
+  final String? warningMessage;
 
   factory _$SnapToRoadsResponse(
-          [void Function(SnapToRoadsResponseBuilder) updates]) =>
+          [void Function(SnapToRoadsResponseBuilder)? updates]) =>
       (new SnapToRoadsResponseBuilder()..update(updates)).build();
 
   _$SnapToRoadsResponse._({this.snappedPoints, this.warningMessage})
@@ -53,17 +53,17 @@ class _$SnapToRoadsResponse extends SnapToRoadsResponse {
 
 class SnapToRoadsResponseBuilder
     implements Builder<SnapToRoadsResponse, SnapToRoadsResponseBuilder> {
-  _$SnapToRoadsResponse _$v;
+  _$SnapToRoadsResponse? _$v;
 
-  ListBuilder<SnappedPoint> _snappedPoints;
+  ListBuilder<SnappedPoint>? _snappedPoints;
   ListBuilder<SnappedPoint> get snappedPoints =>
       _$this._snappedPoints ??= new ListBuilder<SnappedPoint>();
   set snappedPoints(ListBuilder<SnappedPoint> snappedPoints) =>
       _$this._snappedPoints = snappedPoints;
 
-  String _warningMessage;
-  String get warningMessage => _$this._warningMessage;
-  set warningMessage(String warningMessage) =>
+  String? _warningMessage;
+  String? get warningMessage => _$this._warningMessage;
+  set warningMessage(String? warningMessage) =>
       _$this._warningMessage = warningMessage;
 
   SnapToRoadsResponseBuilder() {
@@ -87,7 +87,7 @@ class SnapToRoadsResponseBuilder
   }
 
   @override
-  void update(void Function(SnapToRoadsResponseBuilder) updates) {
+  void update(void Function(SnapToRoadsResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -100,7 +100,7 @@ class SnapToRoadsResponseBuilder
               snappedPoints: _snappedPoints?.build(),
               warningMessage: warningMessage);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'snappedPoints';
         _snappedPoints?.build();

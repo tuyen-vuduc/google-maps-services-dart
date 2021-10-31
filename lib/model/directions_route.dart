@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -18,41 +18,33 @@ part 'directions_route.g.dart';
 abstract class DirectionsRoute implements Built<DirectionsRoute, DirectionsRouteBuilder> {
 
     /// An array which contains information about a leg of the route, between two locations within the given route. A separate leg will be present for each waypoint or destination specified. (A route with no waypoints will contain exactly one leg within the legs array.) Each leg consists of a series of steps.
-    @nullable
     @BuiltValueField(wireName: r'legs')
-    BuiltList<DirectionsLeg> get legs;
+    BuiltList<DirectionsLeg>? get legs;
 
-    @nullable
     @BuiltValueField(wireName: r'bounds')
-    Bounds get bounds;
+    Bounds? get bounds;
 
     /// Contains an array of warnings to be displayed when showing these directions. You must handle and display these warnings yourself.
-    @nullable
     @BuiltValueField(wireName: r'copyrights')
-    String get copyrights;
+    String? get copyrights;
 
     /// Contains a short textual description for the route, suitable for naming and disambiguating the route from alternatives.
-    @nullable
     @BuiltValueField(wireName: r'summary')
-    String get summary;
+    String? get summary;
 
     /// An array indicating the order of any waypoints in the calculated route. This waypoints may be reordered if the request was passed optimize:true within its waypoints parameter.
-    @nullable
     @BuiltValueField(wireName: r'waypoint_order')
-    BuiltList<int> get waypointOrder;
+    BuiltList<int>? get waypointOrder;
 
     /// Contains an array of warnings to be displayed when showing these directions. You must handle and display these warnings yourself.
-    @nullable
     @BuiltValueField(wireName: r'warnings')
-    BuiltList<String> get warnings;
+    BuiltList<String>? get warnings;
 
-    @nullable
     @BuiltValueField(wireName: r'overview_polyline')
-    DirectionsPolyline get overviewPolyline;
+    DirectionsPolyline? get overviewPolyline;
 
-    @nullable
     @BuiltValueField(wireName: r'fare')
-    Fare get fare;
+    Fare? get fare;
 
     DirectionsRoute._();
 
@@ -72,9 +64,9 @@ class _$DirectionsRouteSerializer implements StructuredSerializer<DirectionsRout
     final String wireName = r'DirectionsRoute';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsRoute object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsRoute object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'legs')
             ..add(object.legs == null ? null : serializers.serialize(object.legs,
@@ -113,13 +105,13 @@ class _$DirectionsRouteSerializer implements StructuredSerializer<DirectionsRout
     }
 
     @override
-    DirectionsRoute deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsRoute deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsRouteBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -133,11 +125,11 @@ class _$DirectionsRouteSerializer implements StructuredSerializer<DirectionsRout
                     break;
                 case r'copyrights':
                     result.copyrights = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'summary':
                     result.summary = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'waypoint_order':
                     result.waypointOrder.replace(serializers.deserialize(value,

@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -20,57 +20,45 @@ part 'directions_leg.g.dart';
 abstract class DirectionsLeg implements Built<DirectionsLeg, DirectionsLegBuilder> {
 
     /// Contains the human-readable address (typically a street address) from reverse geocoding the `end_location` of this leg. This content is meant to be read as-is. Do not programmatically parse the formatted address.
-    @nullable
     @BuiltValueField(wireName: r'end_address')
-    String get endAddress;
+    String? get endAddress;
 
-    @nullable
     @BuiltValueField(wireName: r'end_location')
-    LatLngLiteral get endLocation;
+    LatLngLiteral? get endLocation;
 
     /// Contains the human-readable address (typically a street address) resulting from reverse geocoding the `start_location` of this leg. This content is meant to be read as-is. Do not programmatically parse the formatted address.
-    @nullable
     @BuiltValueField(wireName: r'start_address')
-    String get startAddress;
+    String? get startAddress;
 
-    @nullable
     @BuiltValueField(wireName: r'start_location')
-    LatLngLiteral get startLocation;
+    LatLngLiteral? get startLocation;
 
     /// An array of steps denoting information about each separate step of the leg of the journey.
-    @nullable
     @BuiltValueField(wireName: r'steps')
-    BuiltList<DirectionsStep> get steps;
+    BuiltList<DirectionsStep>? get steps;
 
     /// Information about traffic speed along the leg.
-    @nullable
     @BuiltValueField(wireName: r'traffic_speed_entry')
-    BuiltList<DirectionsTrafficSpeedEntry> get trafficSpeedEntry;
+    BuiltList<DirectionsTrafficSpeedEntry>? get trafficSpeedEntry;
 
     /// The locations of via waypoints along this leg.
-    @nullable
     @BuiltValueField(wireName: r'via_waypoint')
-    BuiltList<DirectionsViaWaypoint> get viaWaypoint;
+    BuiltList<DirectionsViaWaypoint>? get viaWaypoint;
 
-    @nullable
     @BuiltValueField(wireName: r'arrival_time')
-    TimeZoneTextValueObject get arrivalTime;
+    TimeZoneTextValueObject? get arrivalTime;
 
-    @nullable
     @BuiltValueField(wireName: r'departure_time')
-    TimeZoneTextValueObject get departureTime;
+    TimeZoneTextValueObject? get departureTime;
 
-    @nullable
     @BuiltValueField(wireName: r'distance')
-    TextValueObject get distance;
+    TextValueObject? get distance;
 
-    @nullable
     @BuiltValueField(wireName: r'duration')
-    TextValueObject get duration;
+    TextValueObject? get duration;
 
-    @nullable
     @BuiltValueField(wireName: r'duration_in_traffic')
-    TextValueObject get durationInTraffic;
+    TextValueObject? get durationInTraffic;
 
     DirectionsLeg._();
 
@@ -90,9 +78,9 @@ class _$DirectionsLegSerializer implements StructuredSerializer<DirectionsLeg> {
     final String wireName = r'DirectionsLeg';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsLeg object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsLeg object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'end_address')
             ..add(object.endAddress == null ? null : serializers.serialize(object.endAddress,
@@ -155,19 +143,19 @@ class _$DirectionsLegSerializer implements StructuredSerializer<DirectionsLeg> {
     }
 
     @override
-    DirectionsLeg deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsLeg deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsLegBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'end_address':
                     result.endAddress = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'end_location':
                     result.endLocation.replace(serializers.deserialize(value,
@@ -175,7 +163,7 @@ class _$DirectionsLegSerializer implements StructuredSerializer<DirectionsLeg> {
                     break;
                 case r'start_address':
                     result.startAddress = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'start_location':
                     result.startLocation.replace(serializers.deserialize(value,

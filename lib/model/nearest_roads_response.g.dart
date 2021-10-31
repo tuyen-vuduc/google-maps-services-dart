@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'nearest_roads_response.dart';
 
@@ -9,10 +9,10 @@ part of 'nearest_roads_response.dart';
 
 class _$NearestRoadsResponse extends NearestRoadsResponse {
   @override
-  final BuiltList<SnappedPoint> snappedPoints;
+  final BuiltList<SnappedPoint>? snappedPoints;
 
   factory _$NearestRoadsResponse(
-          [void Function(NearestRoadsResponseBuilder) updates]) =>
+          [void Function(NearestRoadsResponseBuilder)? updates]) =>
       (new NearestRoadsResponseBuilder()..update(updates)).build();
 
   _$NearestRoadsResponse._({this.snappedPoints}) : super._();
@@ -48,9 +48,9 @@ class _$NearestRoadsResponse extends NearestRoadsResponse {
 
 class NearestRoadsResponseBuilder
     implements Builder<NearestRoadsResponse, NearestRoadsResponseBuilder> {
-  _$NearestRoadsResponse _$v;
+  _$NearestRoadsResponse? _$v;
 
-  ListBuilder<SnappedPoint> _snappedPoints;
+  ListBuilder<SnappedPoint>? _snappedPoints;
   ListBuilder<SnappedPoint> get snappedPoints =>
       _$this._snappedPoints ??= new ListBuilder<SnappedPoint>();
   set snappedPoints(ListBuilder<SnappedPoint> snappedPoints) =>
@@ -76,7 +76,7 @@ class NearestRoadsResponseBuilder
   }
 
   @override
-  void update(void Function(NearestRoadsResponseBuilder) updates) {
+  void update(void Function(NearestRoadsResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -87,7 +87,7 @@ class NearestRoadsResponseBuilder
       _$result = _$v ??
           new _$NearestRoadsResponse._(snappedPoints: _snappedPoints?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'snappedPoints';
         _snappedPoints?.build();

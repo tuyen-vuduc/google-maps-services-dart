@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'time_zone_text_value_object.dart';
 
@@ -9,14 +9,14 @@ part of 'time_zone_text_value_object.dart';
 
 class _$TimeZoneTextValueObject extends TimeZoneTextValueObject {
   @override
-  final String text;
+  final String? text;
   @override
-  final num value;
+  final num? value;
   @override
-  final String timeZone;
+  final String? timeZone;
 
   factory _$TimeZoneTextValueObject(
-          [void Function(TimeZoneTextValueObjectBuilder) updates]) =>
+          [void Function(TimeZoneTextValueObjectBuilder)? updates]) =>
       (new TimeZoneTextValueObjectBuilder()..update(updates)).build();
 
   _$TimeZoneTextValueObject._({this.text, this.value, this.timeZone})
@@ -59,19 +59,19 @@ class _$TimeZoneTextValueObject extends TimeZoneTextValueObject {
 class TimeZoneTextValueObjectBuilder
     implements
         Builder<TimeZoneTextValueObject, TimeZoneTextValueObjectBuilder> {
-  _$TimeZoneTextValueObject _$v;
+  _$TimeZoneTextValueObject? _$v;
 
-  String _text;
-  String get text => _$this._text;
-  set text(String text) => _$this._text = text;
+  String? _text;
+  String? get text => _$this._text;
+  set text(String? text) => _$this._text = text;
 
-  num _value;
-  num get value => _$this._value;
-  set value(num value) => _$this._value = value;
+  num? _value;
+  num? get value => _$this._value;
+  set value(num? value) => _$this._value = value;
 
-  String _timeZone;
-  String get timeZone => _$this._timeZone;
-  set timeZone(String timeZone) => _$this._timeZone = timeZone;
+  String? _timeZone;
+  String? get timeZone => _$this._timeZone;
+  set timeZone(String? timeZone) => _$this._timeZone = timeZone;
 
   TimeZoneTextValueObjectBuilder() {
     TimeZoneTextValueObject._initializeBuilder(this);
@@ -95,7 +95,7 @@ class TimeZoneTextValueObjectBuilder
   }
 
   @override
-  void update(void Function(TimeZoneTextValueObjectBuilder) updates) {
+  void update(void Function(TimeZoneTextValueObjectBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,13 +14,11 @@ part 'geometry.g.dart';
 
 abstract class Geometry implements Built<Geometry, GeometryBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
-    @nullable
     @BuiltValueField(wireName: r'viewport')
-    Bounds get viewport;
+    Bounds? get viewport;
 
     Geometry._();
 
@@ -40,9 +38,9 @@ class _$GeometrySerializer implements StructuredSerializer<Geometry> {
     final String wireName = r'Geometry';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, Geometry object,
+    Iterable<Object?> serialize(Serializers serializers, Geometry object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'location')
             ..add(object.location == null ? null : serializers.serialize(object.location,
@@ -55,13 +53,13 @@ class _$GeometrySerializer implements StructuredSerializer<Geometry> {
     }
 
     @override
-    Geometry deserialize(Serializers serializers, Iterable<Object> serialized,
+    Geometry deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = GeometryBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

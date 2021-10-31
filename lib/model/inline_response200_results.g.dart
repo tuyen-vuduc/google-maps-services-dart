@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'inline_response200_results.dart';
 
@@ -9,14 +9,14 @@ part of 'inline_response200_results.dart';
 
 class _$InlineResponse200Results extends InlineResponse200Results {
   @override
-  final num elevation;
+  final num? elevation;
   @override
-  final num resolution;
+  final num? resolution;
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
 
   factory _$InlineResponse200Results(
-          [void Function(InlineResponse200ResultsBuilder) updates]) =>
+          [void Function(InlineResponse200ResultsBuilder)? updates]) =>
       (new InlineResponse200ResultsBuilder()..update(updates)).build();
 
   _$InlineResponse200Results._({this.elevation, this.resolution, this.location})
@@ -59,17 +59,17 @@ class _$InlineResponse200Results extends InlineResponse200Results {
 class InlineResponse200ResultsBuilder
     implements
         Builder<InlineResponse200Results, InlineResponse200ResultsBuilder> {
-  _$InlineResponse200Results _$v;
+  _$InlineResponse200Results? _$v;
 
-  num _elevation;
-  num get elevation => _$this._elevation;
-  set elevation(num elevation) => _$this._elevation = elevation;
+  num? _elevation;
+  num? get elevation => _$this._elevation;
+  set elevation(num? elevation) => _$this._elevation = elevation;
 
-  num _resolution;
-  num get resolution => _$this._resolution;
-  set resolution(num resolution) => _$this._resolution = resolution;
+  num? _resolution;
+  num? get resolution => _$this._resolution;
+  set resolution(num? resolution) => _$this._resolution = resolution;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
@@ -96,7 +96,7 @@ class InlineResponse200ResultsBuilder
   }
 
   @override
-  void update(void Function(InlineResponse200ResultsBuilder) updates) {
+  void update(void Function(InlineResponse200ResultsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -110,7 +110,7 @@ class InlineResponse200ResultsBuilder
               resolution: resolution,
               location: _location?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

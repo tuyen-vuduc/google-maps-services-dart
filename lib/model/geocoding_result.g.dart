@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geocoding_result.dart';
 
@@ -9,23 +9,23 @@ part of 'geocoding_result.dart';
 
 class _$GeocodingResult extends GeocodingResult {
   @override
-  final BuiltList<AddressComponent> addressComponents;
+  final BuiltList<AddressComponent>? addressComponents;
   @override
-  final String formattedAddress;
+  final String? formattedAddress;
   @override
-  final GeocodingGeometry geometry;
+  final GeocodingGeometry? geometry;
   @override
-  final String placeId;
+  final String? placeId;
   @override
-  final BuiltList<String> types;
+  final BuiltList<String>? types;
   @override
-  final PlusCode plusCode;
+  final PlusCode? plusCode;
   @override
-  final BuiltList<String> postcodeLocalities;
+  final BuiltList<String>? postcodeLocalities;
   @override
-  final bool partialMatch;
+  final bool? partialMatch;
 
-  factory _$GeocodingResult([void Function(GeocodingResultBuilder) updates]) =>
+  factory _$GeocodingResult([void Function(GeocodingResultBuilder)? updates]) =>
       (new GeocodingResultBuilder()..update(updates)).build();
 
   _$GeocodingResult._(
@@ -96,46 +96,46 @@ class _$GeocodingResult extends GeocodingResult {
 
 class GeocodingResultBuilder
     implements Builder<GeocodingResult, GeocodingResultBuilder> {
-  _$GeocodingResult _$v;
+  _$GeocodingResult? _$v;
 
-  ListBuilder<AddressComponent> _addressComponents;
+  ListBuilder<AddressComponent>? _addressComponents;
   ListBuilder<AddressComponent> get addressComponents =>
       _$this._addressComponents ??= new ListBuilder<AddressComponent>();
   set addressComponents(ListBuilder<AddressComponent> addressComponents) =>
       _$this._addressComponents = addressComponents;
 
-  String _formattedAddress;
-  String get formattedAddress => _$this._formattedAddress;
-  set formattedAddress(String formattedAddress) =>
+  String? _formattedAddress;
+  String? get formattedAddress => _$this._formattedAddress;
+  set formattedAddress(String? formattedAddress) =>
       _$this._formattedAddress = formattedAddress;
 
-  GeocodingGeometryBuilder _geometry;
+  GeocodingGeometryBuilder? _geometry;
   GeocodingGeometryBuilder get geometry =>
       _$this._geometry ??= new GeocodingGeometryBuilder();
   set geometry(GeocodingGeometryBuilder geometry) =>
       _$this._geometry = geometry;
 
-  String _placeId;
-  String get placeId => _$this._placeId;
-  set placeId(String placeId) => _$this._placeId = placeId;
+  String? _placeId;
+  String? get placeId => _$this._placeId;
+  set placeId(String? placeId) => _$this._placeId = placeId;
 
-  ListBuilder<String> _types;
+  ListBuilder<String>? _types;
   ListBuilder<String> get types => _$this._types ??= new ListBuilder<String>();
   set types(ListBuilder<String> types) => _$this._types = types;
 
-  PlusCodeBuilder _plusCode;
+  PlusCodeBuilder? _plusCode;
   PlusCodeBuilder get plusCode => _$this._plusCode ??= new PlusCodeBuilder();
   set plusCode(PlusCodeBuilder plusCode) => _$this._plusCode = plusCode;
 
-  ListBuilder<String> _postcodeLocalities;
+  ListBuilder<String>? _postcodeLocalities;
   ListBuilder<String> get postcodeLocalities =>
       _$this._postcodeLocalities ??= new ListBuilder<String>();
   set postcodeLocalities(ListBuilder<String> postcodeLocalities) =>
       _$this._postcodeLocalities = postcodeLocalities;
 
-  bool _partialMatch;
-  bool get partialMatch => _$this._partialMatch;
-  set partialMatch(bool partialMatch) => _$this._partialMatch = partialMatch;
+  bool? _partialMatch;
+  bool? get partialMatch => _$this._partialMatch;
+  set partialMatch(bool? partialMatch) => _$this._partialMatch = partialMatch;
 
   GeocodingResultBuilder() {
     GeocodingResult._initializeBuilder(this);
@@ -164,7 +164,7 @@ class GeocodingResultBuilder
   }
 
   @override
-  void update(void Function(GeocodingResultBuilder) updates) {
+  void update(void Function(GeocodingResultBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -183,7 +183,7 @@ class GeocodingResultBuilder
               postcodeLocalities: _postcodeLocalities?.build(),
               partialMatch: partialMatch);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'addressComponents';
         _addressComponents?.build();

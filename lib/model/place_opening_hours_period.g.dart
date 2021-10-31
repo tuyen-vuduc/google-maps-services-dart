@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_opening_hours_period.dart';
 
@@ -9,12 +9,12 @@ part of 'place_opening_hours_period.dart';
 
 class _$PlaceOpeningHoursPeriod extends PlaceOpeningHoursPeriod {
   @override
-  final PlaceOpeningHoursPeriodDetail open;
+  final PlaceOpeningHoursPeriodDetail? open;
   @override
-  final PlaceOpeningHoursPeriodDetail close;
+  final PlaceOpeningHoursPeriodDetail? close;
 
   factory _$PlaceOpeningHoursPeriod(
-          [void Function(PlaceOpeningHoursPeriodBuilder) updates]) =>
+          [void Function(PlaceOpeningHoursPeriodBuilder)? updates]) =>
       (new PlaceOpeningHoursPeriodBuilder()..update(updates)).build();
 
   _$PlaceOpeningHoursPeriod._({this.open, this.close}) : super._();
@@ -53,14 +53,14 @@ class _$PlaceOpeningHoursPeriod extends PlaceOpeningHoursPeriod {
 class PlaceOpeningHoursPeriodBuilder
     implements
         Builder<PlaceOpeningHoursPeriod, PlaceOpeningHoursPeriodBuilder> {
-  _$PlaceOpeningHoursPeriod _$v;
+  _$PlaceOpeningHoursPeriod? _$v;
 
-  PlaceOpeningHoursPeriodDetailBuilder _open;
+  PlaceOpeningHoursPeriodDetailBuilder? _open;
   PlaceOpeningHoursPeriodDetailBuilder get open =>
       _$this._open ??= new PlaceOpeningHoursPeriodDetailBuilder();
   set open(PlaceOpeningHoursPeriodDetailBuilder open) => _$this._open = open;
 
-  PlaceOpeningHoursPeriodDetailBuilder _close;
+  PlaceOpeningHoursPeriodDetailBuilder? _close;
   PlaceOpeningHoursPeriodDetailBuilder get close =>
       _$this._close ??= new PlaceOpeningHoursPeriodDetailBuilder();
   set close(PlaceOpeningHoursPeriodDetailBuilder close) =>
@@ -87,7 +87,7 @@ class PlaceOpeningHoursPeriodBuilder
   }
 
   @override
-  void update(void Function(PlaceOpeningHoursPeriodBuilder) updates) {
+  void update(void Function(PlaceOpeningHoursPeriodBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -99,7 +99,7 @@ class PlaceOpeningHoursPeriodBuilder
           new _$PlaceOpeningHoursPeriod._(
               open: _open?.build(), close: _close?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'open';
         _open?.build();

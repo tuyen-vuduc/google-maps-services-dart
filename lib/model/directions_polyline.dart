@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,9 +13,8 @@ part 'directions_polyline.g.dart';
 abstract class DirectionsPolyline implements Built<DirectionsPolyline, DirectionsPolylineBuilder> {
 
     /// A single string representation of the polyline.
-    @nullable
     @BuiltValueField(wireName: r'points')
-    String get points;
+    String? get points;
 
     DirectionsPolyline._();
 
@@ -35,9 +34,9 @@ class _$DirectionsPolylineSerializer implements StructuredSerializer<DirectionsP
     final String wireName = r'DirectionsPolyline';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsPolyline object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsPolyline object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'points')
             ..add(object.points == null ? null : serializers.serialize(object.points,
@@ -46,19 +45,19 @@ class _$DirectionsPolylineSerializer implements StructuredSerializer<DirectionsP
     }
 
     @override
-    DirectionsPolyline deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsPolyline deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsPolylineBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'points':
                     result.points = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

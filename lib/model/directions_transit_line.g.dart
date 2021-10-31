@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_transit_line.dart';
 
@@ -9,24 +9,24 @@ part of 'directions_transit_line.dart';
 
 class _$DirectionsTransitLine extends DirectionsTransitLine {
   @override
-  final BuiltList<DirectionsTransitAgency> agencies;
+  final BuiltList<DirectionsTransitAgency>? agencies;
   @override
-  final String name;
+  final String? name;
   @override
-  final String color;
+  final String? color;
   @override
-  final String shortName;
+  final String? shortName;
   @override
-  final String textColor;
+  final String? textColor;
   @override
-  final String url;
+  final String? url;
   @override
-  final String icon;
+  final String? icon;
   @override
-  final DirectionsTransitVehicle vehicle;
+  final DirectionsTransitVehicle? vehicle;
 
   factory _$DirectionsTransitLine(
-          [void Function(DirectionsTransitLineBuilder) updates]) =>
+          [void Function(DirectionsTransitLineBuilder)? updates]) =>
       (new DirectionsTransitLineBuilder()..update(updates)).build();
 
   _$DirectionsTransitLine._(
@@ -96,39 +96,39 @@ class _$DirectionsTransitLine extends DirectionsTransitLine {
 
 class DirectionsTransitLineBuilder
     implements Builder<DirectionsTransitLine, DirectionsTransitLineBuilder> {
-  _$DirectionsTransitLine _$v;
+  _$DirectionsTransitLine? _$v;
 
-  ListBuilder<DirectionsTransitAgency> _agencies;
+  ListBuilder<DirectionsTransitAgency>? _agencies;
   ListBuilder<DirectionsTransitAgency> get agencies =>
       _$this._agencies ??= new ListBuilder<DirectionsTransitAgency>();
   set agencies(ListBuilder<DirectionsTransitAgency> agencies) =>
       _$this._agencies = agencies;
 
-  String _name;
-  String get name => _$this._name;
-  set name(String name) => _$this._name = name;
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
 
-  String _color;
-  String get color => _$this._color;
-  set color(String color) => _$this._color = color;
+  String? _color;
+  String? get color => _$this._color;
+  set color(String? color) => _$this._color = color;
 
-  String _shortName;
-  String get shortName => _$this._shortName;
-  set shortName(String shortName) => _$this._shortName = shortName;
+  String? _shortName;
+  String? get shortName => _$this._shortName;
+  set shortName(String? shortName) => _$this._shortName = shortName;
 
-  String _textColor;
-  String get textColor => _$this._textColor;
-  set textColor(String textColor) => _$this._textColor = textColor;
+  String? _textColor;
+  String? get textColor => _$this._textColor;
+  set textColor(String? textColor) => _$this._textColor = textColor;
 
-  String _url;
-  String get url => _$this._url;
-  set url(String url) => _$this._url = url;
+  String? _url;
+  String? get url => _$this._url;
+  set url(String? url) => _$this._url = url;
 
-  String _icon;
-  String get icon => _$this._icon;
-  set icon(String icon) => _$this._icon = icon;
+  String? _icon;
+  String? get icon => _$this._icon;
+  set icon(String? icon) => _$this._icon = icon;
 
-  DirectionsTransitVehicleBuilder _vehicle;
+  DirectionsTransitVehicleBuilder? _vehicle;
   DirectionsTransitVehicleBuilder get vehicle =>
       _$this._vehicle ??= new DirectionsTransitVehicleBuilder();
   set vehicle(DirectionsTransitVehicleBuilder vehicle) =>
@@ -161,7 +161,7 @@ class DirectionsTransitLineBuilder
   }
 
   @override
-  void update(void Function(DirectionsTransitLineBuilder) updates) {
+  void update(void Function(DirectionsTransitLineBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -180,7 +180,7 @@ class DirectionsTransitLineBuilder
               icon: icon,
               vehicle: _vehicle?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'agencies';
         _agencies?.build();

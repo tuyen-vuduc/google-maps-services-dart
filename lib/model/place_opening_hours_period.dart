@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,13 +13,11 @@ part 'place_opening_hours_period.g.dart';
 
 abstract class PlaceOpeningHoursPeriod implements Built<PlaceOpeningHoursPeriod, PlaceOpeningHoursPeriodBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'open')
-    PlaceOpeningHoursPeriodDetail get open;
+    PlaceOpeningHoursPeriodDetail? get open;
 
-    @nullable
     @BuiltValueField(wireName: r'close')
-    PlaceOpeningHoursPeriodDetail get close;
+    PlaceOpeningHoursPeriodDetail? get close;
 
     PlaceOpeningHoursPeriod._();
 
@@ -39,9 +37,9 @@ class _$PlaceOpeningHoursPeriodSerializer implements StructuredSerializer<PlaceO
     final String wireName = r'PlaceOpeningHoursPeriod';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceOpeningHoursPeriod object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceOpeningHoursPeriod object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'open')
             ..add(object.open == null ? null : serializers.serialize(object.open,
@@ -54,13 +52,13 @@ class _$PlaceOpeningHoursPeriodSerializer implements StructuredSerializer<PlaceO
     }
 
     @override
-    PlaceOpeningHoursPeriod deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceOpeningHoursPeriod deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceOpeningHoursPeriodBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

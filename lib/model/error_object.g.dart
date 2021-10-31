@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'error_object.dart';
 
@@ -9,15 +9,15 @@ part of 'error_object.dart';
 
 class _$ErrorObject extends ErrorObject {
   @override
-  final num code;
+  final num? code;
   @override
-  final String message;
+  final String? message;
   @override
-  final BuiltList<ErrorDetail> errors;
+  final BuiltList<ErrorDetail>? errors;
   @override
-  final String status;
+  final String? status;
 
-  factory _$ErrorObject([void Function(ErrorObjectBuilder) updates]) =>
+  factory _$ErrorObject([void Function(ErrorObjectBuilder)? updates]) =>
       (new ErrorObjectBuilder()..update(updates)).build();
 
   _$ErrorObject._({this.code, this.message, this.errors, this.status})
@@ -59,24 +59,24 @@ class _$ErrorObject extends ErrorObject {
 }
 
 class ErrorObjectBuilder implements Builder<ErrorObject, ErrorObjectBuilder> {
-  _$ErrorObject _$v;
+  _$ErrorObject? _$v;
 
-  num _code;
-  num get code => _$this._code;
-  set code(num code) => _$this._code = code;
+  num? _code;
+  num? get code => _$this._code;
+  set code(num? code) => _$this._code = code;
 
-  String _message;
-  String get message => _$this._message;
-  set message(String message) => _$this._message = message;
+  String? _message;
+  String? get message => _$this._message;
+  set message(String? message) => _$this._message = message;
 
-  ListBuilder<ErrorDetail> _errors;
+  ListBuilder<ErrorDetail>? _errors;
   ListBuilder<ErrorDetail> get errors =>
       _$this._errors ??= new ListBuilder<ErrorDetail>();
   set errors(ListBuilder<ErrorDetail> errors) => _$this._errors = errors;
 
-  String _status;
-  String get status => _$this._status;
-  set status(String status) => _$this._status = status;
+  String? _status;
+  String? get status => _$this._status;
+  set status(String? status) => _$this._status = status;
 
   ErrorObjectBuilder() {
     ErrorObject._initializeBuilder(this);
@@ -101,7 +101,7 @@ class ErrorObjectBuilder implements Builder<ErrorObject, ErrorObjectBuilder> {
   }
 
   @override
-  void update(void Function(ErrorObjectBuilder) updates) {
+  void update(void Function(ErrorObjectBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -116,7 +116,7 @@ class ErrorObjectBuilder implements Builder<ErrorObject, ErrorObjectBuilder> {
               errors: _errors?.build(),
               status: status);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'errors';
         _errors?.build();

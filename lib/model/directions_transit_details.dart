@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,45 +15,36 @@ part 'directions_transit_details.g.dart';
 
 abstract class DirectionsTransitDetails implements Built<DirectionsTransitDetails, DirectionsTransitDetailsBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'arrival_stop')
-    DirectionsTransitStop get arrivalStop;
+    DirectionsTransitStop? get arrivalStop;
 
-    @nullable
     @BuiltValueField(wireName: r'arrival_time')
-    TimeZoneTextValueObject get arrivalTime;
+    TimeZoneTextValueObject? get arrivalTime;
 
-    @nullable
     @BuiltValueField(wireName: r'departure_stop')
-    DirectionsTransitStop get departureStop;
+    DirectionsTransitStop? get departureStop;
 
-    @nullable
     @BuiltValueField(wireName: r'departure_time')
-    TimeZoneTextValueObject get departureTime;
+    TimeZoneTextValueObject? get departureTime;
 
     /// Specifies the direction in which to travel on this line, as it is marked on the vehicle or at the departure stop. This will often be the terminus station.
-    @nullable
     @BuiltValueField(wireName: r'headsign')
-    String get headsign;
+    String? get headsign;
 
     /// Specifies the expected number of seconds between departures from the same stop at this time. For example, with a `headway` value of 600, you would expect a ten minute wait if you should miss your bus.
-    @nullable
     @BuiltValueField(wireName: r'headway')
-    int get headway;
+    int? get headway;
 
-    @nullable
     @BuiltValueField(wireName: r'line')
-    DirectionsTransitLine get line;
+    DirectionsTransitLine? get line;
 
     /// The number of stops from the departure to the arrival stop. This includes the arrival stop, but not the departure stop. For example, if your directions involve leaving from Stop A, passing through stops B and C, and arriving at stop D, `num_stops` will return 3.
-    @nullable
     @BuiltValueField(wireName: r'num_stops')
-    int get numStops;
+    int? get numStops;
 
     /// The text that appears in schedules and sign boards to identify a transit trip to passengers. The text should uniquely identify a trip within a service day. For example, \"538\" is the `trip_short_name` of the Amtrak train that leaves San Jose, CA at 15:10 on weekdays to Sacramento, CA.
-    @nullable
     @BuiltValueField(wireName: r'trip_short_name')
-    String get tripShortName;
+    String? get tripShortName;
 
     DirectionsTransitDetails._();
 
@@ -73,9 +64,9 @@ class _$DirectionsTransitDetailsSerializer implements StructuredSerializer<Direc
     final String wireName = r'DirectionsTransitDetails';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTransitDetails object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTransitDetails object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.arrivalStop != null) {
             result
                 ..add(r'arrival_stop')
@@ -134,13 +125,13 @@ class _$DirectionsTransitDetailsSerializer implements StructuredSerializer<Direc
     }
 
     @override
-    DirectionsTransitDetails deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTransitDetails deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTransitDetailsBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -162,11 +153,11 @@ class _$DirectionsTransitDetailsSerializer implements StructuredSerializer<Direc
                     break;
                 case r'headsign':
                     result.headsign = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'headway':
                     result.headway = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'line':
                     result.line.replace(serializers.deserialize(value,
@@ -174,11 +165,11 @@ class _$DirectionsTransitDetailsSerializer implements StructuredSerializer<Direc
                     break;
                 case r'num_stops':
                     result.numStops = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'trip_short_name':
                     result.tripShortName = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

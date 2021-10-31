@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_autocomplete_prediction.dart';
 
@@ -9,22 +9,22 @@ part of 'place_autocomplete_prediction.dart';
 
 class _$PlaceAutocompletePrediction extends PlaceAutocompletePrediction {
   @override
-  final String description;
+  final String? description;
   @override
-  final BuiltList<PlaceAutocompleteMatchedSubstring> matchedSubstrings;
+  final BuiltList<PlaceAutocompleteMatchedSubstring>? matchedSubstrings;
   @override
-  final PlaceAutocompleteStructuredFormat structuredFormatting;
+  final PlaceAutocompleteStructuredFormat? structuredFormatting;
   @override
-  final BuiltList<PlaceAutocompleteTerm> terms;
+  final BuiltList<PlaceAutocompleteTerm>? terms;
   @override
-  final String placeId;
+  final String? placeId;
   @override
-  final String reference;
+  final String? reference;
   @override
-  final BuiltList<String> types;
+  final BuiltList<String>? types;
 
   factory _$PlaceAutocompletePrediction(
-          [void Function(PlaceAutocompletePredictionBuilder) updates]) =>
+          [void Function(PlaceAutocompletePredictionBuilder)? updates]) =>
       (new PlaceAutocompletePredictionBuilder()..update(updates)).build();
 
   _$PlaceAutocompletePrediction._(
@@ -93,13 +93,13 @@ class PlaceAutocompletePredictionBuilder
     implements
         Builder<PlaceAutocompletePrediction,
             PlaceAutocompletePredictionBuilder> {
-  _$PlaceAutocompletePrediction _$v;
+  _$PlaceAutocompletePrediction? _$v;
 
-  String _description;
-  String get description => _$this._description;
-  set description(String description) => _$this._description = description;
+  String? _description;
+  String? get description => _$this._description;
+  set description(String? description) => _$this._description = description;
 
-  ListBuilder<PlaceAutocompleteMatchedSubstring> _matchedSubstrings;
+  ListBuilder<PlaceAutocompleteMatchedSubstring>? _matchedSubstrings;
   ListBuilder<PlaceAutocompleteMatchedSubstring> get matchedSubstrings =>
       _$this._matchedSubstrings ??=
           new ListBuilder<PlaceAutocompleteMatchedSubstring>();
@@ -107,7 +107,7 @@ class PlaceAutocompletePredictionBuilder
           ListBuilder<PlaceAutocompleteMatchedSubstring> matchedSubstrings) =>
       _$this._matchedSubstrings = matchedSubstrings;
 
-  PlaceAutocompleteStructuredFormatBuilder _structuredFormatting;
+  PlaceAutocompleteStructuredFormatBuilder? _structuredFormatting;
   PlaceAutocompleteStructuredFormatBuilder get structuredFormatting =>
       _$this._structuredFormatting ??=
           new PlaceAutocompleteStructuredFormatBuilder();
@@ -115,20 +115,20 @@ class PlaceAutocompletePredictionBuilder
           PlaceAutocompleteStructuredFormatBuilder structuredFormatting) =>
       _$this._structuredFormatting = structuredFormatting;
 
-  ListBuilder<PlaceAutocompleteTerm> _terms;
+  ListBuilder<PlaceAutocompleteTerm>? _terms;
   ListBuilder<PlaceAutocompleteTerm> get terms =>
       _$this._terms ??= new ListBuilder<PlaceAutocompleteTerm>();
   set terms(ListBuilder<PlaceAutocompleteTerm> terms) => _$this._terms = terms;
 
-  String _placeId;
-  String get placeId => _$this._placeId;
-  set placeId(String placeId) => _$this._placeId = placeId;
+  String? _placeId;
+  String? get placeId => _$this._placeId;
+  set placeId(String? placeId) => _$this._placeId = placeId;
 
-  String _reference;
-  String get reference => _$this._reference;
-  set reference(String reference) => _$this._reference = reference;
+  String? _reference;
+  String? get reference => _$this._reference;
+  set reference(String? reference) => _$this._reference = reference;
 
-  ListBuilder<String> _types;
+  ListBuilder<String>? _types;
   ListBuilder<String> get types => _$this._types ??= new ListBuilder<String>();
   set types(ListBuilder<String> types) => _$this._types = types;
 
@@ -158,7 +158,7 @@ class PlaceAutocompletePredictionBuilder
   }
 
   @override
-  void update(void Function(PlaceAutocompletePredictionBuilder) updates) {
+  void update(void Function(PlaceAutocompletePredictionBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -176,7 +176,7 @@ class PlaceAutocompletePredictionBuilder
               reference: reference,
               types: _types?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'matchedSubstrings';
         _matchedSubstrings?.build();

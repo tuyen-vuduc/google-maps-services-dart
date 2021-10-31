@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'lat_lng_literal.g.dart';
 abstract class LatLngLiteral implements Built<LatLngLiteral, LatLngLiteralBuilder> {
 
     /// Latitude in decimal degrees
-    @nullable
     @BuiltValueField(wireName: r'lat')
-    num get lat;
+    num? get lat;
 
     /// Longitude in decimal degrees
-    @nullable
     @BuiltValueField(wireName: r'lng')
-    num get lng;
+    num? get lng;
 
     LatLngLiteral._();
 
@@ -40,9 +38,9 @@ class _$LatLngLiteralSerializer implements StructuredSerializer<LatLngLiteral> {
     final String wireName = r'LatLngLiteral';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, LatLngLiteral object,
+    Iterable<Object?> serialize(Serializers serializers, LatLngLiteral object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'lat')
             ..add(object.lat == null ? null : serializers.serialize(object.lat,
@@ -55,23 +53,23 @@ class _$LatLngLiteralSerializer implements StructuredSerializer<LatLngLiteral> {
     }
 
     @override
-    LatLngLiteral deserialize(Serializers serializers, Iterable<Object> serialized,
+    LatLngLiteral deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = LatLngLiteralBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'lat':
                     result.lat = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'lng':
                     result.lng = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

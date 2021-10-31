@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geometry.dart';
 
@@ -9,11 +9,11 @@ part of 'geometry.dart';
 
 class _$Geometry extends Geometry {
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final Bounds viewport;
+  final Bounds? viewport;
 
-  factory _$Geometry([void Function(GeometryBuilder) updates]) =>
+  factory _$Geometry([void Function(GeometryBuilder)? updates]) =>
       (new GeometryBuilder()..update(updates)).build();
 
   _$Geometry._({this.location, this.viewport}) : super._();
@@ -48,14 +48,14 @@ class _$Geometry extends Geometry {
 }
 
 class GeometryBuilder implements Builder<Geometry, GeometryBuilder> {
-  _$Geometry _$v;
+  _$Geometry? _$v;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  BoundsBuilder _viewport;
+  BoundsBuilder? _viewport;
   BoundsBuilder get viewport => _$this._viewport ??= new BoundsBuilder();
   set viewport(BoundsBuilder viewport) => _$this._viewport = viewport;
 
@@ -80,7 +80,7 @@ class GeometryBuilder implements Builder<Geometry, GeometryBuilder> {
   }
 
   @override
-  void update(void Function(GeometryBuilder) updates) {
+  void update(void Function(GeometryBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -92,7 +92,7 @@ class GeometryBuilder implements Builder<Geometry, GeometryBuilder> {
           new _$Geometry._(
               location: _location?.build(), viewport: _viewport?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

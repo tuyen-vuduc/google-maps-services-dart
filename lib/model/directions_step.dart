@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -19,50 +19,40 @@ part 'directions_step.g.dart';
 
 abstract class DirectionsStep implements Built<DirectionsStep, DirectionsStepBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'duration')
-    TextValueObject get duration;
+    TextValueObject? get duration;
 
-    @nullable
     @BuiltValueField(wireName: r'end_location')
-    LatLngLiteral get endLocation;
+    LatLngLiteral? get endLocation;
 
     /// Contains formatted instructions for this step, presented as an HTML text string. This content is meant to be read as-is. Do not programmatically parse this display-only content.
-    @nullable
     @BuiltValueField(wireName: r'html_instructions')
-    String get htmlInstructions;
+    String? get htmlInstructions;
 
-    @nullable
     @BuiltValueField(wireName: r'polyline')
-    DirectionsPolyline get polyline;
+    DirectionsPolyline? get polyline;
 
-    @nullable
     @BuiltValueField(wireName: r'start_location')
-    LatLngLiteral get startLocation;
+    LatLngLiteral? get startLocation;
 
-    @nullable
     @BuiltValueField(wireName: r'travel_mode')
-    TravelMode get travelMode;
+    TravelMode? get travelMode;
     // enum travelModeEnum {  DRIVING,  BICYCLING,  TRANSIT,  WALKING,  };
 
-    @nullable
     @BuiltValueField(wireName: r'distance')
-    TextValueObject get distance;
+    TextValueObject? get distance;
 
     /// Contains the action to take for the current step (turn left, merge, straight, etc.). Values are subject to change, and new values may be introduced without prior notice.
-    @nullable
     @BuiltValueField(wireName: r'maneuver')
-    DirectionsStepManeuverEnum get maneuver;
+    DirectionsStepManeuverEnum? get maneuver;
     // enum maneuverEnum {  turn-slight-left,  turn-sharp-left,  turn-left,  turn-slight-right,  turn-sharp-right,  keep-right,  keep-left,  uturn-left,  uturn-right,  turn-right,  straight,  ramp-left,  ramp-right,  merge,  fork-left,  fork-right,  ferry,  ferry-train,  roundabout-left,  roundabout-right,  };
 
-    @nullable
     @BuiltValueField(wireName: r'transit_details')
-    DirectionsTransitDetails get transitDetails;
+    DirectionsTransitDetails? get transitDetails;
 
     /// Contains detailed directions for walking or driving steps in transit directions. Substeps are only available when travel_mode is set to \"transit\". The inner steps array is of the same type as steps.
-    @nullable
     @BuiltValueField(wireName: r'steps')
-    JsonObject get steps;
+    JsonObject? get steps;
 
     DirectionsStep._();
 
@@ -82,9 +72,9 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
     final String wireName = r'DirectionsStep';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsStep object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsStep object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'duration')
             ..add(object.duration == null ? null : serializers.serialize(object.duration,
@@ -137,13 +127,13 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
     }
 
     @override
-    DirectionsStep deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsStep deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsStepBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -157,7 +147,7 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
                     break;
                 case r'html_instructions':
                     result.htmlInstructions = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'polyline':
                     result.polyline.replace(serializers.deserialize(value,
@@ -169,7 +159,7 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
                     break;
                 case r'travel_mode':
                     result.travelMode = serializers.deserialize(value,
-                        specifiedType: const FullType(TravelMode)) as TravelMode;
+                        specifiedType: const FullType(TravelMode)) as TravelMode?;
                     break;
                 case r'distance':
                     result.distance.replace(serializers.deserialize(value,
@@ -177,7 +167,7 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
                     break;
                 case r'maneuver':
                     result.maneuver = serializers.deserialize(value,
-                        specifiedType: const FullType(DirectionsStepManeuverEnum)) as DirectionsStepManeuverEnum;
+                        specifiedType: const FullType(DirectionsStepManeuverEnum)) as DirectionsStepManeuverEnum?;
                     break;
                 case r'transit_details':
                     result.transitDetails.replace(serializers.deserialize(value,
@@ -185,7 +175,7 @@ class _$DirectionsStepSerializer implements StructuredSerializer<DirectionsStep>
                     break;
                 case r'steps':
                     result.steps = serializers.deserialize(value,
-                        specifiedType: const FullType(JsonObject)) as JsonObject;
+                        specifiedType: const FullType(JsonObject)) as JsonObject?;
                     break;
             }
         }

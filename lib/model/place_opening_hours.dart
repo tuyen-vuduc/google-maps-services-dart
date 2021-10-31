@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,19 +15,16 @@ part 'place_opening_hours.g.dart';
 abstract class PlaceOpeningHours implements Built<PlaceOpeningHours, PlaceOpeningHoursBuilder> {
 
     /// A boolean value indicating if the place is open at the current time.
-    @nullable
     @BuiltValueField(wireName: r'open_now')
-    bool get openNow;
+    bool? get openNow;
 
     /// An array of opening periods covering seven days, starting from Sunday, in chronological order. 
-    @nullable
     @BuiltValueField(wireName: r'periods')
-    BuiltList<PlaceOpeningHoursPeriod> get periods;
+    BuiltList<PlaceOpeningHoursPeriod>? get periods;
 
     /// A boolean value indicating if the place is open at the current time.
-    @nullable
     @BuiltValueField(wireName: r'weekday_text')
-    BuiltList<String> get weekdayText;
+    BuiltList<String>? get weekdayText;
 
     PlaceOpeningHours._();
 
@@ -47,9 +44,9 @@ class _$PlaceOpeningHoursSerializer implements StructuredSerializer<PlaceOpening
     final String wireName = r'PlaceOpeningHours';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceOpeningHours object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceOpeningHours object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.openNow != null) {
             result
                 ..add(r'open_now')
@@ -72,19 +69,19 @@ class _$PlaceOpeningHoursSerializer implements StructuredSerializer<PlaceOpening
     }
 
     @override
-    PlaceOpeningHours deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceOpeningHours deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceOpeningHoursBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'open_now':
                     result.openNow = serializers.deserialize(value,
-                        specifiedType: const FullType(bool)) as bool;
+                        specifiedType: const FullType(bool)) as bool?;
                     break;
                 case r'periods':
                     result.periods.replace(serializers.deserialize(value,

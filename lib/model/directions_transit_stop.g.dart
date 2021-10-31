@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_transit_stop.dart';
 
@@ -9,12 +9,12 @@ part of 'directions_transit_stop.dart';
 
 class _$DirectionsTransitStop extends DirectionsTransitStop {
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final String name;
+  final String? name;
 
   factory _$DirectionsTransitStop(
-          [void Function(DirectionsTransitStopBuilder) updates]) =>
+          [void Function(DirectionsTransitStopBuilder)? updates]) =>
       (new DirectionsTransitStopBuilder()..update(updates)).build();
 
   _$DirectionsTransitStop._({this.location, this.name}) : super._();
@@ -52,16 +52,16 @@ class _$DirectionsTransitStop extends DirectionsTransitStop {
 
 class DirectionsTransitStopBuilder
     implements Builder<DirectionsTransitStop, DirectionsTransitStopBuilder> {
-  _$DirectionsTransitStop _$v;
+  _$DirectionsTransitStop? _$v;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  String _name;
-  String get name => _$this._name;
-  set name(String name) => _$this._name = name;
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
 
   DirectionsTransitStopBuilder() {
     DirectionsTransitStop._initializeBuilder(this);
@@ -84,7 +84,7 @@ class DirectionsTransitStopBuilder
   }
 
   @override
-  void update(void Function(DirectionsTransitStopBuilder) updates) {
+  void update(void Function(DirectionsTransitStopBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -96,7 +96,7 @@ class DirectionsTransitStopBuilder
           new _$DirectionsTransitStop._(
               location: _location?.build(), name: name);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

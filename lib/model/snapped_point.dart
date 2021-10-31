@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,19 +13,16 @@ part 'snapped_point.g.dart';
 
 abstract class SnappedPoint implements Built<SnappedPoint, SnappedPointBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatitudeLongitudeLiteral get location;
+    LatitudeLongitudeLiteral? get location;
 
     /// A unique identifier for a place. All place IDs returned by the Roads API correspond to road segments.
-    @nullable
     @BuiltValueField(wireName: r'placeId')
-    String get placeId;
+    String? get placeId;
 
     /// An integer that indicates the corresponding value in the original request. Each value in the request should map to a snapped value in the response. However, if you've set interpolate=true, then it's possible that the response will contain more coordinates than the request. Interpolated values will not have an `originalIndex`. These values are indexed from `0`, so a point with an originalIndex of `4` will be the snapped value of the 5th latitude/longitude passed to the path parameter.
-    @nullable
     @BuiltValueField(wireName: r'originalIndex')
-    num get originalIndex;
+    num? get originalIndex;
 
     SnappedPoint._();
 
@@ -45,9 +42,9 @@ class _$SnappedPointSerializer implements StructuredSerializer<SnappedPoint> {
     final String wireName = r'SnappedPoint';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, SnappedPoint object,
+    Iterable<Object?> serialize(Serializers serializers, SnappedPoint object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'location')
             ..add(object.location == null ? null : serializers.serialize(object.location,
@@ -66,13 +63,13 @@ class _$SnappedPointSerializer implements StructuredSerializer<SnappedPoint> {
     }
 
     @override
-    SnappedPoint deserialize(Serializers serializers, Iterable<Object> serialized,
+    SnappedPoint deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = SnappedPointBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -82,11 +79,11 @@ class _$SnappedPointSerializer implements StructuredSerializer<SnappedPoint> {
                     break;
                 case r'placeId':
                     result.placeId = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'originalIndex':
                     result.originalIndex = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_opening_hours.dart';
 
@@ -9,14 +9,14 @@ part of 'place_opening_hours.dart';
 
 class _$PlaceOpeningHours extends PlaceOpeningHours {
   @override
-  final bool openNow;
+  final bool? openNow;
   @override
-  final BuiltList<PlaceOpeningHoursPeriod> periods;
+  final BuiltList<PlaceOpeningHoursPeriod>? periods;
   @override
-  final BuiltList<String> weekdayText;
+  final BuiltList<String>? weekdayText;
 
   factory _$PlaceOpeningHours(
-          [void Function(PlaceOpeningHoursBuilder) updates]) =>
+          [void Function(PlaceOpeningHoursBuilder)? updates]) =>
       (new PlaceOpeningHoursBuilder()..update(updates)).build();
 
   _$PlaceOpeningHours._({this.openNow, this.periods, this.weekdayText})
@@ -57,19 +57,19 @@ class _$PlaceOpeningHours extends PlaceOpeningHours {
 
 class PlaceOpeningHoursBuilder
     implements Builder<PlaceOpeningHours, PlaceOpeningHoursBuilder> {
-  _$PlaceOpeningHours _$v;
+  _$PlaceOpeningHours? _$v;
 
-  bool _openNow;
-  bool get openNow => _$this._openNow;
-  set openNow(bool openNow) => _$this._openNow = openNow;
+  bool? _openNow;
+  bool? get openNow => _$this._openNow;
+  set openNow(bool? openNow) => _$this._openNow = openNow;
 
-  ListBuilder<PlaceOpeningHoursPeriod> _periods;
+  ListBuilder<PlaceOpeningHoursPeriod>? _periods;
   ListBuilder<PlaceOpeningHoursPeriod> get periods =>
       _$this._periods ??= new ListBuilder<PlaceOpeningHoursPeriod>();
   set periods(ListBuilder<PlaceOpeningHoursPeriod> periods) =>
       _$this._periods = periods;
 
-  ListBuilder<String> _weekdayText;
+  ListBuilder<String>? _weekdayText;
   ListBuilder<String> get weekdayText =>
       _$this._weekdayText ??= new ListBuilder<String>();
   set weekdayText(ListBuilder<String> weekdayText) =>
@@ -97,7 +97,7 @@ class PlaceOpeningHoursBuilder
   }
 
   @override
-  void update(void Function(PlaceOpeningHoursBuilder) updates) {
+  void update(void Function(PlaceOpeningHoursBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -111,7 +111,7 @@ class PlaceOpeningHoursBuilder
               periods: _periods?.build(),
               weekdayText: _weekdayText?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'periods';
         _periods?.build();

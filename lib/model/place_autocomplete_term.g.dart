@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_autocomplete_term.dart';
 
@@ -9,12 +9,12 @@ part of 'place_autocomplete_term.dart';
 
 class _$PlaceAutocompleteTerm extends PlaceAutocompleteTerm {
   @override
-  final String value;
+  final String? value;
   @override
-  final num offset;
+  final num? offset;
 
   factory _$PlaceAutocompleteTerm(
-          [void Function(PlaceAutocompleteTermBuilder) updates]) =>
+          [void Function(PlaceAutocompleteTermBuilder)? updates]) =>
       (new PlaceAutocompleteTermBuilder()..update(updates)).build();
 
   _$PlaceAutocompleteTerm._({this.value, this.offset}) : super._();
@@ -52,15 +52,15 @@ class _$PlaceAutocompleteTerm extends PlaceAutocompleteTerm {
 
 class PlaceAutocompleteTermBuilder
     implements Builder<PlaceAutocompleteTerm, PlaceAutocompleteTermBuilder> {
-  _$PlaceAutocompleteTerm _$v;
+  _$PlaceAutocompleteTerm? _$v;
 
-  String _value;
-  String get value => _$this._value;
-  set value(String value) => _$this._value = value;
+  String? _value;
+  String? get value => _$this._value;
+  set value(String? value) => _$this._value = value;
 
-  num _offset;
-  num get offset => _$this._offset;
-  set offset(num offset) => _$this._offset = offset;
+  num? _offset;
+  num? get offset => _$this._offset;
+  set offset(num? offset) => _$this._offset = offset;
 
   PlaceAutocompleteTermBuilder() {
     PlaceAutocompleteTerm._initializeBuilder(this);
@@ -83,7 +83,7 @@ class PlaceAutocompleteTermBuilder
   }
 
   @override
-  void update(void Function(PlaceAutocompleteTermBuilder) updates) {
+  void update(void Function(PlaceAutocompleteTermBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

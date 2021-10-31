@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place.dart';
 
@@ -70,61 +70,61 @@ class _$PlaceBusinessStatusEnumSerializer
 
 class _$Place extends Place {
   @override
-  final BuiltList<AddressComponent> addressComponents;
+  final BuiltList<AddressComponent>? addressComponents;
   @override
-  final String adrAddress;
+  final String? adrAddress;
   @override
-  final PlaceBusinessStatusEnum businessStatus;
+  final PlaceBusinessStatusEnum? businessStatus;
   @override
-  final String formattedAddress;
+  final String? formattedAddress;
   @override
-  final String formattedPhoneNumber;
+  final String? formattedPhoneNumber;
   @override
-  final Geometry geometry;
+  final Geometry? geometry;
   @override
-  final String icon;
+  final String? icon;
   @override
-  final String iconBackgroundColor;
+  final String? iconBackgroundColor;
   @override
-  final String iconMaskBaseUri;
+  final String? iconMaskBaseUri;
   @override
-  final String internationalPhoneNumber;
+  final String? internationalPhoneNumber;
   @override
-  final String name;
+  final String? name;
   @override
-  final PlaceOpeningHours openingHours;
+  final PlaceOpeningHours? openingHours;
   @override
-  final bool permanentlyClosed;
+  final bool? permanentlyClosed;
   @override
-  final BuiltList<PlacePhoto> photos;
+  final BuiltList<PlacePhoto>? photos;
   @override
-  final String placeId;
+  final String? placeId;
   @override
-  final PlusCode plusCode;
+  final PlusCode? plusCode;
   @override
-  final num priceLevel;
+  final num? priceLevel;
   @override
-  final num rating;
+  final num? rating;
   @override
-  final String reference;
+  final String? reference;
   @override
-  final BuiltList<PlaceReview> reviews;
+  final BuiltList<PlaceReview>? reviews;
   @override
-  final String scope;
+  final String? scope;
   @override
-  final BuiltList<String> types;
+  final BuiltList<String>? types;
   @override
-  final String url;
+  final String? url;
   @override
-  final num userRatingsTotal;
+  final num? userRatingsTotal;
   @override
-  final num utcOffset;
+  final num? utcOffset;
   @override
-  final String vicinity;
+  final String? vicinity;
   @override
-  final String website;
+  final String? website;
 
-  factory _$Place([void Function(PlaceBuilder) updates]) =>
+  factory _$Place([void Function(PlaceBuilder)? updates]) =>
       (new PlaceBuilder()..update(updates)).build();
 
   _$Place._(
@@ -274,129 +274,129 @@ class _$Place extends Place {
 }
 
 class PlaceBuilder implements Builder<Place, PlaceBuilder> {
-  _$Place _$v;
+  _$Place? _$v;
 
-  ListBuilder<AddressComponent> _addressComponents;
+  ListBuilder<AddressComponent>? _addressComponents;
   ListBuilder<AddressComponent> get addressComponents =>
       _$this._addressComponents ??= new ListBuilder<AddressComponent>();
   set addressComponents(ListBuilder<AddressComponent> addressComponents) =>
       _$this._addressComponents = addressComponents;
 
-  String _adrAddress;
-  String get adrAddress => _$this._adrAddress;
-  set adrAddress(String adrAddress) => _$this._adrAddress = adrAddress;
+  String? _adrAddress;
+  String? get adrAddress => _$this._adrAddress;
+  set adrAddress(String? adrAddress) => _$this._adrAddress = adrAddress;
 
-  PlaceBusinessStatusEnum _businessStatus;
-  PlaceBusinessStatusEnum get businessStatus => _$this._businessStatus;
-  set businessStatus(PlaceBusinessStatusEnum businessStatus) =>
+  PlaceBusinessStatusEnum? _businessStatus;
+  PlaceBusinessStatusEnum? get businessStatus => _$this._businessStatus;
+  set businessStatus(PlaceBusinessStatusEnum? businessStatus) =>
       _$this._businessStatus = businessStatus;
 
-  String _formattedAddress;
-  String get formattedAddress => _$this._formattedAddress;
-  set formattedAddress(String formattedAddress) =>
+  String? _formattedAddress;
+  String? get formattedAddress => _$this._formattedAddress;
+  set formattedAddress(String? formattedAddress) =>
       _$this._formattedAddress = formattedAddress;
 
-  String _formattedPhoneNumber;
-  String get formattedPhoneNumber => _$this._formattedPhoneNumber;
-  set formattedPhoneNumber(String formattedPhoneNumber) =>
+  String? _formattedPhoneNumber;
+  String? get formattedPhoneNumber => _$this._formattedPhoneNumber;
+  set formattedPhoneNumber(String? formattedPhoneNumber) =>
       _$this._formattedPhoneNumber = formattedPhoneNumber;
 
-  GeometryBuilder _geometry;
+  GeometryBuilder? _geometry;
   GeometryBuilder get geometry => _$this._geometry ??= new GeometryBuilder();
   set geometry(GeometryBuilder geometry) => _$this._geometry = geometry;
 
-  String _icon;
-  String get icon => _$this._icon;
-  set icon(String icon) => _$this._icon = icon;
+  String? _icon;
+  String? get icon => _$this._icon;
+  set icon(String? icon) => _$this._icon = icon;
 
-  String _iconBackgroundColor;
-  String get iconBackgroundColor => _$this._iconBackgroundColor;
-  set iconBackgroundColor(String iconBackgroundColor) =>
+  String? _iconBackgroundColor;
+  String? get iconBackgroundColor => _$this._iconBackgroundColor;
+  set iconBackgroundColor(String? iconBackgroundColor) =>
       _$this._iconBackgroundColor = iconBackgroundColor;
 
-  String _iconMaskBaseUri;
-  String get iconMaskBaseUri => _$this._iconMaskBaseUri;
-  set iconMaskBaseUri(String iconMaskBaseUri) =>
+  String? _iconMaskBaseUri;
+  String? get iconMaskBaseUri => _$this._iconMaskBaseUri;
+  set iconMaskBaseUri(String? iconMaskBaseUri) =>
       _$this._iconMaskBaseUri = iconMaskBaseUri;
 
-  String _internationalPhoneNumber;
-  String get internationalPhoneNumber => _$this._internationalPhoneNumber;
-  set internationalPhoneNumber(String internationalPhoneNumber) =>
+  String? _internationalPhoneNumber;
+  String? get internationalPhoneNumber => _$this._internationalPhoneNumber;
+  set internationalPhoneNumber(String? internationalPhoneNumber) =>
       _$this._internationalPhoneNumber = internationalPhoneNumber;
 
-  String _name;
-  String get name => _$this._name;
-  set name(String name) => _$this._name = name;
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
 
-  PlaceOpeningHoursBuilder _openingHours;
+  PlaceOpeningHoursBuilder? _openingHours;
   PlaceOpeningHoursBuilder get openingHours =>
       _$this._openingHours ??= new PlaceOpeningHoursBuilder();
   set openingHours(PlaceOpeningHoursBuilder openingHours) =>
       _$this._openingHours = openingHours;
 
-  bool _permanentlyClosed;
-  bool get permanentlyClosed => _$this._permanentlyClosed;
-  set permanentlyClosed(bool permanentlyClosed) =>
+  bool? _permanentlyClosed;
+  bool? get permanentlyClosed => _$this._permanentlyClosed;
+  set permanentlyClosed(bool? permanentlyClosed) =>
       _$this._permanentlyClosed = permanentlyClosed;
 
-  ListBuilder<PlacePhoto> _photos;
+  ListBuilder<PlacePhoto>? _photos;
   ListBuilder<PlacePhoto> get photos =>
       _$this._photos ??= new ListBuilder<PlacePhoto>();
   set photos(ListBuilder<PlacePhoto> photos) => _$this._photos = photos;
 
-  String _placeId;
-  String get placeId => _$this._placeId;
-  set placeId(String placeId) => _$this._placeId = placeId;
+  String? _placeId;
+  String? get placeId => _$this._placeId;
+  set placeId(String? placeId) => _$this._placeId = placeId;
 
-  PlusCodeBuilder _plusCode;
+  PlusCodeBuilder? _plusCode;
   PlusCodeBuilder get plusCode => _$this._plusCode ??= new PlusCodeBuilder();
   set plusCode(PlusCodeBuilder plusCode) => _$this._plusCode = plusCode;
 
-  num _priceLevel;
-  num get priceLevel => _$this._priceLevel;
-  set priceLevel(num priceLevel) => _$this._priceLevel = priceLevel;
+  num? _priceLevel;
+  num? get priceLevel => _$this._priceLevel;
+  set priceLevel(num? priceLevel) => _$this._priceLevel = priceLevel;
 
-  num _rating;
-  num get rating => _$this._rating;
-  set rating(num rating) => _$this._rating = rating;
+  num? _rating;
+  num? get rating => _$this._rating;
+  set rating(num? rating) => _$this._rating = rating;
 
-  String _reference;
-  String get reference => _$this._reference;
-  set reference(String reference) => _$this._reference = reference;
+  String? _reference;
+  String? get reference => _$this._reference;
+  set reference(String? reference) => _$this._reference = reference;
 
-  ListBuilder<PlaceReview> _reviews;
+  ListBuilder<PlaceReview>? _reviews;
   ListBuilder<PlaceReview> get reviews =>
       _$this._reviews ??= new ListBuilder<PlaceReview>();
   set reviews(ListBuilder<PlaceReview> reviews) => _$this._reviews = reviews;
 
-  String _scope;
-  String get scope => _$this._scope;
-  set scope(String scope) => _$this._scope = scope;
+  String? _scope;
+  String? get scope => _$this._scope;
+  set scope(String? scope) => _$this._scope = scope;
 
-  ListBuilder<String> _types;
+  ListBuilder<String>? _types;
   ListBuilder<String> get types => _$this._types ??= new ListBuilder<String>();
   set types(ListBuilder<String> types) => _$this._types = types;
 
-  String _url;
-  String get url => _$this._url;
-  set url(String url) => _$this._url = url;
+  String? _url;
+  String? get url => _$this._url;
+  set url(String? url) => _$this._url = url;
 
-  num _userRatingsTotal;
-  num get userRatingsTotal => _$this._userRatingsTotal;
-  set userRatingsTotal(num userRatingsTotal) =>
+  num? _userRatingsTotal;
+  num? get userRatingsTotal => _$this._userRatingsTotal;
+  set userRatingsTotal(num? userRatingsTotal) =>
       _$this._userRatingsTotal = userRatingsTotal;
 
-  num _utcOffset;
-  num get utcOffset => _$this._utcOffset;
-  set utcOffset(num utcOffset) => _$this._utcOffset = utcOffset;
+  num? _utcOffset;
+  num? get utcOffset => _$this._utcOffset;
+  set utcOffset(num? utcOffset) => _$this._utcOffset = utcOffset;
 
-  String _vicinity;
-  String get vicinity => _$this._vicinity;
-  set vicinity(String vicinity) => _$this._vicinity = vicinity;
+  String? _vicinity;
+  String? get vicinity => _$this._vicinity;
+  set vicinity(String? vicinity) => _$this._vicinity = vicinity;
 
-  String _website;
-  String get website => _$this._website;
-  set website(String website) => _$this._website = website;
+  String? _website;
+  String? get website => _$this._website;
+  set website(String? website) => _$this._website = website;
 
   PlaceBuilder() {
     Place._initializeBuilder(this);
@@ -444,7 +444,7 @@ class PlaceBuilder implements Builder<Place, PlaceBuilder> {
   }
 
   @override
-  void update(void Function(PlaceBuilder) updates) {
+  void update(void Function(PlaceBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -482,7 +482,7 @@ class PlaceBuilder implements Builder<Place, PlaceBuilder> {
               vicinity: vicinity,
               website: website);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'addressComponents';
         _addressComponents?.build();

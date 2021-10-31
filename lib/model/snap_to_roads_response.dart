@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,14 +15,12 @@ part 'snap_to_roads_response.g.dart';
 abstract class SnapToRoadsResponse implements Built<SnapToRoadsResponse, SnapToRoadsResponseBuilder> {
 
     /// An array of snapped points.
-    @nullable
     @BuiltValueField(wireName: r'snappedPoints')
-    BuiltList<SnappedPoint> get snappedPoints;
+    BuiltList<SnappedPoint>? get snappedPoints;
 
     /// A string containing a user-visible warning.
-    @nullable
     @BuiltValueField(wireName: r'warningMessage')
-    String get warningMessage;
+    String? get warningMessage;
 
     SnapToRoadsResponse._();
 
@@ -42,9 +40,9 @@ class _$SnapToRoadsResponseSerializer implements StructuredSerializer<SnapToRoad
     final String wireName = r'SnapToRoadsResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, SnapToRoadsResponse object,
+    Iterable<Object?> serialize(Serializers serializers, SnapToRoadsResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.snappedPoints != null) {
             result
                 ..add(r'snappedPoints')
@@ -61,13 +59,13 @@ class _$SnapToRoadsResponseSerializer implements StructuredSerializer<SnapToRoad
     }
 
     @override
-    SnapToRoadsResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    SnapToRoadsResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = SnapToRoadsResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -77,7 +75,7 @@ class _$SnapToRoadsResponseSerializer implements StructuredSerializer<SnapToRoad
                     break;
                 case r'warningMessage':
                     result.warningMessage = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

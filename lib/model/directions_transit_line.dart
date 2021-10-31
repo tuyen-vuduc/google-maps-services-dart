@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -16,43 +16,35 @@ part 'directions_transit_line.g.dart';
 abstract class DirectionsTransitLine implements Built<DirectionsTransitLine, DirectionsTransitLineBuilder> {
 
     /// The transit agency (or agencies) that operates this transit line.
-    @nullable
     @BuiltValueField(wireName: r'agencies')
-    BuiltList<DirectionsTransitAgency> get agencies;
+    BuiltList<DirectionsTransitAgency>? get agencies;
 
     /// The full name of this transit line, e.g. \"8 Avenue Local\".
-    @nullable
     @BuiltValueField(wireName: r'name')
-    String get name;
+    String? get name;
 
     /// The color commonly used in signage for this line.
-    @nullable
     @BuiltValueField(wireName: r'color')
-    String get color;
+    String? get color;
 
     /// The short name of this transit line. This will normally be a line number, such as \"M7\" or \"355\".
-    @nullable
     @BuiltValueField(wireName: r'short_name')
-    String get shortName;
+    String? get shortName;
 
     /// The color commonly used in signage for this line.
-    @nullable
     @BuiltValueField(wireName: r'text_color')
-    String get textColor;
+    String? get textColor;
 
     /// Contains the URL for this transit line as provided by the transit agency.
-    @nullable
     @BuiltValueField(wireName: r'url')
-    String get url;
+    String? get url;
 
     /// Contains the URL for the icon associated with this line.
-    @nullable
     @BuiltValueField(wireName: r'icon')
-    String get icon;
+    String? get icon;
 
-    @nullable
     @BuiltValueField(wireName: r'vehicle')
-    DirectionsTransitVehicle get vehicle;
+    DirectionsTransitVehicle? get vehicle;
 
     DirectionsTransitLine._();
 
@@ -72,9 +64,9 @@ class _$DirectionsTransitLineSerializer implements StructuredSerializer<Directio
     final String wireName = r'DirectionsTransitLine';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTransitLine object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTransitLine object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'agencies')
             ..add(object.agencies == null ? null : serializers.serialize(object.agencies,
@@ -123,13 +115,13 @@ class _$DirectionsTransitLineSerializer implements StructuredSerializer<Directio
     }
 
     @override
-    DirectionsTransitLine deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTransitLine deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTransitLineBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -139,27 +131,27 @@ class _$DirectionsTransitLineSerializer implements StructuredSerializer<Directio
                     break;
                 case r'name':
                     result.name = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'color':
                     result.color = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'short_name':
                     result.shortName = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'text_color':
                     result.textColor = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'url':
                     result.url = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'icon':
                     result.icon = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'vehicle':
                     result.vehicle.replace(serializers.deserialize(value,

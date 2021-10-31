@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'time_zone_response.dart';
 
@@ -9,20 +9,20 @@ part of 'time_zone_response.dart';
 
 class _$TimeZoneResponse extends TimeZoneResponse {
   @override
-  final TimeZoneStatus status;
+  final TimeZoneStatus? status;
   @override
-  final num dstOffset;
+  final num? dstOffset;
   @override
-  final num rawOffset;
+  final num? rawOffset;
   @override
-  final String timeZoneId;
+  final String? timeZoneId;
   @override
-  final String timeZoneName;
+  final String? timeZoneName;
   @override
-  final String errorMessage;
+  final String? errorMessage;
 
   factory _$TimeZoneResponse(
-          [void Function(TimeZoneResponseBuilder) updates]) =>
+          [void Function(TimeZoneResponseBuilder)? updates]) =>
       (new TimeZoneResponseBuilder()..update(updates)).build();
 
   _$TimeZoneResponse._(
@@ -81,31 +81,31 @@ class _$TimeZoneResponse extends TimeZoneResponse {
 
 class TimeZoneResponseBuilder
     implements Builder<TimeZoneResponse, TimeZoneResponseBuilder> {
-  _$TimeZoneResponse _$v;
+  _$TimeZoneResponse? _$v;
 
-  TimeZoneStatus _status;
-  TimeZoneStatus get status => _$this._status;
-  set status(TimeZoneStatus status) => _$this._status = status;
+  TimeZoneStatus? _status;
+  TimeZoneStatus? get status => _$this._status;
+  set status(TimeZoneStatus? status) => _$this._status = status;
 
-  num _dstOffset;
-  num get dstOffset => _$this._dstOffset;
-  set dstOffset(num dstOffset) => _$this._dstOffset = dstOffset;
+  num? _dstOffset;
+  num? get dstOffset => _$this._dstOffset;
+  set dstOffset(num? dstOffset) => _$this._dstOffset = dstOffset;
 
-  num _rawOffset;
-  num get rawOffset => _$this._rawOffset;
-  set rawOffset(num rawOffset) => _$this._rawOffset = rawOffset;
+  num? _rawOffset;
+  num? get rawOffset => _$this._rawOffset;
+  set rawOffset(num? rawOffset) => _$this._rawOffset = rawOffset;
 
-  String _timeZoneId;
-  String get timeZoneId => _$this._timeZoneId;
-  set timeZoneId(String timeZoneId) => _$this._timeZoneId = timeZoneId;
+  String? _timeZoneId;
+  String? get timeZoneId => _$this._timeZoneId;
+  set timeZoneId(String? timeZoneId) => _$this._timeZoneId = timeZoneId;
 
-  String _timeZoneName;
-  String get timeZoneName => _$this._timeZoneName;
-  set timeZoneName(String timeZoneName) => _$this._timeZoneName = timeZoneName;
+  String? _timeZoneName;
+  String? get timeZoneName => _$this._timeZoneName;
+  set timeZoneName(String? timeZoneName) => _$this._timeZoneName = timeZoneName;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
   TimeZoneResponseBuilder() {
     TimeZoneResponse._initializeBuilder(this);
@@ -132,7 +132,7 @@ class TimeZoneResponseBuilder
   }
 
   @override
-  void update(void Function(TimeZoneResponseBuilder) updates) {
+  void update(void Function(TimeZoneResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

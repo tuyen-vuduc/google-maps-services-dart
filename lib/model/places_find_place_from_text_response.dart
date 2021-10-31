@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -16,24 +16,20 @@ part 'places_find_place_from_text_response.g.dart';
 abstract class PlacesFindPlaceFromTextResponse implements Built<PlacesFindPlaceFromTextResponse, PlacesFindPlaceFromTextResponseBuilder> {
 
     /// Contains an array of Place candidates. <div class=\"caution\">Place Search requests return a subset of the fields that are returned by Place Details requests. If the field you want is not returned by Place Search, you can use Place Search to get a place_id, then use that Place ID to make a Place Details request.</div> 
-    @nullable
     @BuiltValueField(wireName: r'candidates')
-    BuiltList<Place> get candidates;
+    BuiltList<Place>? get candidates;
 
-    @nullable
     @BuiltValueField(wireName: r'status')
-    PlacesSearchStatus get status;
+    PlacesSearchStatus? get status;
     // enum statusEnum {  OK,  ZERO_RESULTS,  INVALID_REQUEST,  OVER_QUERY_LIMIT,  REQUEST_DENIED,  UNKNOWN_ERROR,  };
 
     /// When the service returns a status code other than `OK<`, there may be an additional `error_message` field within the response object. This field contains more detailed information about thereasons behind the given status code. This field is not always returned, and its content is subject to change. 
-    @nullable
     @BuiltValueField(wireName: r'error_message')
-    String get errorMessage;
+    String? get errorMessage;
 
     /// When the service returns additional information about the request specification, there may be an additional `info_messages` field within the response object. This field is only returned for successful requests. It may not always be returned, and its content is subject to change. 
-    @nullable
     @BuiltValueField(wireName: r'info_messages')
-    BuiltList<String> get infoMessages;
+    BuiltList<String>? get infoMessages;
 
     PlacesFindPlaceFromTextResponse._();
 
@@ -53,9 +49,9 @@ class _$PlacesFindPlaceFromTextResponseSerializer implements StructuredSerialize
     final String wireName = r'PlacesFindPlaceFromTextResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlacesFindPlaceFromTextResponse object,
+    Iterable<Object?> serialize(Serializers serializers, PlacesFindPlaceFromTextResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'candidates')
             ..add(object.candidates == null ? null : serializers.serialize(object.candidates,
@@ -80,13 +76,13 @@ class _$PlacesFindPlaceFromTextResponseSerializer implements StructuredSerialize
     }
 
     @override
-    PlacesFindPlaceFromTextResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlacesFindPlaceFromTextResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlacesFindPlaceFromTextResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -96,11 +92,11 @@ class _$PlacesFindPlaceFromTextResponseSerializer implements StructuredSerialize
                     break;
                 case r'status':
                     result.status = serializers.deserialize(value,
-                        specifiedType: const FullType(PlacesSearchStatus)) as PlacesSearchStatus;
+                        specifiedType: const FullType(PlacesSearchStatus)) as PlacesSearchStatus?;
                     break;
                 case r'error_message':
                     result.errorMessage = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'info_messages':
                     result.infoMessages.replace(serializers.deserialize(value,

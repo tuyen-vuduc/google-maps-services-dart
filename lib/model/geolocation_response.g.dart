@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geolocation_response.dart';
 
@@ -9,12 +9,12 @@ part of 'geolocation_response.dart';
 
 class _$GeolocationResponse extends GeolocationResponse {
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final num accuracy;
+  final num? accuracy;
 
   factory _$GeolocationResponse(
-          [void Function(GeolocationResponseBuilder) updates]) =>
+          [void Function(GeolocationResponseBuilder)? updates]) =>
       (new GeolocationResponseBuilder()..update(updates)).build();
 
   _$GeolocationResponse._({this.location, this.accuracy}) : super._();
@@ -52,16 +52,16 @@ class _$GeolocationResponse extends GeolocationResponse {
 
 class GeolocationResponseBuilder
     implements Builder<GeolocationResponse, GeolocationResponseBuilder> {
-  _$GeolocationResponse _$v;
+  _$GeolocationResponse? _$v;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  num _accuracy;
-  num get accuracy => _$this._accuracy;
-  set accuracy(num accuracy) => _$this._accuracy = accuracy;
+  num? _accuracy;
+  num? get accuracy => _$this._accuracy;
+  set accuracy(num? accuracy) => _$this._accuracy = accuracy;
 
   GeolocationResponseBuilder() {
     GeolocationResponse._initializeBuilder(this);
@@ -84,7 +84,7 @@ class GeolocationResponseBuilder
   }
 
   @override
-  void update(void Function(GeolocationResponseBuilder) updates) {
+  void update(void Function(GeolocationResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -96,7 +96,7 @@ class GeolocationResponseBuilder
           new _$GeolocationResponse._(
               location: _location?.build(), accuracy: accuracy);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

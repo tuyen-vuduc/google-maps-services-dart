@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -25,21 +25,21 @@ class StreetViewAPIApi {
   /// The Street View Static API lets you embed a static (non-interactive) Street View panorama or thumbnail into your web page, without the use of JavaScript. The viewport is defined with URL parameters sent through a standard HTTP request, and is returned as a static image. 
   Future<Response<Uint8List>> streetView(
     String size, { 
-    num fov,
-    num heading,
-    String location,
-    String pano,
-    num pitch,
-    num radius,
-    bool returnErrorCode,
-    String signature,
-    String source_,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    num? fov,
+    num? heading,
+    String? location,
+    String? pano,
+    num? pitch,
+    num? radius,
+    bool? returnErrorCode,
+    String? signature,
+    String? source_,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/maps/api/streetview',
@@ -100,7 +100,7 @@ class StreetViewAPIApi {
       ),
     );
 
-    final Uint8List _responseData = _response.data as Uint8List;
+    final Uint8List? _responseData = _response.data as Uint8List?;
 
     return Response<Uint8List>(
       data: _responseData,
@@ -118,21 +118,21 @@ class StreetViewAPIApi {
   ///
   /// The Street View Static API metadata requests provide data about Street View panoramas. Using the metadata, you can find out if a Street View image is available at a given location, as well as getting programmatic access to the latitude and longitude, the panorama ID, the date the photo was taken, and the copyright information for the image. Accessing this metadata allows you to customize error behavior in your application. 
   Future<Response<StreetViewResponse>> streetViewMetadata({ 
-    num heading,
-    String location,
-    String pano,
-    num pitch,
-    num radius,
-    bool returnErrorCode,
-    String signature,
-    String size,
-    String source_,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    num? heading,
+    String? location,
+    String? pano,
+    num? pitch,
+    num? radius,
+    bool? returnErrorCode,
+    String? signature,
+    String? size,
+    String? source_,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/maps/api/streetview/metadata',
@@ -195,7 +195,7 @@ class StreetViewAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as StreetViewResponse;
+    ) as StreetViewResponse?;
 
     return Response<StreetViewResponse>(
       data: _responseData,

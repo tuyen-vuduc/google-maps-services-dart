@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,18 +14,15 @@ part 'elevation_result.g.dart';
 abstract class ElevationResult implements Built<ElevationResult, ElevationResultBuilder> {
 
     /// The elevation of the location in meters.
-    @nullable
     @BuiltValueField(wireName: r'elevation')
-    num get elevation;
+    num? get elevation;
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// The value indicating the maximum distance between data points from which the elevation was interpolated, in meters. This property will be missing if the resolution is not known. Note that elevation data becomes more coarse (larger resolution values) when multiple points are passed. To obtain the most accurate elevation value for a point, it should be queried independently.
-    @nullable
     @BuiltValueField(wireName: r'resolution')
-    num get resolution;
+    num? get resolution;
 
     ElevationResult._();
 
@@ -45,9 +42,9 @@ class _$ElevationResultSerializer implements StructuredSerializer<ElevationResul
     final String wireName = r'ElevationResult';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, ElevationResult object,
+    Iterable<Object?> serialize(Serializers serializers, ElevationResult object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'elevation')
             ..add(object.elevation == null ? null : serializers.serialize(object.elevation,
@@ -66,19 +63,19 @@ class _$ElevationResultSerializer implements StructuredSerializer<ElevationResul
     }
 
     @override
-    ElevationResult deserialize(Serializers serializers, Iterable<Object> serialized,
+    ElevationResult deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = ElevationResultBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'elevation':
                     result.elevation = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'location':
                     result.location.replace(serializers.deserialize(value,
@@ -86,7 +83,7 @@ class _$ElevationResultSerializer implements StructuredSerializer<ElevationResul
                     break;
                 case r'resolution':
                     result.resolution = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

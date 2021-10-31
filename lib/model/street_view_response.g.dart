@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'street_view_response.dart';
 
@@ -9,18 +9,18 @@ part of 'street_view_response.dart';
 
 class _$StreetViewResponse extends StreetViewResponse {
   @override
-  final StreetViewStatus status;
+  final StreetViewStatus? status;
   @override
-  final String copyright;
+  final String? copyright;
   @override
-  final String date;
+  final String? date;
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final String panoId;
+  final String? panoId;
 
   factory _$StreetViewResponse(
-          [void Function(StreetViewResponseBuilder) updates]) =>
+          [void Function(StreetViewResponseBuilder)? updates]) =>
       (new StreetViewResponseBuilder()..update(updates)).build();
 
   _$StreetViewResponse._(
@@ -71,28 +71,28 @@ class _$StreetViewResponse extends StreetViewResponse {
 
 class StreetViewResponseBuilder
     implements Builder<StreetViewResponse, StreetViewResponseBuilder> {
-  _$StreetViewResponse _$v;
+  _$StreetViewResponse? _$v;
 
-  StreetViewStatus _status;
-  StreetViewStatus get status => _$this._status;
-  set status(StreetViewStatus status) => _$this._status = status;
+  StreetViewStatus? _status;
+  StreetViewStatus? get status => _$this._status;
+  set status(StreetViewStatus? status) => _$this._status = status;
 
-  String _copyright;
-  String get copyright => _$this._copyright;
-  set copyright(String copyright) => _$this._copyright = copyright;
+  String? _copyright;
+  String? get copyright => _$this._copyright;
+  set copyright(String? copyright) => _$this._copyright = copyright;
 
-  String _date;
-  String get date => _$this._date;
-  set date(String date) => _$this._date = date;
+  String? _date;
+  String? get date => _$this._date;
+  set date(String? date) => _$this._date = date;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  String _panoId;
-  String get panoId => _$this._panoId;
-  set panoId(String panoId) => _$this._panoId = panoId;
+  String? _panoId;
+  String? get panoId => _$this._panoId;
+  set panoId(String? panoId) => _$this._panoId = panoId;
 
   StreetViewResponseBuilder() {
     StreetViewResponse._initializeBuilder(this);
@@ -118,7 +118,7 @@ class StreetViewResponseBuilder
   }
 
   @override
-  void update(void Function(StreetViewResponseBuilder) updates) {
+  void update(void Function(StreetViewResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -134,7 +134,7 @@ class StreetViewResponseBuilder
               location: _location?.build(),
               panoId: panoId);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

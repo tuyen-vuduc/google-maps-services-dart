@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_autocomplete_matched_substring.dart';
 
@@ -10,12 +10,12 @@ part of 'place_autocomplete_matched_substring.dart';
 class _$PlaceAutocompleteMatchedSubstring
     extends PlaceAutocompleteMatchedSubstring {
   @override
-  final num length;
+  final num? length;
   @override
-  final num offset;
+  final num? offset;
 
   factory _$PlaceAutocompleteMatchedSubstring(
-          [void Function(PlaceAutocompleteMatchedSubstringBuilder) updates]) =>
+          [void Function(PlaceAutocompleteMatchedSubstringBuilder)? updates]) =>
       (new PlaceAutocompleteMatchedSubstringBuilder()..update(updates)).build();
 
   _$PlaceAutocompleteMatchedSubstring._({this.length, this.offset}) : super._();
@@ -55,15 +55,15 @@ class PlaceAutocompleteMatchedSubstringBuilder
     implements
         Builder<PlaceAutocompleteMatchedSubstring,
             PlaceAutocompleteMatchedSubstringBuilder> {
-  _$PlaceAutocompleteMatchedSubstring _$v;
+  _$PlaceAutocompleteMatchedSubstring? _$v;
 
-  num _length;
-  num get length => _$this._length;
-  set length(num length) => _$this._length = length;
+  num? _length;
+  num? get length => _$this._length;
+  set length(num? length) => _$this._length = length;
 
-  num _offset;
-  num get offset => _$this._offset;
-  set offset(num offset) => _$this._offset = offset;
+  num? _offset;
+  num? get offset => _$this._offset;
+  set offset(num? offset) => _$this._offset = offset;
 
   PlaceAutocompleteMatchedSubstringBuilder() {
     PlaceAutocompleteMatchedSubstring._initializeBuilder(this);
@@ -86,7 +86,7 @@ class PlaceAutocompleteMatchedSubstringBuilder
   }
 
   @override
-  void update(void Function(PlaceAutocompleteMatchedSubstringBuilder) updates) {
+  void update(void Function(PlaceAutocompleteMatchedSubstringBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

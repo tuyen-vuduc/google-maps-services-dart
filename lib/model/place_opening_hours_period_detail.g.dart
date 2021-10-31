@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'place_opening_hours_period_detail.dart';
 
@@ -9,12 +9,12 @@ part of 'place_opening_hours_period_detail.dart';
 
 class _$PlaceOpeningHoursPeriodDetail extends PlaceOpeningHoursPeriodDetail {
   @override
-  final num day;
+  final num? day;
   @override
-  final String time;
+  final String? time;
 
   factory _$PlaceOpeningHoursPeriodDetail(
-          [void Function(PlaceOpeningHoursPeriodDetailBuilder) updates]) =>
+          [void Function(PlaceOpeningHoursPeriodDetailBuilder)? updates]) =>
       (new PlaceOpeningHoursPeriodDetailBuilder()..update(updates)).build();
 
   _$PlaceOpeningHoursPeriodDetail._({this.day, this.time}) : super._();
@@ -54,15 +54,15 @@ class PlaceOpeningHoursPeriodDetailBuilder
     implements
         Builder<PlaceOpeningHoursPeriodDetail,
             PlaceOpeningHoursPeriodDetailBuilder> {
-  _$PlaceOpeningHoursPeriodDetail _$v;
+  _$PlaceOpeningHoursPeriodDetail? _$v;
 
-  num _day;
-  num get day => _$this._day;
-  set day(num day) => _$this._day = day;
+  num? _day;
+  num? get day => _$this._day;
+  set day(num? day) => _$this._day = day;
 
-  String _time;
-  String get time => _$this._time;
-  set time(String time) => _$this._time = time;
+  String? _time;
+  String? get time => _$this._time;
+  set time(String? time) => _$this._time = time;
 
   PlaceOpeningHoursPeriodDetailBuilder() {
     PlaceOpeningHoursPeriodDetail._initializeBuilder(this);
@@ -85,7 +85,7 @@ class PlaceOpeningHoursPeriodDetailBuilder
   }
 
   @override
-  void update(void Function(PlaceOpeningHoursPeriodDetailBuilder) updates) {
+  void update(void Function(PlaceOpeningHoursPeriodDetailBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

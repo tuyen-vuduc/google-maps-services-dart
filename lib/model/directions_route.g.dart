@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_route.dart';
 
@@ -9,23 +9,23 @@ part of 'directions_route.dart';
 
 class _$DirectionsRoute extends DirectionsRoute {
   @override
-  final BuiltList<DirectionsLeg> legs;
+  final BuiltList<DirectionsLeg>? legs;
   @override
-  final Bounds bounds;
+  final Bounds? bounds;
   @override
-  final String copyrights;
+  final String? copyrights;
   @override
-  final String summary;
+  final String? summary;
   @override
-  final BuiltList<int> waypointOrder;
+  final BuiltList<int>? waypointOrder;
   @override
-  final BuiltList<String> warnings;
+  final BuiltList<String>? warnings;
   @override
-  final DirectionsPolyline overviewPolyline;
+  final DirectionsPolyline? overviewPolyline;
   @override
-  final Fare fare;
+  final Fare? fare;
 
-  factory _$DirectionsRoute([void Function(DirectionsRouteBuilder) updates]) =>
+  factory _$DirectionsRoute([void Function(DirectionsRouteBuilder)? updates]) =>
       (new DirectionsRouteBuilder()..update(updates)).build();
 
   _$DirectionsRoute._(
@@ -94,43 +94,43 @@ class _$DirectionsRoute extends DirectionsRoute {
 
 class DirectionsRouteBuilder
     implements Builder<DirectionsRoute, DirectionsRouteBuilder> {
-  _$DirectionsRoute _$v;
+  _$DirectionsRoute? _$v;
 
-  ListBuilder<DirectionsLeg> _legs;
+  ListBuilder<DirectionsLeg>? _legs;
   ListBuilder<DirectionsLeg> get legs =>
       _$this._legs ??= new ListBuilder<DirectionsLeg>();
   set legs(ListBuilder<DirectionsLeg> legs) => _$this._legs = legs;
 
-  BoundsBuilder _bounds;
+  BoundsBuilder? _bounds;
   BoundsBuilder get bounds => _$this._bounds ??= new BoundsBuilder();
   set bounds(BoundsBuilder bounds) => _$this._bounds = bounds;
 
-  String _copyrights;
-  String get copyrights => _$this._copyrights;
-  set copyrights(String copyrights) => _$this._copyrights = copyrights;
+  String? _copyrights;
+  String? get copyrights => _$this._copyrights;
+  set copyrights(String? copyrights) => _$this._copyrights = copyrights;
 
-  String _summary;
-  String get summary => _$this._summary;
-  set summary(String summary) => _$this._summary = summary;
+  String? _summary;
+  String? get summary => _$this._summary;
+  set summary(String? summary) => _$this._summary = summary;
 
-  ListBuilder<int> _waypointOrder;
+  ListBuilder<int>? _waypointOrder;
   ListBuilder<int> get waypointOrder =>
       _$this._waypointOrder ??= new ListBuilder<int>();
   set waypointOrder(ListBuilder<int> waypointOrder) =>
       _$this._waypointOrder = waypointOrder;
 
-  ListBuilder<String> _warnings;
+  ListBuilder<String>? _warnings;
   ListBuilder<String> get warnings =>
       _$this._warnings ??= new ListBuilder<String>();
   set warnings(ListBuilder<String> warnings) => _$this._warnings = warnings;
 
-  DirectionsPolylineBuilder _overviewPolyline;
+  DirectionsPolylineBuilder? _overviewPolyline;
   DirectionsPolylineBuilder get overviewPolyline =>
       _$this._overviewPolyline ??= new DirectionsPolylineBuilder();
   set overviewPolyline(DirectionsPolylineBuilder overviewPolyline) =>
       _$this._overviewPolyline = overviewPolyline;
 
-  FareBuilder _fare;
+  FareBuilder? _fare;
   FareBuilder get fare => _$this._fare ??= new FareBuilder();
   set fare(FareBuilder fare) => _$this._fare = fare;
 
@@ -161,7 +161,7 @@ class DirectionsRouteBuilder
   }
 
   @override
-  void update(void Function(DirectionsRouteBuilder) updates) {
+  void update(void Function(DirectionsRouteBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -180,7 +180,7 @@ class DirectionsRouteBuilder
               overviewPolyline: _overviewPolyline?.build(),
               fare: _fare?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'legs';
         _legs?.build();

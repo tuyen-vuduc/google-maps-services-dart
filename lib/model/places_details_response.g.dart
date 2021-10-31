@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'places_details_response.dart';
 
@@ -9,16 +9,16 @@ part of 'places_details_response.dart';
 
 class _$PlacesDetailsResponse extends PlacesDetailsResponse {
   @override
-  final BuiltList<String> htmlAttributions;
+  final BuiltList<String>? htmlAttributions;
   @override
-  final Place result;
+  final Place? result;
   @override
-  final PlacesDetailsStatus status;
+  final PlacesDetailsStatus? status;
   @override
-  final BuiltList<String> infoMessages;
+  final BuiltList<String>? infoMessages;
 
   factory _$PlacesDetailsResponse(
-          [void Function(PlacesDetailsResponseBuilder) updates]) =>
+          [void Function(PlacesDetailsResponseBuilder)? updates]) =>
       (new PlacesDetailsResponseBuilder()..update(updates)).build();
 
   _$PlacesDetailsResponse._(
@@ -65,23 +65,23 @@ class _$PlacesDetailsResponse extends PlacesDetailsResponse {
 
 class PlacesDetailsResponseBuilder
     implements Builder<PlacesDetailsResponse, PlacesDetailsResponseBuilder> {
-  _$PlacesDetailsResponse _$v;
+  _$PlacesDetailsResponse? _$v;
 
-  ListBuilder<String> _htmlAttributions;
+  ListBuilder<String>? _htmlAttributions;
   ListBuilder<String> get htmlAttributions =>
       _$this._htmlAttributions ??= new ListBuilder<String>();
   set htmlAttributions(ListBuilder<String> htmlAttributions) =>
       _$this._htmlAttributions = htmlAttributions;
 
-  PlaceBuilder _result;
+  PlaceBuilder? _result;
   PlaceBuilder get result => _$this._result ??= new PlaceBuilder();
   set result(PlaceBuilder result) => _$this._result = result;
 
-  PlacesDetailsStatus _status;
-  PlacesDetailsStatus get status => _$this._status;
-  set status(PlacesDetailsStatus status) => _$this._status = status;
+  PlacesDetailsStatus? _status;
+  PlacesDetailsStatus? get status => _$this._status;
+  set status(PlacesDetailsStatus? status) => _$this._status = status;
 
-  ListBuilder<String> _infoMessages;
+  ListBuilder<String>? _infoMessages;
   ListBuilder<String> get infoMessages =>
       _$this._infoMessages ??= new ListBuilder<String>();
   set infoMessages(ListBuilder<String> infoMessages) =>
@@ -110,7 +110,7 @@ class PlacesDetailsResponseBuilder
   }
 
   @override
-  void update(void Function(PlacesDetailsResponseBuilder) updates) {
+  void update(void Function(PlacesDetailsResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -125,7 +125,7 @@ class PlacesDetailsResponseBuilder
               status: status,
               infoMessages: _infoMessages?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'htmlAttributions';
         _htmlAttributions?.build();

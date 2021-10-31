@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_transit_vehicle.dart';
 
@@ -195,16 +195,16 @@ class _$DirectionsTransitVehicleTypeEnumSerializer
 
 class _$DirectionsTransitVehicle extends DirectionsTransitVehicle {
   @override
-  final String name;
+  final String? name;
   @override
-  final DirectionsTransitVehicleTypeEnum type;
+  final DirectionsTransitVehicleTypeEnum? type;
   @override
-  final String icon;
+  final String? icon;
   @override
-  final String localIcon;
+  final String? localIcon;
 
   factory _$DirectionsTransitVehicle(
-          [void Function(DirectionsTransitVehicleBuilder) updates]) =>
+          [void Function(DirectionsTransitVehicleBuilder)? updates]) =>
       (new DirectionsTransitVehicleBuilder()..update(updates)).build();
 
   _$DirectionsTransitVehicle._(
@@ -251,23 +251,23 @@ class _$DirectionsTransitVehicle extends DirectionsTransitVehicle {
 class DirectionsTransitVehicleBuilder
     implements
         Builder<DirectionsTransitVehicle, DirectionsTransitVehicleBuilder> {
-  _$DirectionsTransitVehicle _$v;
+  _$DirectionsTransitVehicle? _$v;
 
-  String _name;
-  String get name => _$this._name;
-  set name(String name) => _$this._name = name;
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
 
-  DirectionsTransitVehicleTypeEnum _type;
-  DirectionsTransitVehicleTypeEnum get type => _$this._type;
-  set type(DirectionsTransitVehicleTypeEnum type) => _$this._type = type;
+  DirectionsTransitVehicleTypeEnum? _type;
+  DirectionsTransitVehicleTypeEnum? get type => _$this._type;
+  set type(DirectionsTransitVehicleTypeEnum? type) => _$this._type = type;
 
-  String _icon;
-  String get icon => _$this._icon;
-  set icon(String icon) => _$this._icon = icon;
+  String? _icon;
+  String? get icon => _$this._icon;
+  set icon(String? icon) => _$this._icon = icon;
 
-  String _localIcon;
-  String get localIcon => _$this._localIcon;
-  set localIcon(String localIcon) => _$this._localIcon = localIcon;
+  String? _localIcon;
+  String? get localIcon => _$this._localIcon;
+  set localIcon(String? localIcon) => _$this._localIcon = localIcon;
 
   DirectionsTransitVehicleBuilder() {
     DirectionsTransitVehicle._initializeBuilder(this);
@@ -292,7 +292,7 @@ class DirectionsTransitVehicleBuilder
   }
 
   @override
-  void update(void Function(DirectionsTransitVehicleBuilder) updates) {
+  void update(void Function(DirectionsTransitVehicleBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

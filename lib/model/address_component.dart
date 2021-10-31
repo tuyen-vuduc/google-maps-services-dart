@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,19 +14,16 @@ part 'address_component.g.dart';
 abstract class AddressComponent implements Built<AddressComponent, AddressComponentBuilder> {
 
     /// The full text description or name of the address component as returned by the Geocoder.
-    @nullable
     @BuiltValueField(wireName: r'long_name')
-    String get longName;
+    String? get longName;
 
     /// An abbreviated textual name for the address component, if available. For example, an address component for the state of Alaska may have a long_name of \"Alaska\" and a short_name of \"AK\" using the 2-letter postal abbreviation.
-    @nullable
     @BuiltValueField(wireName: r'short_name')
-    String get shortName;
+    String? get shortName;
 
     /// An array indicating the type of the address component. See the list of [supported types](https://developers.google.com/maps/documentation/places/web-service/supported_types).
-    @nullable
     @BuiltValueField(wireName: r'types')
-    BuiltList<String> get types;
+    BuiltList<String>? get types;
 
     AddressComponent._();
 
@@ -46,9 +43,9 @@ class _$AddressComponentSerializer implements StructuredSerializer<AddressCompon
     final String wireName = r'AddressComponent';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, AddressComponent object,
+    Iterable<Object?> serialize(Serializers serializers, AddressComponent object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'long_name')
             ..add(object.longName == null ? null : serializers.serialize(object.longName,
@@ -65,23 +62,23 @@ class _$AddressComponentSerializer implements StructuredSerializer<AddressCompon
     }
 
     @override
-    AddressComponent deserialize(Serializers serializers, Iterable<Object> serialized,
+    AddressComponent deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = AddressComponentBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'long_name':
                     result.longName = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'short_name':
                     result.shortName = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'types':
                     result.types.replace(serializers.deserialize(value,

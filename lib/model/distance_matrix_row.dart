@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,9 +15,8 @@ part 'distance_matrix_row.g.dart';
 abstract class DistanceMatrixRow implements Built<DistanceMatrixRow, DistanceMatrixRowBuilder> {
 
     /// When the Distance Matrix API returns results, it places them within a JSON rows array. Even if no results are returned (such as when the origins and/or destinations don't exist), it still returns an empty array.   Rows are ordered according to the values in the origin parameter of the request. Each row corresponds to an origin, and each element within that row corresponds to a pairing of the origin with a destination value.  Each row array contains one or more element entries, which in turn contain the information about a single origin-destination pairing. 
-    @nullable
     @BuiltValueField(wireName: r'elements')
-    BuiltList<DistanceMatrixElement> get elements;
+    BuiltList<DistanceMatrixElement>? get elements;
 
     DistanceMatrixRow._();
 
@@ -37,9 +36,9 @@ class _$DistanceMatrixRowSerializer implements StructuredSerializer<DistanceMatr
     final String wireName = r'DistanceMatrixRow';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DistanceMatrixRow object,
+    Iterable<Object?> serialize(Serializers serializers, DistanceMatrixRow object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'elements')
             ..add(object.elements == null ? null : serializers.serialize(object.elements,
@@ -48,13 +47,13 @@ class _$DistanceMatrixRowSerializer implements StructuredSerializer<DistanceMatr
     }
 
     @override
-    DistanceMatrixRow deserialize(Serializers serializers, Iterable<Object> serialized,
+    DistanceMatrixRow deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DistanceMatrixRowBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

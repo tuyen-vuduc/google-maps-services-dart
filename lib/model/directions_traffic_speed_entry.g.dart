@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_traffic_speed_entry.dart';
 
@@ -9,12 +9,12 @@ part of 'directions_traffic_speed_entry.dart';
 
 class _$DirectionsTrafficSpeedEntry extends DirectionsTrafficSpeedEntry {
   @override
-  final String speedCategory;
+  final String? speedCategory;
   @override
-  final num offsetMeters;
+  final num? offsetMeters;
 
   factory _$DirectionsTrafficSpeedEntry(
-          [void Function(DirectionsTrafficSpeedEntryBuilder) updates]) =>
+          [void Function(DirectionsTrafficSpeedEntryBuilder)? updates]) =>
       (new DirectionsTrafficSpeedEntryBuilder()..update(updates)).build();
 
   _$DirectionsTrafficSpeedEntry._({this.speedCategory, this.offsetMeters})
@@ -55,16 +55,16 @@ class DirectionsTrafficSpeedEntryBuilder
     implements
         Builder<DirectionsTrafficSpeedEntry,
             DirectionsTrafficSpeedEntryBuilder> {
-  _$DirectionsTrafficSpeedEntry _$v;
+  _$DirectionsTrafficSpeedEntry? _$v;
 
-  String _speedCategory;
-  String get speedCategory => _$this._speedCategory;
-  set speedCategory(String speedCategory) =>
+  String? _speedCategory;
+  String? get speedCategory => _$this._speedCategory;
+  set speedCategory(String? speedCategory) =>
       _$this._speedCategory = speedCategory;
 
-  num _offsetMeters;
-  num get offsetMeters => _$this._offsetMeters;
-  set offsetMeters(num offsetMeters) => _$this._offsetMeters = offsetMeters;
+  num? _offsetMeters;
+  num? get offsetMeters => _$this._offsetMeters;
+  set offsetMeters(num? offsetMeters) => _$this._offsetMeters = offsetMeters;
 
   DirectionsTrafficSpeedEntryBuilder() {
     DirectionsTrafficSpeedEntry._initializeBuilder(this);
@@ -87,7 +87,7 @@ class DirectionsTrafficSpeedEntryBuilder
   }
 
   @override
-  void update(void Function(DirectionsTrafficSpeedEntryBuilder) updates) {
+  void update(void Function(DirectionsTrafficSpeedEntryBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

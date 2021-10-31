@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,9 +15,8 @@ part 'nearest_roads_response.g.dart';
 abstract class NearestRoadsResponse implements Built<NearestRoadsResponse, NearestRoadsResponseBuilder> {
 
     /// An array of snapped points.
-    @nullable
     @BuiltValueField(wireName: r'snappedPoints')
-    BuiltList<SnappedPoint> get snappedPoints;
+    BuiltList<SnappedPoint>? get snappedPoints;
 
     NearestRoadsResponse._();
 
@@ -37,9 +36,9 @@ class _$NearestRoadsResponseSerializer implements StructuredSerializer<NearestRo
     final String wireName = r'NearestRoadsResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, NearestRoadsResponse object,
+    Iterable<Object?> serialize(Serializers serializers, NearestRoadsResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.snappedPoints != null) {
             result
                 ..add(r'snappedPoints')
@@ -50,13 +49,13 @@ class _$NearestRoadsResponseSerializer implements StructuredSerializer<NearestRo
     }
 
     @override
-    NearestRoadsResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    NearestRoadsResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = NearestRoadsResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

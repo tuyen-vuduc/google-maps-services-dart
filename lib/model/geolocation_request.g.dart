@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geolocation_request.dart';
 
@@ -9,22 +9,22 @@ part of 'geolocation_request.dart';
 
 class _$GeolocationRequest extends GeolocationRequest {
   @override
-  final int homeMobileCountryCode;
+  final int? homeMobileCountryCode;
   @override
-  final int homeMobileNetworkCode;
+  final int? homeMobileNetworkCode;
   @override
-  final String radioType;
+  final String? radioType;
   @override
-  final String carrier;
+  final String? carrier;
   @override
-  final String considerIp;
+  final String? considerIp;
   @override
-  final BuiltList<CellTower> cellTowers;
+  final BuiltList<CellTower>? cellTowers;
   @override
-  final BuiltList<WiFiAccessPoint> wifiAccessPoints;
+  final BuiltList<WiFiAccessPoint>? wifiAccessPoints;
 
   factory _$GeolocationRequest(
-          [void Function(GeolocationRequestBuilder) updates]) =>
+          [void Function(GeolocationRequestBuilder)? updates]) =>
       (new GeolocationRequestBuilder()..update(updates)).build();
 
   _$GeolocationRequest._(
@@ -91,37 +91,37 @@ class _$GeolocationRequest extends GeolocationRequest {
 
 class GeolocationRequestBuilder
     implements Builder<GeolocationRequest, GeolocationRequestBuilder> {
-  _$GeolocationRequest _$v;
+  _$GeolocationRequest? _$v;
 
-  int _homeMobileCountryCode;
-  int get homeMobileCountryCode => _$this._homeMobileCountryCode;
-  set homeMobileCountryCode(int homeMobileCountryCode) =>
+  int? _homeMobileCountryCode;
+  int? get homeMobileCountryCode => _$this._homeMobileCountryCode;
+  set homeMobileCountryCode(int? homeMobileCountryCode) =>
       _$this._homeMobileCountryCode = homeMobileCountryCode;
 
-  int _homeMobileNetworkCode;
-  int get homeMobileNetworkCode => _$this._homeMobileNetworkCode;
-  set homeMobileNetworkCode(int homeMobileNetworkCode) =>
+  int? _homeMobileNetworkCode;
+  int? get homeMobileNetworkCode => _$this._homeMobileNetworkCode;
+  set homeMobileNetworkCode(int? homeMobileNetworkCode) =>
       _$this._homeMobileNetworkCode = homeMobileNetworkCode;
 
-  String _radioType;
-  String get radioType => _$this._radioType;
-  set radioType(String radioType) => _$this._radioType = radioType;
+  String? _radioType;
+  String? get radioType => _$this._radioType;
+  set radioType(String? radioType) => _$this._radioType = radioType;
 
-  String _carrier;
-  String get carrier => _$this._carrier;
-  set carrier(String carrier) => _$this._carrier = carrier;
+  String? _carrier;
+  String? get carrier => _$this._carrier;
+  set carrier(String? carrier) => _$this._carrier = carrier;
 
-  String _considerIp;
-  String get considerIp => _$this._considerIp;
-  set considerIp(String considerIp) => _$this._considerIp = considerIp;
+  String? _considerIp;
+  String? get considerIp => _$this._considerIp;
+  set considerIp(String? considerIp) => _$this._considerIp = considerIp;
 
-  ListBuilder<CellTower> _cellTowers;
+  ListBuilder<CellTower>? _cellTowers;
   ListBuilder<CellTower> get cellTowers =>
       _$this._cellTowers ??= new ListBuilder<CellTower>();
   set cellTowers(ListBuilder<CellTower> cellTowers) =>
       _$this._cellTowers = cellTowers;
 
-  ListBuilder<WiFiAccessPoint> _wifiAccessPoints;
+  ListBuilder<WiFiAccessPoint>? _wifiAccessPoints;
   ListBuilder<WiFiAccessPoint> get wifiAccessPoints =>
       _$this._wifiAccessPoints ??= new ListBuilder<WiFiAccessPoint>();
   set wifiAccessPoints(ListBuilder<WiFiAccessPoint> wifiAccessPoints) =>
@@ -153,7 +153,7 @@ class GeolocationRequestBuilder
   }
 
   @override
-  void update(void Function(GeolocationRequestBuilder) updates) {
+  void update(void Function(GeolocationRequestBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -171,7 +171,7 @@ class GeolocationRequestBuilder
               cellTowers: _cellTowers?.build(),
               wifiAccessPoints: _wifiAccessPoints?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'cellTowers';
         _cellTowers?.build();

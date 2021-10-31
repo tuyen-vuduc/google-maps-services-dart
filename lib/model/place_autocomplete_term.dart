@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'place_autocomplete_term.g.dart';
 abstract class PlaceAutocompleteTerm implements Built<PlaceAutocompleteTerm, PlaceAutocompleteTermBuilder> {
 
     /// The text of the term.
-    @nullable
     @BuiltValueField(wireName: r'value')
-    String get value;
+    String? get value;
 
     /// Defines the start position of this term in the description, measured in Unicode characters
-    @nullable
     @BuiltValueField(wireName: r'offset')
-    num get offset;
+    num? get offset;
 
     PlaceAutocompleteTerm._();
 
@@ -40,9 +38,9 @@ class _$PlaceAutocompleteTermSerializer implements StructuredSerializer<PlaceAut
     final String wireName = r'PlaceAutocompleteTerm';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceAutocompleteTerm object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceAutocompleteTerm object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'value')
             ..add(object.value == null ? null : serializers.serialize(object.value,
@@ -55,23 +53,23 @@ class _$PlaceAutocompleteTermSerializer implements StructuredSerializer<PlaceAut
     }
 
     @override
-    PlaceAutocompleteTerm deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceAutocompleteTerm deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceAutocompleteTermBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'value':
                     result.value = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'offset':
                     result.offset = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

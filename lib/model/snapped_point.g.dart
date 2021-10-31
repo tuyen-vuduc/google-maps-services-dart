@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'snapped_point.dart';
 
@@ -9,13 +9,13 @@ part of 'snapped_point.dart';
 
 class _$SnappedPoint extends SnappedPoint {
   @override
-  final LatitudeLongitudeLiteral location;
+  final LatitudeLongitudeLiteral? location;
   @override
-  final String placeId;
+  final String? placeId;
   @override
-  final num originalIndex;
+  final num? originalIndex;
 
-  factory _$SnappedPoint([void Function(SnappedPointBuilder) updates]) =>
+  factory _$SnappedPoint([void Function(SnappedPointBuilder)? updates]) =>
       (new SnappedPointBuilder()..update(updates)).build();
 
   _$SnappedPoint._({this.location, this.placeId, this.originalIndex})
@@ -55,21 +55,21 @@ class _$SnappedPoint extends SnappedPoint {
 
 class SnappedPointBuilder
     implements Builder<SnappedPoint, SnappedPointBuilder> {
-  _$SnappedPoint _$v;
+  _$SnappedPoint? _$v;
 
-  LatitudeLongitudeLiteralBuilder _location;
+  LatitudeLongitudeLiteralBuilder? _location;
   LatitudeLongitudeLiteralBuilder get location =>
       _$this._location ??= new LatitudeLongitudeLiteralBuilder();
   set location(LatitudeLongitudeLiteralBuilder location) =>
       _$this._location = location;
 
-  String _placeId;
-  String get placeId => _$this._placeId;
-  set placeId(String placeId) => _$this._placeId = placeId;
+  String? _placeId;
+  String? get placeId => _$this._placeId;
+  set placeId(String? placeId) => _$this._placeId = placeId;
 
-  num _originalIndex;
-  num get originalIndex => _$this._originalIndex;
-  set originalIndex(num originalIndex) => _$this._originalIndex = originalIndex;
+  num? _originalIndex;
+  num? get originalIndex => _$this._originalIndex;
+  set originalIndex(num? originalIndex) => _$this._originalIndex = originalIndex;
 
   SnappedPointBuilder() {
     SnappedPoint._initializeBuilder(this);
@@ -93,7 +93,7 @@ class SnappedPointBuilder
   }
 
   @override
-  void update(void Function(SnappedPointBuilder) updates) {
+  void update(void Function(SnappedPointBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -107,7 +107,7 @@ class SnappedPointBuilder
               placeId: placeId,
               originalIndex: originalIndex);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

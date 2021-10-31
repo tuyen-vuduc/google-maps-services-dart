@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'geolocation_response.g.dart';
 
 abstract class GeolocationResponse implements Built<GeolocationResponse, GeolocationResponseBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// The accuracy of the estimated location, in meters. This represents the radius of a circle around the given `location`. If your Geolocation response shows a very high value in the `accuracy` field, the service may be geolocating based on the  request IP, instead of WiFi points or cell towers. This can happen if no cell towers or access points are valid or recognized. To confirm that this is the issue, set `considerIp` to `false` in your request. If the response is a `404`, you've confirmed that your `wifiAccessPoints` and `cellTowers` objects could not be geolocated.
-    @nullable
     @BuiltValueField(wireName: r'accuracy')
-    num get accuracy;
+    num? get accuracy;
 
     GeolocationResponse._();
 
@@ -40,9 +38,9 @@ class _$GeolocationResponseSerializer implements StructuredSerializer<Geolocatio
     final String wireName = r'GeolocationResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, GeolocationResponse object,
+    Iterable<Object?> serialize(Serializers serializers, GeolocationResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'location')
             ..add(object.location == null ? null : serializers.serialize(object.location,
@@ -55,13 +53,13 @@ class _$GeolocationResponseSerializer implements StructuredSerializer<Geolocatio
     }
 
     @override
-    GeolocationResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    GeolocationResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = GeolocationResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -71,7 +69,7 @@ class _$GeolocationResponseSerializer implements StructuredSerializer<Geolocatio
                     break;
                 case r'accuracy':
                     result.accuracy = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

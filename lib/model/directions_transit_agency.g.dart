@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_transit_agency.dart';
 
@@ -9,14 +9,14 @@ part of 'directions_transit_agency.dart';
 
 class _$DirectionsTransitAgency extends DirectionsTransitAgency {
   @override
-  final String name;
+  final String? name;
   @override
-  final String phone;
+  final String? phone;
   @override
-  final String url;
+  final String? url;
 
   factory _$DirectionsTransitAgency(
-          [void Function(DirectionsTransitAgencyBuilder) updates]) =>
+          [void Function(DirectionsTransitAgencyBuilder)? updates]) =>
       (new DirectionsTransitAgencyBuilder()..update(updates)).build();
 
   _$DirectionsTransitAgency._({this.name, this.phone, this.url}) : super._();
@@ -57,19 +57,19 @@ class _$DirectionsTransitAgency extends DirectionsTransitAgency {
 class DirectionsTransitAgencyBuilder
     implements
         Builder<DirectionsTransitAgency, DirectionsTransitAgencyBuilder> {
-  _$DirectionsTransitAgency _$v;
+  _$DirectionsTransitAgency? _$v;
 
-  String _name;
-  String get name => _$this._name;
-  set name(String name) => _$this._name = name;
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
 
-  String _phone;
-  String get phone => _$this._phone;
-  set phone(String phone) => _$this._phone = phone;
+  String? _phone;
+  String? get phone => _$this._phone;
+  set phone(String? phone) => _$this._phone = phone;
 
-  String _url;
-  String get url => _$this._url;
-  set url(String url) => _$this._url = url;
+  String? _url;
+  String? get url => _$this._url;
+  set url(String? url) => _$this._url = url;
 
   DirectionsTransitAgencyBuilder() {
     DirectionsTransitAgency._initializeBuilder(this);
@@ -93,7 +93,7 @@ class DirectionsTransitAgencyBuilder
   }
 
   @override
-  void update(void Function(DirectionsTransitAgencyBuilder) updates) {
+  void update(void Function(DirectionsTransitAgencyBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

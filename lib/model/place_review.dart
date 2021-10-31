@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,44 +13,36 @@ part 'place_review.g.dart';
 abstract class PlaceReview implements Built<PlaceReview, PlaceReviewBuilder> {
 
     /// The name of the user who submitted the review. Anonymous reviews are attributed to \"A Google user\".
-    @nullable
     @BuiltValueField(wireName: r'author_name')
-    String get authorName;
+    String? get authorName;
 
     /// The user's overall rating for this place. This is a whole number, ranging from 1 to 5.
-    @nullable
     @BuiltValueField(wireName: r'rating')
-    num get rating;
+    num? get rating;
 
     /// The time that the review was submitted in text, relative to the current time.
-    @nullable
     @BuiltValueField(wireName: r'relative_time_description')
-    String get relativeTimeDescription;
+    String? get relativeTimeDescription;
 
     /// The time that the review was submitted, measured in the number of seconds since since midnight, January 1, 1970 UTC.
-    @nullable
     @BuiltValueField(wireName: r'time')
-    num get time;
+    num? get time;
 
     /// The URL to the user's Google Maps Local Guides profile, if available.
-    @nullable
     @BuiltValueField(wireName: r'author_url')
-    String get authorUrl;
+    String? get authorUrl;
 
     /// The URL to the user's profile photo, if available.
-    @nullable
     @BuiltValueField(wireName: r'profile_photo_url')
-    String get profilePhotoUrl;
+    String? get profilePhotoUrl;
 
     /// An IETF language code indicating the language used in the user's review. This field contains the main language tag only, and not the secondary tag indicating country or region. For example, all the English reviews are tagged as 'en', and not 'en-AU' or 'en-UK' and so on.
-    @nullable
     @BuiltValueField(wireName: r'language')
-    String get language;
+    String? get language;
 
     /// The user's review. When reviewing a location with Google Places, text reviews are considered optional. Therefore, this field may be empty. Note that this field may include simple HTML markup. For example, the entity reference `&amp;` may represent an ampersand character.
-    @nullable
     @BuiltValueField(wireName: r'text')
-    String get text;
+    String? get text;
 
     PlaceReview._();
 
@@ -70,9 +62,9 @@ class _$PlaceReviewSerializer implements StructuredSerializer<PlaceReview> {
     final String wireName = r'PlaceReview';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceReview object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceReview object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'author_name')
             ..add(object.authorName == null ? null : serializers.serialize(object.authorName,
@@ -117,47 +109,47 @@ class _$PlaceReviewSerializer implements StructuredSerializer<PlaceReview> {
     }
 
     @override
-    PlaceReview deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceReview deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceReviewBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'author_name':
                     result.authorName = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'rating':
                     result.rating = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'relative_time_description':
                     result.relativeTimeDescription = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'time':
                     result.time = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'author_url':
                     result.authorUrl = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'profile_photo_url':
                     result.profilePhotoUrl = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'language':
                     result.language = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'text':
                     result.text = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_geocoded_waypoint.dart';
 
@@ -335,16 +335,16 @@ class _$DirectionsGeocodedWaypointTypesEnumSerializer
 
 class _$DirectionsGeocodedWaypoint extends DirectionsGeocodedWaypoint {
   @override
-  final DirectionsGeocodedWaypointGeocoderStatusEnum geocoderStatus;
+  final DirectionsGeocodedWaypointGeocoderStatusEnum? geocoderStatus;
   @override
-  final JsonObject partialMatch;
+  final JsonObject? partialMatch;
   @override
-  final String placeId;
+  final String? placeId;
   @override
-  final BuiltList<DirectionsGeocodedWaypointTypesEnum> types;
+  final BuiltList<DirectionsGeocodedWaypointTypesEnum>? types;
 
   factory _$DirectionsGeocodedWaypoint(
-          [void Function(DirectionsGeocodedWaypointBuilder) updates]) =>
+          [void Function(DirectionsGeocodedWaypointBuilder)? updates]) =>
       (new DirectionsGeocodedWaypointBuilder()..update(updates)).build();
 
   _$DirectionsGeocodedWaypoint._(
@@ -392,25 +392,25 @@ class _$DirectionsGeocodedWaypoint extends DirectionsGeocodedWaypoint {
 class DirectionsGeocodedWaypointBuilder
     implements
         Builder<DirectionsGeocodedWaypoint, DirectionsGeocodedWaypointBuilder> {
-  _$DirectionsGeocodedWaypoint _$v;
+  _$DirectionsGeocodedWaypoint? _$v;
 
-  DirectionsGeocodedWaypointGeocoderStatusEnum _geocoderStatus;
-  DirectionsGeocodedWaypointGeocoderStatusEnum get geocoderStatus =>
+  DirectionsGeocodedWaypointGeocoderStatusEnum? _geocoderStatus;
+  DirectionsGeocodedWaypointGeocoderStatusEnum? get geocoderStatus =>
       _$this._geocoderStatus;
   set geocoderStatus(
-          DirectionsGeocodedWaypointGeocoderStatusEnum geocoderStatus) =>
+          DirectionsGeocodedWaypointGeocoderStatusEnum? geocoderStatus) =>
       _$this._geocoderStatus = geocoderStatus;
 
-  JsonObject _partialMatch;
-  JsonObject get partialMatch => _$this._partialMatch;
-  set partialMatch(JsonObject partialMatch) =>
+  JsonObject? _partialMatch;
+  JsonObject? get partialMatch => _$this._partialMatch;
+  set partialMatch(JsonObject? partialMatch) =>
       _$this._partialMatch = partialMatch;
 
-  String _placeId;
-  String get placeId => _$this._placeId;
-  set placeId(String placeId) => _$this._placeId = placeId;
+  String? _placeId;
+  String? get placeId => _$this._placeId;
+  set placeId(String? placeId) => _$this._placeId = placeId;
 
-  ListBuilder<DirectionsGeocodedWaypointTypesEnum> _types;
+  ListBuilder<DirectionsGeocodedWaypointTypesEnum>? _types;
   ListBuilder<DirectionsGeocodedWaypointTypesEnum> get types =>
       _$this._types ??= new ListBuilder<DirectionsGeocodedWaypointTypesEnum>();
   set types(ListBuilder<DirectionsGeocodedWaypointTypesEnum> types) =>
@@ -439,7 +439,7 @@ class DirectionsGeocodedWaypointBuilder
   }
 
   @override
-  void update(void Function(DirectionsGeocodedWaypointBuilder) updates) {
+  void update(void Function(DirectionsGeocodedWaypointBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -454,7 +454,7 @@ class DirectionsGeocodedWaypointBuilder
               placeId: placeId,
               types: _types?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'types';
         _types?.build();

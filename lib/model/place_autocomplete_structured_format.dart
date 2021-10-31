@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,24 +15,20 @@ part 'place_autocomplete_structured_format.g.dart';
 abstract class PlaceAutocompleteStructuredFormat implements Built<PlaceAutocompleteStructuredFormat, PlaceAutocompleteStructuredFormatBuilder> {
 
     /// Contains the main text of a prediction, usually the name of the place.
-    @nullable
     @BuiltValueField(wireName: r'main_text')
-    String get mainText;
+    String? get mainText;
 
     /// Contains an array with `offset` value and `length`. These describe the location of the entered term in the prediction result text, so that the term can be highlighted if desired.
-    @nullable
     @BuiltValueField(wireName: r'main_text_matched_substrings')
-    BuiltList<PlaceAutocompleteMatchedSubstring> get mainTextMatchedSubstrings;
+    BuiltList<PlaceAutocompleteMatchedSubstring>? get mainTextMatchedSubstrings;
 
     /// Contains the secondary text of a prediction, usually the location of the place.
-    @nullable
     @BuiltValueField(wireName: r'secondary_text')
-    String get secondaryText;
+    String? get secondaryText;
 
     /// Contains an array with `offset` value and `length`. These describe the location of the entered term in the prediction result text, so that the term can be highlighted if desired.
-    @nullable
     @BuiltValueField(wireName: r'secondary_text_matched_substrings')
-    BuiltList<PlaceAutocompleteMatchedSubstring> get secondaryTextMatchedSubstrings;
+    BuiltList<PlaceAutocompleteMatchedSubstring>? get secondaryTextMatchedSubstrings;
 
     PlaceAutocompleteStructuredFormat._();
 
@@ -52,9 +48,9 @@ class _$PlaceAutocompleteStructuredFormatSerializer implements StructuredSeriali
     final String wireName = r'PlaceAutocompleteStructuredFormat';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceAutocompleteStructuredFormat object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceAutocompleteStructuredFormat object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'main_text')
             ..add(object.mainText == null ? null : serializers.serialize(object.mainText,
@@ -77,19 +73,19 @@ class _$PlaceAutocompleteStructuredFormatSerializer implements StructuredSeriali
     }
 
     @override
-    PlaceAutocompleteStructuredFormat deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceAutocompleteStructuredFormat deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceAutocompleteStructuredFormatBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'main_text':
                     result.mainText = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'main_text_matched_substrings':
                     result.mainTextMatchedSubstrings.replace(serializers.deserialize(value,
@@ -97,7 +93,7 @@ class _$PlaceAutocompleteStructuredFormatSerializer implements StructuredSeriali
                     break;
                 case r'secondary_text':
                     result.secondaryText = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'secondary_text_matched_substrings':
                     result.secondaryTextMatchedSubstrings.replace(serializers.deserialize(value,

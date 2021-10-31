@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,26 +15,21 @@ part 'distance_matrix_element.g.dart';
 
 abstract class DistanceMatrixElement implements Built<DistanceMatrixElement, DistanceMatrixElementBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'status')
-    DistanceMatrixElementStatus get status;
+    DistanceMatrixElementStatus? get status;
     // enum statusEnum {  OK,  NOT_FOUND,  ZERO_RESULTS,  MAX_ROUTE_LENGTH_EXCEEDED,  };
 
-    @nullable
     @BuiltValueField(wireName: r'fare')
-    Fare get fare;
+    Fare? get fare;
 
-    @nullable
     @BuiltValueField(wireName: r'distance')
-    TextValueObject get distance;
+    TextValueObject? get distance;
 
-    @nullable
     @BuiltValueField(wireName: r'duration_in_traffic')
-    TextValueObject get durationInTraffic;
+    TextValueObject? get durationInTraffic;
 
-    @nullable
     @BuiltValueField(wireName: r'duration')
-    TextValueObject get duration;
+    TextValueObject? get duration;
 
     DistanceMatrixElement._();
 
@@ -54,9 +49,9 @@ class _$DistanceMatrixElementSerializer implements StructuredSerializer<Distance
     final String wireName = r'DistanceMatrixElement';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DistanceMatrixElement object,
+    Iterable<Object?> serialize(Serializers serializers, DistanceMatrixElement object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'status')
             ..add(object.status == null ? null : serializers.serialize(object.status,
@@ -89,19 +84,19 @@ class _$DistanceMatrixElementSerializer implements StructuredSerializer<Distance
     }
 
     @override
-    DistanceMatrixElement deserialize(Serializers serializers, Iterable<Object> serialized,
+    DistanceMatrixElement deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DistanceMatrixElementBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'status':
                     result.status = serializers.deserialize(value,
-                        specifiedType: const FullType(DistanceMatrixElementStatus)) as DistanceMatrixElementStatus;
+                        specifiedType: const FullType(DistanceMatrixElementStatus)) as DistanceMatrixElementStatus?;
                     break;
                 case r'fare':
                     result.fare.replace(serializers.deserialize(value,

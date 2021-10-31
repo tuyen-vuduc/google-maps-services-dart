@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'cell_tower.dart';
 
@@ -9,21 +9,21 @@ part of 'cell_tower.dart';
 
 class _$CellTower extends CellTower {
   @override
-  final int cellId;
+  final int? cellId;
   @override
-  final int locationAreaCode;
+  final int? locationAreaCode;
   @override
-  final int mobileCountryCode;
+  final int? mobileCountryCode;
   @override
-  final int mobileNetworkCode;
+  final int? mobileNetworkCode;
   @override
-  final int age;
+  final int? age;
   @override
-  final num signalStrength;
+  final num? signalStrength;
   @override
-  final num timingAdvance;
+  final num? timingAdvance;
 
-  factory _$CellTower([void Function(CellTowerBuilder) updates]) =>
+  factory _$CellTower([void Function(CellTowerBuilder)? updates]) =>
       (new CellTowerBuilder()..update(updates)).build();
 
   _$CellTower._(
@@ -85,39 +85,39 @@ class _$CellTower extends CellTower {
 }
 
 class CellTowerBuilder implements Builder<CellTower, CellTowerBuilder> {
-  _$CellTower _$v;
+  _$CellTower? _$v;
 
-  int _cellId;
-  int get cellId => _$this._cellId;
-  set cellId(int cellId) => _$this._cellId = cellId;
+  int? _cellId;
+  int? get cellId => _$this._cellId;
+  set cellId(int? cellId) => _$this._cellId = cellId;
 
-  int _locationAreaCode;
-  int get locationAreaCode => _$this._locationAreaCode;
-  set locationAreaCode(int locationAreaCode) =>
+  int? _locationAreaCode;
+  int? get locationAreaCode => _$this._locationAreaCode;
+  set locationAreaCode(int? locationAreaCode) =>
       _$this._locationAreaCode = locationAreaCode;
 
-  int _mobileCountryCode;
-  int get mobileCountryCode => _$this._mobileCountryCode;
-  set mobileCountryCode(int mobileCountryCode) =>
+  int? _mobileCountryCode;
+  int? get mobileCountryCode => _$this._mobileCountryCode;
+  set mobileCountryCode(int? mobileCountryCode) =>
       _$this._mobileCountryCode = mobileCountryCode;
 
-  int _mobileNetworkCode;
-  int get mobileNetworkCode => _$this._mobileNetworkCode;
-  set mobileNetworkCode(int mobileNetworkCode) =>
+  int? _mobileNetworkCode;
+  int? get mobileNetworkCode => _$this._mobileNetworkCode;
+  set mobileNetworkCode(int? mobileNetworkCode) =>
       _$this._mobileNetworkCode = mobileNetworkCode;
 
-  int _age;
-  int get age => _$this._age;
-  set age(int age) => _$this._age = age;
+  int? _age;
+  int? get age => _$this._age;
+  set age(int? age) => _$this._age = age;
 
-  num _signalStrength;
-  num get signalStrength => _$this._signalStrength;
-  set signalStrength(num signalStrength) =>
+  num? _signalStrength;
+  num? get signalStrength => _$this._signalStrength;
+  set signalStrength(num? signalStrength) =>
       _$this._signalStrength = signalStrength;
 
-  num _timingAdvance;
-  num get timingAdvance => _$this._timingAdvance;
-  set timingAdvance(num timingAdvance) => _$this._timingAdvance = timingAdvance;
+  num? _timingAdvance;
+  num? get timingAdvance => _$this._timingAdvance;
+  set timingAdvance(num? timingAdvance) => _$this._timingAdvance = timingAdvance;
 
   CellTowerBuilder() {
     CellTower._initializeBuilder(this);
@@ -145,7 +145,7 @@ class CellTowerBuilder implements Builder<CellTower, CellTowerBuilder> {
   }
 
   @override
-  void update(void Function(CellTowerBuilder) updates) {
+  void update(void Function(CellTowerBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

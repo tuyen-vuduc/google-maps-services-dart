@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'elevation_response.dart';
 
@@ -9,14 +9,14 @@ part of 'elevation_response.dart';
 
 class _$ElevationResponse extends ElevationResponse {
   @override
-  final ElevationStatus status;
+  final ElevationStatus? status;
   @override
-  final BuiltList<ElevationResult> results;
+  final BuiltList<ElevationResult>? results;
   @override
-  final String errorMessage;
+  final String? errorMessage;
 
   factory _$ElevationResponse(
-          [void Function(ElevationResponseBuilder) updates]) =>
+          [void Function(ElevationResponseBuilder)? updates]) =>
       (new ElevationResponseBuilder()..update(updates)).build();
 
   _$ElevationResponse._({this.status, this.results, this.errorMessage})
@@ -57,21 +57,21 @@ class _$ElevationResponse extends ElevationResponse {
 
 class ElevationResponseBuilder
     implements Builder<ElevationResponse, ElevationResponseBuilder> {
-  _$ElevationResponse _$v;
+  _$ElevationResponse? _$v;
 
-  ElevationStatus _status;
-  ElevationStatus get status => _$this._status;
-  set status(ElevationStatus status) => _$this._status = status;
+  ElevationStatus? _status;
+  ElevationStatus? get status => _$this._status;
+  set status(ElevationStatus? status) => _$this._status = status;
 
-  ListBuilder<ElevationResult> _results;
+  ListBuilder<ElevationResult>? _results;
   ListBuilder<ElevationResult> get results =>
       _$this._results ??= new ListBuilder<ElevationResult>();
   set results(ListBuilder<ElevationResult> results) =>
       _$this._results = results;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
   ElevationResponseBuilder() {
     ElevationResponse._initializeBuilder(this);
@@ -95,7 +95,7 @@ class ElevationResponseBuilder
   }
 
   @override
-  void update(void Function(ElevationResponseBuilder) updates) {
+  void update(void Function(ElevationResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -109,7 +109,7 @@ class ElevationResponseBuilder
               results: _results?.build(),
               errorMessage: errorMessage);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'results';
         _results?.build();

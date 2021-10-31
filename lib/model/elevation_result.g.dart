@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'elevation_result.dart';
 
@@ -9,13 +9,13 @@ part of 'elevation_result.dart';
 
 class _$ElevationResult extends ElevationResult {
   @override
-  final num elevation;
+  final num? elevation;
   @override
-  final LatLngLiteral location;
+  final LatLngLiteral? location;
   @override
-  final num resolution;
+  final num? resolution;
 
-  factory _$ElevationResult([void Function(ElevationResultBuilder) updates]) =>
+  factory _$ElevationResult([void Function(ElevationResultBuilder)? updates]) =>
       (new ElevationResultBuilder()..update(updates)).build();
 
   _$ElevationResult._({this.elevation, this.location, this.resolution})
@@ -56,20 +56,20 @@ class _$ElevationResult extends ElevationResult {
 
 class ElevationResultBuilder
     implements Builder<ElevationResult, ElevationResultBuilder> {
-  _$ElevationResult _$v;
+  _$ElevationResult? _$v;
 
-  num _elevation;
-  num get elevation => _$this._elevation;
-  set elevation(num elevation) => _$this._elevation = elevation;
+  num? _elevation;
+  num? get elevation => _$this._elevation;
+  set elevation(num? elevation) => _$this._elevation = elevation;
 
-  LatLngLiteralBuilder _location;
+  LatLngLiteralBuilder? _location;
   LatLngLiteralBuilder get location =>
       _$this._location ??= new LatLngLiteralBuilder();
   set location(LatLngLiteralBuilder location) => _$this._location = location;
 
-  num _resolution;
-  num get resolution => _$this._resolution;
-  set resolution(num resolution) => _$this._resolution = resolution;
+  num? _resolution;
+  num? get resolution => _$this._resolution;
+  set resolution(num? resolution) => _$this._resolution = resolution;
 
   ElevationResultBuilder() {
     ElevationResult._initializeBuilder(this);
@@ -93,7 +93,7 @@ class ElevationResultBuilder
   }
 
   @override
-  void update(void Function(ElevationResultBuilder) updates) {
+  void update(void Function(ElevationResultBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -107,7 +107,7 @@ class ElevationResultBuilder
               location: _location?.build(),
               resolution: resolution);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'location';
         _location?.build();

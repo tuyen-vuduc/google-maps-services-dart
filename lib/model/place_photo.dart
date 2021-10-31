@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -14,24 +14,20 @@ part 'place_photo.g.dart';
 abstract class PlacePhoto implements Built<PlacePhoto, PlacePhotoBuilder> {
 
     /// The height of the photo.
-    @nullable
     @BuiltValueField(wireName: r'height')
-    num get height;
+    num? get height;
 
     /// The width of the photo.
-    @nullable
     @BuiltValueField(wireName: r'width')
-    num get width;
+    num? get width;
 
     /// The HTML attributions for the photo.
-    @nullable
     @BuiltValueField(wireName: r'html_attributions')
-    BuiltList<String> get htmlAttributions;
+    BuiltList<String>? get htmlAttributions;
 
     /// A string used to identify the photo when you perform a Photo request.
-    @nullable
     @BuiltValueField(wireName: r'photo_reference')
-    String get photoReference;
+    String? get photoReference;
 
     PlacePhoto._();
 
@@ -51,9 +47,9 @@ class _$PlacePhotoSerializer implements StructuredSerializer<PlacePhoto> {
     final String wireName = r'PlacePhoto';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlacePhoto object,
+    Iterable<Object?> serialize(Serializers serializers, PlacePhoto object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'height')
             ..add(object.height == null ? null : serializers.serialize(object.height,
@@ -74,23 +70,23 @@ class _$PlacePhotoSerializer implements StructuredSerializer<PlacePhoto> {
     }
 
     @override
-    PlacePhoto deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlacePhoto deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlacePhotoBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'height':
                     result.height = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'width':
                     result.width = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'html_attributions':
                     result.htmlAttributions.replace(serializers.deserialize(value,
@@ -98,7 +94,7 @@ class _$PlacePhotoSerializer implements StructuredSerializer<PlacePhoto> {
                     break;
                 case r'photo_reference':
                     result.photoReference = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

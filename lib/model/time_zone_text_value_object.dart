@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,19 +13,16 @@ part 'time_zone_text_value_object.g.dart';
 abstract class TimeZoneTextValueObject implements Built<TimeZoneTextValueObject, TimeZoneTextValueObjectBuilder> {
 
     /// The time specified as a string in the time zone.
-    @nullable
     @BuiltValueField(wireName: r'text')
-    String get text;
+    String? get text;
 
     /// The time specified as Unix time, or seconds since midnight, January 1, 1970 UTC.
-    @nullable
     @BuiltValueField(wireName: r'value')
-    num get value;
+    num? get value;
 
     /// Contains the time zone. The value is the name of the time zone as defined in the [IANA Time Zone Database](http://www.iana.org/time-zones), e.g. \"America/New_York\".
-    @nullable
     @BuiltValueField(wireName: r'time_zone')
-    String get timeZone;
+    String? get timeZone;
 
     TimeZoneTextValueObject._();
 
@@ -45,9 +42,9 @@ class _$TimeZoneTextValueObjectSerializer implements StructuredSerializer<TimeZo
     final String wireName = r'TimeZoneTextValueObject';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, TimeZoneTextValueObject object,
+    Iterable<Object?> serialize(Serializers serializers, TimeZoneTextValueObject object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'text')
             ..add(object.text == null ? null : serializers.serialize(object.text,
@@ -64,27 +61,27 @@ class _$TimeZoneTextValueObjectSerializer implements StructuredSerializer<TimeZo
     }
 
     @override
-    TimeZoneTextValueObject deserialize(Serializers serializers, Iterable<Object> serialized,
+    TimeZoneTextValueObject deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = TimeZoneTextValueObjectBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'text':
                     result.text = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'value':
                     result.value = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'time_zone':
                     result.timeZone = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

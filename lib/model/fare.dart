@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,19 +13,16 @@ part 'fare.g.dart';
 abstract class Fare implements Built<Fare, FareBuilder> {
 
     /// An [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) indicating the currency that the amount is expressed in.
-    @nullable
     @BuiltValueField(wireName: r'currency')
-    String get currency;
+    String? get currency;
 
     /// The total fare amount, in the currency specified.
-    @nullable
     @BuiltValueField(wireName: r'value')
-    num get value;
+    num? get value;
 
     /// The total fare amount, formatted in the requested language.
-    @nullable
     @BuiltValueField(wireName: r'text')
-    String get text;
+    String? get text;
 
     Fare._();
 
@@ -45,9 +42,9 @@ class _$FareSerializer implements StructuredSerializer<Fare> {
     final String wireName = r'Fare';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, Fare object,
+    Iterable<Object?> serialize(Serializers serializers, Fare object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'currency')
             ..add(object.currency == null ? null : serializers.serialize(object.currency,
@@ -64,27 +61,27 @@ class _$FareSerializer implements StructuredSerializer<Fare> {
     }
 
     @override
-    Fare deserialize(Serializers serializers, Iterable<Object> serialized,
+    Fare deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = FareBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'currency':
                     result.currency = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'value':
                     result.value = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'text':
                     result.text = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

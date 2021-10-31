@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -27,12 +27,12 @@ class RoadsAPIApi {
   /// This service returns individual road segments for a given set of GPS coordinates. This services takes up to 100 GPS points and returns the closest road segment for each point. The points passed do not need to be part of a continuous path.
   Future<Response<NearestRoadsResponse>> nearestRoads(
     BuiltList<String> points, { 
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/v1/nearestRoads',
@@ -87,7 +87,7 @@ class RoadsAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as NearestRoadsResponse;
+    ) as NearestRoadsResponse?;
 
     return Response<NearestRoadsResponse>(
       data: _responseData,
@@ -106,13 +106,13 @@ class RoadsAPIApi {
   /// This service returns the best-fit road geometry for a given set of GPS coordinates. This service takes up to 100 GPS points collected along a route, and returns a similar set of data with the points snapped to the most likely roads the vehicle was traveling along. Optionally, you can request that the points be interpolated, resulting in a path that smoothly follows the geometry of the road.
   Future<Response<SnapToRoadsResponse>> snapToRoads(
     BuiltList<String> path, { 
-    bool interpolate,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    bool? interpolate,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/v1/snapToRoads',
@@ -168,7 +168,7 @@ class RoadsAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as SnapToRoadsResponse;
+    ) as SnapToRoadsResponse?;
 
     return Response<SnapToRoadsResponse>(
       data: _responseData,

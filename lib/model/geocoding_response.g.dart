@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'geocoding_response.dart';
 
@@ -9,16 +9,16 @@ part of 'geocoding_response.dart';
 
 class _$GeocodingResponse extends GeocodingResponse {
   @override
-  final BuiltList<GeocodingResult> results;
+  final BuiltList<GeocodingResult>? results;
   @override
-  final GeocodingStatus status;
+  final GeocodingStatus? status;
   @override
-  final PlusCode plusCode;
+  final PlusCode? plusCode;
   @override
-  final String errorMessage;
+  final String? errorMessage;
 
   factory _$GeocodingResponse(
-          [void Function(GeocodingResponseBuilder) updates]) =>
+          [void Function(GeocodingResponseBuilder)? updates]) =>
       (new GeocodingResponseBuilder()..update(updates)).build();
 
   _$GeocodingResponse._(
@@ -63,25 +63,25 @@ class _$GeocodingResponse extends GeocodingResponse {
 
 class GeocodingResponseBuilder
     implements Builder<GeocodingResponse, GeocodingResponseBuilder> {
-  _$GeocodingResponse _$v;
+  _$GeocodingResponse? _$v;
 
-  ListBuilder<GeocodingResult> _results;
+  ListBuilder<GeocodingResult>? _results;
   ListBuilder<GeocodingResult> get results =>
       _$this._results ??= new ListBuilder<GeocodingResult>();
   set results(ListBuilder<GeocodingResult> results) =>
       _$this._results = results;
 
-  GeocodingStatus _status;
-  GeocodingStatus get status => _$this._status;
-  set status(GeocodingStatus status) => _$this._status = status;
+  GeocodingStatus? _status;
+  GeocodingStatus? get status => _$this._status;
+  set status(GeocodingStatus? status) => _$this._status = status;
 
-  PlusCodeBuilder _plusCode;
+  PlusCodeBuilder? _plusCode;
   PlusCodeBuilder get plusCode => _$this._plusCode ??= new PlusCodeBuilder();
   set plusCode(PlusCodeBuilder plusCode) => _$this._plusCode = plusCode;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
   GeocodingResponseBuilder() {
     GeocodingResponse._initializeBuilder(this);
@@ -106,7 +106,7 @@ class GeocodingResponseBuilder
   }
 
   @override
-  void update(void Function(GeocodingResponseBuilder) updates) {
+  void update(void Function(GeocodingResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -121,7 +121,7 @@ class GeocodingResponseBuilder
               plusCode: _plusCode?.build(),
               errorMessage: errorMessage);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'results';
         _results?.build();

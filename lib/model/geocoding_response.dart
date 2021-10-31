@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -16,23 +16,19 @@ part 'geocoding_response.g.dart';
 
 abstract class GeocodingResponse implements Built<GeocodingResponse, GeocodingResponseBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'results')
-    BuiltList<GeocodingResult> get results;
+    BuiltList<GeocodingResult>? get results;
 
-    @nullable
     @BuiltValueField(wireName: r'status')
-    GeocodingStatus get status;
+    GeocodingStatus? get status;
     // enum statusEnum {  OK,  INVALID_REQUEST,  OVER_DAILY_LIMIT,  OVER_QUERY_LIMIT,  REQUEST_DENIED,  UNKNOWN_ERROR,  ZERO_RESULTS,  };
 
-    @nullable
     @BuiltValueField(wireName: r'plus_code')
-    PlusCode get plusCode;
+    PlusCode? get plusCode;
 
     /// A short description of the error.
-    @nullable
     @BuiltValueField(wireName: r'error_message')
-    String get errorMessage;
+    String? get errorMessage;
 
     GeocodingResponse._();
 
@@ -52,9 +48,9 @@ class _$GeocodingResponseSerializer implements StructuredSerializer<GeocodingRes
     final String wireName = r'GeocodingResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, GeocodingResponse object,
+    Iterable<Object?> serialize(Serializers serializers, GeocodingResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'results')
             ..add(object.results == null ? null : serializers.serialize(object.results,
@@ -79,13 +75,13 @@ class _$GeocodingResponseSerializer implements StructuredSerializer<GeocodingRes
     }
 
     @override
-    GeocodingResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    GeocodingResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = GeocodingResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -95,7 +91,7 @@ class _$GeocodingResponseSerializer implements StructuredSerializer<GeocodingRes
                     break;
                 case r'status':
                     result.status = serializers.deserialize(value,
-                        specifiedType: const FullType(GeocodingStatus)) as GeocodingStatus;
+                        specifiedType: const FullType(GeocodingStatus)) as GeocodingStatus?;
                     break;
                 case r'plus_code':
                     result.plusCode.replace(serializers.deserialize(value,
@@ -103,7 +99,7 @@ class _$GeocodingResponseSerializer implements StructuredSerializer<GeocodingRes
                     break;
                 case r'error_message':
                     result.errorMessage = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
             }
         }

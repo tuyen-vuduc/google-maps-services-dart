@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_transit_details.dart';
 
@@ -9,26 +9,26 @@ part of 'directions_transit_details.dart';
 
 class _$DirectionsTransitDetails extends DirectionsTransitDetails {
   @override
-  final DirectionsTransitStop arrivalStop;
+  final DirectionsTransitStop? arrivalStop;
   @override
-  final TimeZoneTextValueObject arrivalTime;
+  final TimeZoneTextValueObject? arrivalTime;
   @override
-  final DirectionsTransitStop departureStop;
+  final DirectionsTransitStop? departureStop;
   @override
-  final TimeZoneTextValueObject departureTime;
+  final TimeZoneTextValueObject? departureTime;
   @override
-  final String headsign;
+  final String? headsign;
   @override
-  final int headway;
+  final int? headway;
   @override
-  final DirectionsTransitLine line;
+  final DirectionsTransitLine? line;
   @override
-  final int numStops;
+  final int? numStops;
   @override
-  final String tripShortName;
+  final String? tripShortName;
 
   factory _$DirectionsTransitDetails(
-          [void Function(DirectionsTransitDetailsBuilder) updates]) =>
+          [void Function(DirectionsTransitDetailsBuilder)? updates]) =>
       (new DirectionsTransitDetailsBuilder()..update(updates)).build();
 
   _$DirectionsTransitDetails._(
@@ -106,52 +106,52 @@ class _$DirectionsTransitDetails extends DirectionsTransitDetails {
 class DirectionsTransitDetailsBuilder
     implements
         Builder<DirectionsTransitDetails, DirectionsTransitDetailsBuilder> {
-  _$DirectionsTransitDetails _$v;
+  _$DirectionsTransitDetails? _$v;
 
-  DirectionsTransitStopBuilder _arrivalStop;
+  DirectionsTransitStopBuilder? _arrivalStop;
   DirectionsTransitStopBuilder get arrivalStop =>
       _$this._arrivalStop ??= new DirectionsTransitStopBuilder();
   set arrivalStop(DirectionsTransitStopBuilder arrivalStop) =>
       _$this._arrivalStop = arrivalStop;
 
-  TimeZoneTextValueObjectBuilder _arrivalTime;
+  TimeZoneTextValueObjectBuilder? _arrivalTime;
   TimeZoneTextValueObjectBuilder get arrivalTime =>
       _$this._arrivalTime ??= new TimeZoneTextValueObjectBuilder();
   set arrivalTime(TimeZoneTextValueObjectBuilder arrivalTime) =>
       _$this._arrivalTime = arrivalTime;
 
-  DirectionsTransitStopBuilder _departureStop;
+  DirectionsTransitStopBuilder? _departureStop;
   DirectionsTransitStopBuilder get departureStop =>
       _$this._departureStop ??= new DirectionsTransitStopBuilder();
   set departureStop(DirectionsTransitStopBuilder departureStop) =>
       _$this._departureStop = departureStop;
 
-  TimeZoneTextValueObjectBuilder _departureTime;
+  TimeZoneTextValueObjectBuilder? _departureTime;
   TimeZoneTextValueObjectBuilder get departureTime =>
       _$this._departureTime ??= new TimeZoneTextValueObjectBuilder();
   set departureTime(TimeZoneTextValueObjectBuilder departureTime) =>
       _$this._departureTime = departureTime;
 
-  String _headsign;
-  String get headsign => _$this._headsign;
-  set headsign(String headsign) => _$this._headsign = headsign;
+  String? _headsign;
+  String? get headsign => _$this._headsign;
+  set headsign(String? headsign) => _$this._headsign = headsign;
 
-  int _headway;
-  int get headway => _$this._headway;
-  set headway(int headway) => _$this._headway = headway;
+  int? _headway;
+  int? get headway => _$this._headway;
+  set headway(int? headway) => _$this._headway = headway;
 
-  DirectionsTransitLineBuilder _line;
+  DirectionsTransitLineBuilder? _line;
   DirectionsTransitLineBuilder get line =>
       _$this._line ??= new DirectionsTransitLineBuilder();
   set line(DirectionsTransitLineBuilder line) => _$this._line = line;
 
-  int _numStops;
-  int get numStops => _$this._numStops;
-  set numStops(int numStops) => _$this._numStops = numStops;
+  int? _numStops;
+  int? get numStops => _$this._numStops;
+  set numStops(int? numStops) => _$this._numStops = numStops;
 
-  String _tripShortName;
-  String get tripShortName => _$this._tripShortName;
-  set tripShortName(String tripShortName) =>
+  String? _tripShortName;
+  String? get tripShortName => _$this._tripShortName;
+  set tripShortName(String? tripShortName) =>
       _$this._tripShortName = tripShortName;
 
   DirectionsTransitDetailsBuilder() {
@@ -182,7 +182,7 @@ class DirectionsTransitDetailsBuilder
   }
 
   @override
-  void update(void Function(DirectionsTransitDetailsBuilder) updates) {
+  void update(void Function(DirectionsTransitDetailsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -202,7 +202,7 @@ class DirectionsTransitDetailsBuilder
               numStops: numStops,
               tripShortName: tripShortName);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'arrivalStop';
         _arrivalStop?.build();

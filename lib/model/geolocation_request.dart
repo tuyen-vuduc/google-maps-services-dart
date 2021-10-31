@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -16,39 +16,32 @@ part 'geolocation_request.g.dart';
 abstract class GeolocationRequest implements Built<GeolocationRequest, GeolocationRequestBuilder> {
 
     /// The cell tower's Mobile Country Code (MCC).
-    @nullable
     @BuiltValueField(wireName: r'homeMobileCountryCode')
-    int get homeMobileCountryCode;
+    int? get homeMobileCountryCode;
 
     /// The cell tower's Mobile Network Code. This is the MNC for GSM and WCDMA; CDMA uses the System ID (SID).
-    @nullable
     @BuiltValueField(wireName: r'homeMobileNetworkCode')
-    int get homeMobileNetworkCode;
+    int? get homeMobileNetworkCode;
 
     /// The mobile radio type. Supported values are lte, gsm, cdma, and wcdma. While this field is optional, it should be included if a value is available, for more accurate results.
-    @nullable
     @BuiltValueField(wireName: r'radioType')
-    String get radioType;
+    String? get radioType;
 
     /// The carrier name.
-    @nullable
     @BuiltValueField(wireName: r'carrier')
-    String get carrier;
+    String? get carrier;
 
     /// Specifies whether to fall back to IP geolocation if wifi and cell tower signals are not available. Defaults to true. Set considerIp to false to disable fall back.
-    @nullable
     @BuiltValueField(wireName: r'considerIp')
-    String get considerIp;
+    String? get considerIp;
 
     /// The request body's cellTowers array contains zero or more cell tower objects.
-    @nullable
     @BuiltValueField(wireName: r'cellTowers')
-    BuiltList<CellTower> get cellTowers;
+    BuiltList<CellTower>? get cellTowers;
 
     /// An array of two or more WiFi access point objects.
-    @nullable
     @BuiltValueField(wireName: r'wifiAccessPoints')
-    BuiltList<WiFiAccessPoint> get wifiAccessPoints;
+    BuiltList<WiFiAccessPoint>? get wifiAccessPoints;
 
     GeolocationRequest._();
 
@@ -68,9 +61,9 @@ class _$GeolocationRequestSerializer implements StructuredSerializer<Geolocation
     final String wireName = r'GeolocationRequest';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, GeolocationRequest object,
+    Iterable<Object?> serialize(Serializers serializers, GeolocationRequest object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.homeMobileCountryCode != null) {
             result
                 ..add(r'homeMobileCountryCode')
@@ -117,35 +110,35 @@ class _$GeolocationRequestSerializer implements StructuredSerializer<Geolocation
     }
 
     @override
-    GeolocationRequest deserialize(Serializers serializers, Iterable<Object> serialized,
+    GeolocationRequest deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = GeolocationRequestBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'homeMobileCountryCode':
                     result.homeMobileCountryCode = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'homeMobileNetworkCode':
                     result.homeMobileNetworkCode = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'radioType':
                     result.radioType = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'carrier':
                     result.carrier = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'considerIp':
                     result.considerIp = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'cellTowers':
                     result.cellTowers.replace(serializers.deserialize(value,

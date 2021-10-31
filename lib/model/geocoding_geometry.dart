@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -15,23 +15,19 @@ part 'geocoding_geometry.g.dart';
 
 abstract class GeocodingGeometry implements Built<GeocodingGeometry, GeocodingGeometryBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// Stores additional data about the specified location. The following values are currently supported:  - \"ROOFTOP\" indicates that the returned result is a precise geocode for which we have location information accurate down to street address precision. - \"RANGE_INTERPOLATED\" indicates that the returned result reflects an approximation (usually on a road) interpolated between two precise points (such as intersections). Interpolated results are generally returned when rooftop geocodes are unavailable for a street address. - \"GEOMETRIC_CENTER\" indicates that the returned result is the geometric center of a result such as a polyline (for example, a street) or polygon (region). - \"APPROXIMATE\" indicates that the returned result is approximate. 
-    @nullable
     @BuiltValueField(wireName: r'location_type')
-    GeocodingGeometryLocationTypeEnum get locationType;
+    GeocodingGeometryLocationTypeEnum? get locationType;
     // enum locationTypeEnum {  ROOFTOP,  RANGE_INTERPOLATED,  GEOMETRIC_CENTER,  APPROXIMATE,  };
 
-    @nullable
     @BuiltValueField(wireName: r'viewport')
-    Bounds get viewport;
+    Bounds? get viewport;
 
-    @nullable
     @BuiltValueField(wireName: r'bounds')
-    Bounds get bounds;
+    Bounds? get bounds;
 
     GeocodingGeometry._();
 
@@ -51,9 +47,9 @@ class _$GeocodingGeometrySerializer implements StructuredSerializer<GeocodingGeo
     final String wireName = r'GeocodingGeometry';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, GeocodingGeometry object,
+    Iterable<Object?> serialize(Serializers serializers, GeocodingGeometry object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'location')
             ..add(object.location == null ? null : serializers.serialize(object.location,
@@ -76,13 +72,13 @@ class _$GeocodingGeometrySerializer implements StructuredSerializer<GeocodingGeo
     }
 
     @override
-    GeocodingGeometry deserialize(Serializers serializers, Iterable<Object> serialized,
+    GeocodingGeometry deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = GeocodingGeometryBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -92,7 +88,7 @@ class _$GeocodingGeometrySerializer implements StructuredSerializer<GeocodingGeo
                     break;
                 case r'location_type':
                     result.locationType = serializers.deserialize(value,
-                        specifiedType: const FullType(GeocodingGeometryLocationTypeEnum)) as GeocodingGeometryLocationTypeEnum;
+                        specifiedType: const FullType(GeocodingGeometryLocationTypeEnum)) as GeocodingGeometryLocationTypeEnum?;
                     break;
                 case r'viewport':
                     result.viewport.replace(serializers.deserialize(value,

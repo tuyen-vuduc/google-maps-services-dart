@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'error_response.dart';
 
@@ -9,9 +9,9 @@ part of 'error_response.dart';
 
 class _$ErrorResponse extends ErrorResponse {
   @override
-  final ErrorObject error;
+  final ErrorObject? error;
 
-  factory _$ErrorResponse([void Function(ErrorResponseBuilder) updates]) =>
+  factory _$ErrorResponse([void Function(ErrorResponseBuilder)? updates]) =>
       (new ErrorResponseBuilder()..update(updates)).build();
 
   _$ErrorResponse._({this.error}) : super._();
@@ -43,9 +43,9 @@ class _$ErrorResponse extends ErrorResponse {
 
 class ErrorResponseBuilder
     implements Builder<ErrorResponse, ErrorResponseBuilder> {
-  _$ErrorResponse _$v;
+  _$ErrorResponse? _$v;
 
-  ErrorObjectBuilder _error;
+  ErrorObjectBuilder? _error;
   ErrorObjectBuilder get error => _$this._error ??= new ErrorObjectBuilder();
   set error(ErrorObjectBuilder error) => _$this._error = error;
 
@@ -69,7 +69,7 @@ class ErrorResponseBuilder
   }
 
   @override
-  void update(void Function(ErrorResponseBuilder) updates) {
+  void update(void Function(ErrorResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -79,7 +79,7 @@ class ErrorResponseBuilder
     try {
       _$result = _$v ?? new _$ErrorResponse._(error: _error?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'error';
         _error?.build();

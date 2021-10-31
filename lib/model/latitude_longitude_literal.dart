@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'latitude_longitude_literal.g.dart';
 abstract class LatitudeLongitudeLiteral implements Built<LatitudeLongitudeLiteral, LatitudeLongitudeLiteralBuilder> {
 
     /// Latitude in decimal degrees
-    @nullable
     @BuiltValueField(wireName: r'latitude')
-    num get latitude;
+    num? get latitude;
 
     /// Longitude in decimal degrees
-    @nullable
     @BuiltValueField(wireName: r'longitude')
-    num get longitude;
+    num? get longitude;
 
     LatitudeLongitudeLiteral._();
 
@@ -40,9 +38,9 @@ class _$LatitudeLongitudeLiteralSerializer implements StructuredSerializer<Latit
     final String wireName = r'LatitudeLongitudeLiteral';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, LatitudeLongitudeLiteral object,
+    Iterable<Object?> serialize(Serializers serializers, LatitudeLongitudeLiteral object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'latitude')
             ..add(object.latitude == null ? null : serializers.serialize(object.latitude,
@@ -55,23 +53,23 @@ class _$LatitudeLongitudeLiteralSerializer implements StructuredSerializer<Latit
     }
 
     @override
-    LatitudeLongitudeLiteral deserialize(Serializers serializers, Iterable<Object> serialized,
+    LatitudeLongitudeLiteral deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = LatitudeLongitudeLiteralBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'latitude':
                     result.latitude = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
                 case r'longitude':
                     result.longitude = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

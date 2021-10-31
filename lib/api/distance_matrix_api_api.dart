@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -27,22 +27,22 @@ class DistanceMatrixAPIApi {
   Future<Response<DistanceMatrixResponse>> distanceMatrix(
     BuiltList<String> destinations,
     BuiltList<String> origins, { 
-    num arrivalTime,
-    num departureTime,
-    String avoid,
-    String units,
-    String language,
-    TravelMode mode,
-    String region,
-    String trafficModel,
-    String transitMode,
-    String transitRoutingPreference,
-    CancelToken cancelToken,
-    Map<String, dynamic> headers,
-    Map<String, dynamic> extra,
-    ValidateStatus validateStatus,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    num? arrivalTime,
+    num? departureTime,
+    String? avoid,
+    String? units,
+    String? language,
+    TravelMode? mode,
+    String? region,
+    String? trafficModel,
+    String? transitMode,
+    String? transitRoutingPreference,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     final _request = RequestOptions(
       path: r'/maps/api/distanceMatrix/json',
@@ -108,7 +108,7 @@ class DistanceMatrixAPIApi {
     final _responseData = _serializers.deserialize(
       _response.data,
       specifiedType: _responseType,
-    ) as DistanceMatrixResponse;
+    ) as DistanceMatrixResponse?;
 
     return Response<DistanceMatrixResponse>(
       data: _responseData,

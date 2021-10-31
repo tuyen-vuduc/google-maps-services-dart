@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -17,38 +17,31 @@ part 'place_autocomplete_prediction.g.dart';
 abstract class PlaceAutocompletePrediction implements Built<PlaceAutocompletePrediction, PlaceAutocompletePredictionBuilder> {
 
     /// Contains the human-readable name for the returned result. For `establishment` results, this is usually the business name. This content is meant to be read as-is. Do not programmatically parse the formatted address.
-    @nullable
     @BuiltValueField(wireName: r'description')
-    String get description;
+    String? get description;
 
     /// A list of substrings that describe the location of the entered term in the prediction result text, so that the term can be highlighted if desired.
-    @nullable
     @BuiltValueField(wireName: r'matched_substrings')
-    BuiltList<PlaceAutocompleteMatchedSubstring> get matchedSubstrings;
+    BuiltList<PlaceAutocompleteMatchedSubstring>? get matchedSubstrings;
 
-    @nullable
     @BuiltValueField(wireName: r'structured_formatting')
-    PlaceAutocompleteStructuredFormat get structuredFormatting;
+    PlaceAutocompleteStructuredFormat? get structuredFormatting;
 
     /// Contains an array of terms identifying each section of the returned description (a section of the description is generally terminated with a comma). Each entry in the array has a `value` field, containing the text of the term, and an `offset` field, defining the start position of this term in the description, measured in Unicode characters.
-    @nullable
     @BuiltValueField(wireName: r'terms')
-    BuiltList<PlaceAutocompleteTerm> get terms;
+    BuiltList<PlaceAutocompleteTerm>? get terms;
 
     /// A textual identifier that uniquely identifies a place. To retrieve information about the place, pass this identifier in the placeId field of a Places API request. For more information about place IDs, see the [Place IDs](https://developers.google.com/maps/documentation/places/web-service/place-id) overview.
-    @nullable
     @BuiltValueField(wireName: r'place_id')
-    String get placeId;
+    String? get placeId;
 
     /// (Deprecated) See place_id.
-    @nullable
     @BuiltValueField(wireName: r'reference')
-    String get reference;
+    String? get reference;
 
     /// Contains an array of types that apply to this place. For example: `[ \"political\", \"locality\" ]` or `[ \"establishment\", \"geocode\", \"beauty_salon\" ]`. The array can contain multiple values. Learn more about [Place types](https://developers.google.com/maps/documentation/places/web-service/supported_types). 
-    @nullable
     @BuiltValueField(wireName: r'types')
-    BuiltList<String> get types;
+    BuiltList<String>? get types;
 
     PlaceAutocompletePrediction._();
 
@@ -68,9 +61,9 @@ class _$PlaceAutocompletePredictionSerializer implements StructuredSerializer<Pl
     final String wireName = r'PlaceAutocompletePrediction';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, PlaceAutocompletePrediction object,
+    Iterable<Object?> serialize(Serializers serializers, PlaceAutocompletePrediction object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'description')
             ..add(object.description == null ? null : serializers.serialize(object.description,
@@ -109,19 +102,19 @@ class _$PlaceAutocompletePredictionSerializer implements StructuredSerializer<Pl
     }
 
     @override
-    PlaceAutocompletePrediction deserialize(Serializers serializers, Iterable<Object> serialized,
+    PlaceAutocompletePrediction deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = PlaceAutocompletePredictionBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'description':
                     result.description = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'matched_substrings':
                     result.matchedSubstrings.replace(serializers.deserialize(value,
@@ -137,11 +130,11 @@ class _$PlaceAutocompletePredictionSerializer implements StructuredSerializer<Pl
                     break;
                 case r'place_id':
                     result.placeId = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'reference':
                     result.reference = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'types':
                     result.types.replace(serializers.deserialize(value,

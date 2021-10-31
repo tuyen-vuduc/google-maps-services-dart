@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'distance_matrix_element.dart';
 
@@ -9,18 +9,18 @@ part of 'distance_matrix_element.dart';
 
 class _$DistanceMatrixElement extends DistanceMatrixElement {
   @override
-  final DistanceMatrixElementStatus status;
+  final DistanceMatrixElementStatus? status;
   @override
-  final Fare fare;
+  final Fare? fare;
   @override
-  final TextValueObject distance;
+  final TextValueObject? distance;
   @override
-  final TextValueObject durationInTraffic;
+  final TextValueObject? durationInTraffic;
   @override
-  final TextValueObject duration;
+  final TextValueObject? duration;
 
   factory _$DistanceMatrixElement(
-          [void Function(DistanceMatrixElementBuilder) updates]) =>
+          [void Function(DistanceMatrixElementBuilder)? updates]) =>
       (new DistanceMatrixElementBuilder()..update(updates)).build();
 
   _$DistanceMatrixElement._(
@@ -73,28 +73,28 @@ class _$DistanceMatrixElement extends DistanceMatrixElement {
 
 class DistanceMatrixElementBuilder
     implements Builder<DistanceMatrixElement, DistanceMatrixElementBuilder> {
-  _$DistanceMatrixElement _$v;
+  _$DistanceMatrixElement? _$v;
 
-  DistanceMatrixElementStatus _status;
-  DistanceMatrixElementStatus get status => _$this._status;
-  set status(DistanceMatrixElementStatus status) => _$this._status = status;
+  DistanceMatrixElementStatus? _status;
+  DistanceMatrixElementStatus? get status => _$this._status;
+  set status(DistanceMatrixElementStatus? status) => _$this._status = status;
 
-  FareBuilder _fare;
+  FareBuilder? _fare;
   FareBuilder get fare => _$this._fare ??= new FareBuilder();
   set fare(FareBuilder fare) => _$this._fare = fare;
 
-  TextValueObjectBuilder _distance;
+  TextValueObjectBuilder? _distance;
   TextValueObjectBuilder get distance =>
       _$this._distance ??= new TextValueObjectBuilder();
   set distance(TextValueObjectBuilder distance) => _$this._distance = distance;
 
-  TextValueObjectBuilder _durationInTraffic;
+  TextValueObjectBuilder? _durationInTraffic;
   TextValueObjectBuilder get durationInTraffic =>
       _$this._durationInTraffic ??= new TextValueObjectBuilder();
   set durationInTraffic(TextValueObjectBuilder durationInTraffic) =>
       _$this._durationInTraffic = durationInTraffic;
 
-  TextValueObjectBuilder _duration;
+  TextValueObjectBuilder? _duration;
   TextValueObjectBuilder get duration =>
       _$this._duration ??= new TextValueObjectBuilder();
   set duration(TextValueObjectBuilder duration) => _$this._duration = duration;
@@ -123,7 +123,7 @@ class DistanceMatrixElementBuilder
   }
 
   @override
-  void update(void Function(DistanceMatrixElementBuilder) updates) {
+  void update(void Function(DistanceMatrixElementBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -139,7 +139,7 @@ class DistanceMatrixElementBuilder
               durationInTraffic: _durationInTraffic?.build(),
               duration: _duration?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'fare';
         _fare?.build();

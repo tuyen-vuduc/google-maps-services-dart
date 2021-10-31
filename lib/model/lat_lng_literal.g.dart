@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'lat_lng_literal.dart';
 
@@ -9,11 +9,11 @@ part of 'lat_lng_literal.dart';
 
 class _$LatLngLiteral extends LatLngLiteral {
   @override
-  final num lat;
+  final num? lat;
   @override
-  final num lng;
+  final num? lng;
 
-  factory _$LatLngLiteral([void Function(LatLngLiteralBuilder) updates]) =>
+  factory _$LatLngLiteral([void Function(LatLngLiteralBuilder)? updates]) =>
       (new LatLngLiteralBuilder()..update(updates)).build();
 
   _$LatLngLiteral._({this.lat, this.lng}) : super._();
@@ -47,15 +47,15 @@ class _$LatLngLiteral extends LatLngLiteral {
 
 class LatLngLiteralBuilder
     implements Builder<LatLngLiteral, LatLngLiteralBuilder> {
-  _$LatLngLiteral _$v;
+  _$LatLngLiteral? _$v;
 
-  num _lat;
-  num get lat => _$this._lat;
-  set lat(num lat) => _$this._lat = lat;
+  num? _lat;
+  num? get lat => _$this._lat;
+  set lat(num? lat) => _$this._lat = lat;
 
-  num _lng;
-  num get lng => _$this._lng;
-  set lng(num lng) => _$this._lng = lng;
+  num? _lng;
+  num? get lng => _$this._lng;
+  set lng(num? lng) => _$this._lng = lng;
 
   LatLngLiteralBuilder() {
     LatLngLiteral._initializeBuilder(this);
@@ -78,7 +78,7 @@ class LatLngLiteralBuilder
   }
 
   @override
-  void update(void Function(LatLngLiteralBuilder) updates) {
+  void update(void Function(LatLngLiteralBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

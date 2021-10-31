@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'fare.dart';
 
@@ -9,13 +9,13 @@ part of 'fare.dart';
 
 class _$Fare extends Fare {
   @override
-  final String currency;
+  final String? currency;
   @override
-  final num value;
+  final num? value;
   @override
-  final String text;
+  final String? text;
 
-  factory _$Fare([void Function(FareBuilder) updates]) =>
+  factory _$Fare([void Function(FareBuilder)? updates]) =>
       (new FareBuilder()..update(updates)).build();
 
   _$Fare._({this.currency, this.value, this.text}) : super._();
@@ -53,19 +53,19 @@ class _$Fare extends Fare {
 }
 
 class FareBuilder implements Builder<Fare, FareBuilder> {
-  _$Fare _$v;
+  _$Fare? _$v;
 
-  String _currency;
-  String get currency => _$this._currency;
-  set currency(String currency) => _$this._currency = currency;
+  String? _currency;
+  String? get currency => _$this._currency;
+  set currency(String? currency) => _$this._currency = currency;
 
-  num _value;
-  num get value => _$this._value;
-  set value(num value) => _$this._value = value;
+  num? _value;
+  num? get value => _$this._value;
+  set value(num? value) => _$this._value = value;
 
-  String _text;
-  String get text => _$this._text;
-  set text(String text) => _$this._text = text;
+  String? _text;
+  String? get text => _$this._text;
+  set text(String? text) => _$this._text = text;
 
   FareBuilder() {
     Fare._initializeBuilder(this);
@@ -89,7 +89,7 @@ class FareBuilder implements Builder<Fare, FareBuilder> {
   }
 
   @override
-  void update(void Function(FareBuilder) updates) {
+  void update(void Function(FareBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

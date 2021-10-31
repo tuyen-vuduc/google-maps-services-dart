@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,29 +13,24 @@ part 'wi_fi_access_point.g.dart';
 abstract class WiFiAccessPoint implements Built<WiFiAccessPoint, WiFiAccessPointBuilder> {
 
     /// The MAC address of the WiFi node. It's typically called a BSS, BSSID or MAC address. Separators must be `:` (colon).
-    @nullable
     @BuiltValueField(wireName: r'macAddress')
-    String get macAddress;
+    String? get macAddress;
 
     /// The current signal strength measured in dBm.
-    @nullable
     @BuiltValueField(wireName: r'signalStrength')
-    int get signalStrength;
+    int? get signalStrength;
 
     /// The current signal to noise ratio measured in dB.
-    @nullable
     @BuiltValueField(wireName: r'signalToNoiseRatio')
-    int get signalToNoiseRatio;
+    int? get signalToNoiseRatio;
 
     /// The number of milliseconds since this access point was detected.
-    @nullable
     @BuiltValueField(wireName: r'age')
-    int get age;
+    int? get age;
 
     /// The channel over which the client is communication with the access point.
-    @nullable
     @BuiltValueField(wireName: r'channel')
-    int get channel;
+    int? get channel;
 
     WiFiAccessPoint._();
 
@@ -55,9 +50,9 @@ class _$WiFiAccessPointSerializer implements StructuredSerializer<WiFiAccessPoin
     final String wireName = r'WiFiAccessPoint';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, WiFiAccessPoint object,
+    Iterable<Object?> serialize(Serializers serializers, WiFiAccessPoint object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'macAddress')
             ..add(object.macAddress == null ? null : serializers.serialize(object.macAddress,
@@ -90,35 +85,35 @@ class _$WiFiAccessPointSerializer implements StructuredSerializer<WiFiAccessPoin
     }
 
     @override
-    WiFiAccessPoint deserialize(Serializers serializers, Iterable<Object> serialized,
+    WiFiAccessPoint deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = WiFiAccessPointBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'macAddress':
                     result.macAddress = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'signalStrength':
                     result.signalStrength = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'signalToNoiseRatio':
                     result.signalToNoiseRatio = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'age':
                     result.age = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'channel':
                     result.channel = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
             }
         }

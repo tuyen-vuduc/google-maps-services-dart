@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,14 +13,12 @@ part 'directions_traffic_speed_entry.g.dart';
 abstract class DirectionsTrafficSpeedEntry implements Built<DirectionsTrafficSpeedEntry, DirectionsTrafficSpeedEntryBuilder> {
 
     /// The current traffic/speed conditions on this portion of a path.
-    @nullable
     @BuiltValueField(wireName: r'speed_category')
-    String get speedCategory;
+    String? get speedCategory;
 
     /// The offset along the path (in meters) up to which this speed category is valid.
-    @nullable
     @BuiltValueField(wireName: r'offset_meters')
-    num get offsetMeters;
+    num? get offsetMeters;
 
     DirectionsTrafficSpeedEntry._();
 
@@ -40,9 +38,9 @@ class _$DirectionsTrafficSpeedEntrySerializer implements StructuredSerializer<Di
     final String wireName = r'DirectionsTrafficSpeedEntry';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsTrafficSpeedEntry object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsTrafficSpeedEntry object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         result
             ..add(r'speed_category')
             ..add(object.speedCategory == null ? null : serializers.serialize(object.speedCategory,
@@ -55,23 +53,23 @@ class _$DirectionsTrafficSpeedEntrySerializer implements StructuredSerializer<Di
     }
 
     @override
-    DirectionsTrafficSpeedEntry deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsTrafficSpeedEntry deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsTrafficSpeedEntryBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
                 case r'speed_category':
                     result.speedCategory = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(String)) as String?;
                     break;
                 case r'offset_meters':
                     result.offsetMeters = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }

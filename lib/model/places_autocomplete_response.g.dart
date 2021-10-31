@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'places_autocomplete_response.dart';
 
@@ -9,16 +9,16 @@ part of 'places_autocomplete_response.dart';
 
 class _$PlacesAutocompleteResponse extends PlacesAutocompleteResponse {
   @override
-  final BuiltList<PlaceAutocompletePrediction> predictions;
+  final BuiltList<PlaceAutocompletePrediction>? predictions;
   @override
-  final PlacesAutocompleteStatus status;
+  final PlacesAutocompleteStatus? status;
   @override
-  final String errorMessage;
+  final String? errorMessage;
   @override
-  final BuiltList<String> infoMessages;
+  final BuiltList<String>? infoMessages;
 
   factory _$PlacesAutocompleteResponse(
-          [void Function(PlacesAutocompleteResponseBuilder) updates]) =>
+          [void Function(PlacesAutocompleteResponseBuilder)? updates]) =>
       (new PlacesAutocompleteResponseBuilder()..update(updates)).build();
 
   _$PlacesAutocompleteResponse._(
@@ -66,23 +66,23 @@ class _$PlacesAutocompleteResponse extends PlacesAutocompleteResponse {
 class PlacesAutocompleteResponseBuilder
     implements
         Builder<PlacesAutocompleteResponse, PlacesAutocompleteResponseBuilder> {
-  _$PlacesAutocompleteResponse _$v;
+  _$PlacesAutocompleteResponse? _$v;
 
-  ListBuilder<PlaceAutocompletePrediction> _predictions;
+  ListBuilder<PlaceAutocompletePrediction>? _predictions;
   ListBuilder<PlaceAutocompletePrediction> get predictions =>
       _$this._predictions ??= new ListBuilder<PlaceAutocompletePrediction>();
   set predictions(ListBuilder<PlaceAutocompletePrediction> predictions) =>
       _$this._predictions = predictions;
 
-  PlacesAutocompleteStatus _status;
-  PlacesAutocompleteStatus get status => _$this._status;
-  set status(PlacesAutocompleteStatus status) => _$this._status = status;
+  PlacesAutocompleteStatus? _status;
+  PlacesAutocompleteStatus? get status => _$this._status;
+  set status(PlacesAutocompleteStatus? status) => _$this._status = status;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
-  ListBuilder<String> _infoMessages;
+  ListBuilder<String>? _infoMessages;
   ListBuilder<String> get infoMessages =>
       _$this._infoMessages ??= new ListBuilder<String>();
   set infoMessages(ListBuilder<String> infoMessages) =>
@@ -111,7 +111,7 @@ class PlacesAutocompleteResponseBuilder
   }
 
   @override
-  void update(void Function(PlacesAutocompleteResponseBuilder) updates) {
+  void update(void Function(PlacesAutocompleteResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -126,7 +126,7 @@ class PlacesAutocompleteResponseBuilder
               errorMessage: errorMessage,
               infoMessages: _infoMessages?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'predictions';
         _predictions?.build();

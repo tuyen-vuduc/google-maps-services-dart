@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'latitude_longitude_literal.dart';
 
@@ -9,12 +9,12 @@ part of 'latitude_longitude_literal.dart';
 
 class _$LatitudeLongitudeLiteral extends LatitudeLongitudeLiteral {
   @override
-  final num latitude;
+  final num? latitude;
   @override
-  final num longitude;
+  final num? longitude;
 
   factory _$LatitudeLongitudeLiteral(
-          [void Function(LatitudeLongitudeLiteralBuilder) updates]) =>
+          [void Function(LatitudeLongitudeLiteralBuilder)? updates]) =>
       (new LatitudeLongitudeLiteralBuilder()..update(updates)).build();
 
   _$LatitudeLongitudeLiteral._({this.latitude, this.longitude}) : super._();
@@ -53,15 +53,15 @@ class _$LatitudeLongitudeLiteral extends LatitudeLongitudeLiteral {
 class LatitudeLongitudeLiteralBuilder
     implements
         Builder<LatitudeLongitudeLiteral, LatitudeLongitudeLiteralBuilder> {
-  _$LatitudeLongitudeLiteral _$v;
+  _$LatitudeLongitudeLiteral? _$v;
 
-  num _latitude;
-  num get latitude => _$this._latitude;
-  set latitude(num latitude) => _$this._latitude = latitude;
+  num? _latitude;
+  num? get latitude => _$this._latitude;
+  set latitude(num? latitude) => _$this._latitude = latitude;
 
-  num _longitude;
-  num get longitude => _$this._longitude;
-  set longitude(num longitude) => _$this._longitude = longitude;
+  num? _longitude;
+  num? get longitude => _$this._longitude;
+  set longitude(num? longitude) => _$this._longitude = longitude;
 
   LatitudeLongitudeLiteralBuilder() {
     LatitudeLongitudeLiteral._initializeBuilder(this);
@@ -84,7 +84,7 @@ class LatitudeLongitudeLiteralBuilder
   }
 
   @override
-  void update(void Function(LatitudeLongitudeLiteralBuilder) updates) {
+  void update(void Function(LatitudeLongitudeLiteralBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

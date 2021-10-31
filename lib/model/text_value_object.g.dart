@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'text_value_object.dart';
 
@@ -9,11 +9,11 @@ part of 'text_value_object.dart';
 
 class _$TextValueObject extends TextValueObject {
   @override
-  final String text;
+  final String? text;
   @override
-  final num value;
+  final num? value;
 
-  factory _$TextValueObject([void Function(TextValueObjectBuilder) updates]) =>
+  factory _$TextValueObject([void Function(TextValueObjectBuilder)? updates]) =>
       (new TextValueObjectBuilder()..update(updates)).build();
 
   _$TextValueObject._({this.text, this.value}) : super._();
@@ -50,15 +50,15 @@ class _$TextValueObject extends TextValueObject {
 
 class TextValueObjectBuilder
     implements Builder<TextValueObject, TextValueObjectBuilder> {
-  _$TextValueObject _$v;
+  _$TextValueObject? _$v;
 
-  String _text;
-  String get text => _$this._text;
-  set text(String text) => _$this._text = text;
+  String? _text;
+  String? get text => _$this._text;
+  set text(String? text) => _$this._text = text;
 
-  num _value;
-  num get value => _$this._value;
-  set value(num value) => _$this._value = value;
+  num? _value;
+  num? get value => _$this._value;
+  set value(num? value) => _$this._value = value;
 
   TextValueObjectBuilder() {
     TextValueObject._initializeBuilder(this);
@@ -81,7 +81,7 @@ class TextValueObjectBuilder
   }
 
   @override
-  void update(void Function(TextValueObjectBuilder) updates) {
+  void update(void Function(TextValueObjectBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

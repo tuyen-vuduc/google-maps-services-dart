@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'wi_fi_access_point.dart';
 
@@ -9,17 +9,17 @@ part of 'wi_fi_access_point.dart';
 
 class _$WiFiAccessPoint extends WiFiAccessPoint {
   @override
-  final String macAddress;
+  final String? macAddress;
   @override
-  final int signalStrength;
+  final int? signalStrength;
   @override
-  final int signalToNoiseRatio;
+  final int? signalToNoiseRatio;
   @override
-  final int age;
+  final int? age;
   @override
-  final int channel;
+  final int? channel;
 
-  factory _$WiFiAccessPoint([void Function(WiFiAccessPointBuilder) updates]) =>
+  factory _$WiFiAccessPoint([void Function(WiFiAccessPointBuilder)? updates]) =>
       (new WiFiAccessPointBuilder()..update(updates)).build();
 
   _$WiFiAccessPoint._(
@@ -73,29 +73,29 @@ class _$WiFiAccessPoint extends WiFiAccessPoint {
 
 class WiFiAccessPointBuilder
     implements Builder<WiFiAccessPoint, WiFiAccessPointBuilder> {
-  _$WiFiAccessPoint _$v;
+  _$WiFiAccessPoint? _$v;
 
-  String _macAddress;
-  String get macAddress => _$this._macAddress;
-  set macAddress(String macAddress) => _$this._macAddress = macAddress;
+  String? _macAddress;
+  String? get macAddress => _$this._macAddress;
+  set macAddress(String? macAddress) => _$this._macAddress = macAddress;
 
-  int _signalStrength;
-  int get signalStrength => _$this._signalStrength;
-  set signalStrength(int signalStrength) =>
+  int? _signalStrength;
+  int? get signalStrength => _$this._signalStrength;
+  set signalStrength(int? signalStrength) =>
       _$this._signalStrength = signalStrength;
 
-  int _signalToNoiseRatio;
-  int get signalToNoiseRatio => _$this._signalToNoiseRatio;
-  set signalToNoiseRatio(int signalToNoiseRatio) =>
+  int? _signalToNoiseRatio;
+  int? get signalToNoiseRatio => _$this._signalToNoiseRatio;
+  set signalToNoiseRatio(int? signalToNoiseRatio) =>
       _$this._signalToNoiseRatio = signalToNoiseRatio;
 
-  int _age;
-  int get age => _$this._age;
-  set age(int age) => _$this._age = age;
+  int? _age;
+  int? get age => _$this._age;
+  set age(int? age) => _$this._age = age;
 
-  int _channel;
-  int get channel => _$this._channel;
-  set channel(int channel) => _$this._channel = channel;
+  int? _channel;
+  int? get channel => _$this._channel;
+  set channel(int? channel) => _$this._channel = channel;
 
   WiFiAccessPointBuilder() {
     WiFiAccessPoint._initializeBuilder(this);
@@ -121,7 +121,7 @@ class WiFiAccessPointBuilder
   }
 
   @override
-  void update(void Function(WiFiAccessPointBuilder) updates) {
+  void update(void Function(WiFiAccessPointBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'directions_polyline.dart';
 
@@ -9,10 +9,10 @@ part of 'directions_polyline.dart';
 
 class _$DirectionsPolyline extends DirectionsPolyline {
   @override
-  final String points;
+  final String? points;
 
   factory _$DirectionsPolyline(
-          [void Function(DirectionsPolylineBuilder) updates]) =>
+          [void Function(DirectionsPolylineBuilder)? updates]) =>
       (new DirectionsPolylineBuilder()..update(updates)).build();
 
   _$DirectionsPolyline._({this.points}) : super._();
@@ -47,11 +47,11 @@ class _$DirectionsPolyline extends DirectionsPolyline {
 
 class DirectionsPolylineBuilder
     implements Builder<DirectionsPolyline, DirectionsPolylineBuilder> {
-  _$DirectionsPolyline _$v;
+  _$DirectionsPolyline? _$v;
 
-  String _points;
-  String get points => _$this._points;
-  set points(String points) => _$this._points = points;
+  String? _points;
+  String? get points => _$this._points;
+  set points(String? points) => _$this._points = points;
 
   DirectionsPolylineBuilder() {
     DirectionsPolyline._initializeBuilder(this);
@@ -73,7 +73,7 @@ class DirectionsPolylineBuilder
   }
 
   @override
-  void update(void Function(DirectionsPolylineBuilder) updates) {
+  void update(void Function(DirectionsPolylineBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

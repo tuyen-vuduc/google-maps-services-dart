@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'bounds.dart';
 
@@ -9,11 +9,11 @@ part of 'bounds.dart';
 
 class _$Bounds extends Bounds {
   @override
-  final LatLngLiteral northeast;
+  final LatLngLiteral? northeast;
   @override
-  final LatLngLiteral southwest;
+  final LatLngLiteral? southwest;
 
-  factory _$Bounds([void Function(BoundsBuilder) updates]) =>
+  factory _$Bounds([void Function(BoundsBuilder)? updates]) =>
       (new BoundsBuilder()..update(updates)).build();
 
   _$Bounds._({this.northeast, this.southwest}) : super._();
@@ -48,15 +48,15 @@ class _$Bounds extends Bounds {
 }
 
 class BoundsBuilder implements Builder<Bounds, BoundsBuilder> {
-  _$Bounds _$v;
+  _$Bounds? _$v;
 
-  LatLngLiteralBuilder _northeast;
+  LatLngLiteralBuilder? _northeast;
   LatLngLiteralBuilder get northeast =>
       _$this._northeast ??= new LatLngLiteralBuilder();
   set northeast(LatLngLiteralBuilder northeast) =>
       _$this._northeast = northeast;
 
-  LatLngLiteralBuilder _southwest;
+  LatLngLiteralBuilder? _southwest;
   LatLngLiteralBuilder get southwest =>
       _$this._southwest ??= new LatLngLiteralBuilder();
   set southwest(LatLngLiteralBuilder southwest) =>
@@ -83,7 +83,7 @@ class BoundsBuilder implements Builder<Bounds, BoundsBuilder> {
   }
 
   @override
-  void update(void Function(BoundsBuilder) updates) {
+  void update(void Function(BoundsBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -95,7 +95,7 @@ class BoundsBuilder implements Builder<Bounds, BoundsBuilder> {
           new _$Bounds._(
               northeast: _northeast?.build(), southwest: _southwest?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'northeast';
         _northeast?.build();

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'error_detail.dart';
 
@@ -156,13 +156,13 @@ class _$ErrorDetailDomainEnumSerializer
 
 class _$ErrorDetail extends ErrorDetail {
   @override
-  final String message;
+  final String? message;
   @override
-  final ErrorDetailReasonEnum reason;
+  final ErrorDetailReasonEnum? reason;
   @override
-  final ErrorDetailDomainEnum domain;
+  final ErrorDetailDomainEnum? domain;
 
-  factory _$ErrorDetail([void Function(ErrorDetailBuilder) updates]) =>
+  factory _$ErrorDetail([void Function(ErrorDetailBuilder)? updates]) =>
       (new ErrorDetailBuilder()..update(updates)).build();
 
   _$ErrorDetail._({this.message, this.reason, this.domain}) : super._();
@@ -200,19 +200,19 @@ class _$ErrorDetail extends ErrorDetail {
 }
 
 class ErrorDetailBuilder implements Builder<ErrorDetail, ErrorDetailBuilder> {
-  _$ErrorDetail _$v;
+  _$ErrorDetail? _$v;
 
-  String _message;
-  String get message => _$this._message;
-  set message(String message) => _$this._message = message;
+  String? _message;
+  String? get message => _$this._message;
+  set message(String? message) => _$this._message = message;
 
-  ErrorDetailReasonEnum _reason;
-  ErrorDetailReasonEnum get reason => _$this._reason;
-  set reason(ErrorDetailReasonEnum reason) => _$this._reason = reason;
+  ErrorDetailReasonEnum? _reason;
+  ErrorDetailReasonEnum? get reason => _$this._reason;
+  set reason(ErrorDetailReasonEnum? reason) => _$this._reason = reason;
 
-  ErrorDetailDomainEnum _domain;
-  ErrorDetailDomainEnum get domain => _$this._domain;
-  set domain(ErrorDetailDomainEnum domain) => _$this._domain = domain;
+  ErrorDetailDomainEnum? _domain;
+  ErrorDetailDomainEnum? get domain => _$this._domain;
+  set domain(ErrorDetailDomainEnum? domain) => _$this._domain = domain;
 
   ErrorDetailBuilder() {
     ErrorDetail._initializeBuilder(this);
@@ -236,7 +236,7 @@ class ErrorDetailBuilder implements Builder<ErrorDetail, ErrorDetailBuilder> {
   }
 
   @override
-  void update(void Function(ErrorDetailBuilder) updates) {
+  void update(void Function(ErrorDetailBuilder)? updates) {
     if (updates != null) updates(this);
   }
 

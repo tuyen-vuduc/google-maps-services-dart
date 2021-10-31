@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,9 +13,8 @@ part 'nearest_roads_error_response.g.dart';
 
 abstract class NearestRoadsErrorResponse implements Built<NearestRoadsErrorResponse, NearestRoadsErrorResponseBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'error')
-    NearestRoadsError get error;
+    NearestRoadsError? get error;
 
     NearestRoadsErrorResponse._();
 
@@ -35,9 +34,9 @@ class _$NearestRoadsErrorResponseSerializer implements StructuredSerializer<Near
     final String wireName = r'NearestRoadsErrorResponse';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, NearestRoadsErrorResponse object,
+    Iterable<Object?> serialize(Serializers serializers, NearestRoadsErrorResponse object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.error != null) {
             result
                 ..add(r'error')
@@ -48,13 +47,13 @@ class _$NearestRoadsErrorResponseSerializer implements StructuredSerializer<Near
     }
 
     @override
-    NearestRoadsErrorResponse deserialize(Serializers serializers, Iterable<Object> serialized,
+    NearestRoadsErrorResponse deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = NearestRoadsErrorResponseBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {

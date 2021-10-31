@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'inline_response200.dart';
 
@@ -9,14 +9,14 @@ part of 'inline_response200.dart';
 
 class _$InlineResponse200 extends InlineResponse200 {
   @override
-  final ElevationStatus status;
+  final ElevationStatus? status;
   @override
-  final BuiltList<InlineResponse200Results> results;
+  final BuiltList<InlineResponse200Results>? results;
   @override
-  final String errorMessage;
+  final String? errorMessage;
 
   factory _$InlineResponse200(
-          [void Function(InlineResponse200Builder) updates]) =>
+          [void Function(InlineResponse200Builder)? updates]) =>
       (new InlineResponse200Builder()..update(updates)).build();
 
   _$InlineResponse200._({this.status, this.results, this.errorMessage})
@@ -57,21 +57,21 @@ class _$InlineResponse200 extends InlineResponse200 {
 
 class InlineResponse200Builder
     implements Builder<InlineResponse200, InlineResponse200Builder> {
-  _$InlineResponse200 _$v;
+  _$InlineResponse200? _$v;
 
-  ElevationStatus _status;
-  ElevationStatus get status => _$this._status;
-  set status(ElevationStatus status) => _$this._status = status;
+  ElevationStatus? _status;
+  ElevationStatus? get status => _$this._status;
+  set status(ElevationStatus? status) => _$this._status = status;
 
-  ListBuilder<InlineResponse200Results> _results;
+  ListBuilder<InlineResponse200Results>? _results;
   ListBuilder<InlineResponse200Results> get results =>
       _$this._results ??= new ListBuilder<InlineResponse200Results>();
   set results(ListBuilder<InlineResponse200Results> results) =>
       _$this._results = results;
 
-  String _errorMessage;
-  String get errorMessage => _$this._errorMessage;
-  set errorMessage(String errorMessage) => _$this._errorMessage = errorMessage;
+  String? _errorMessage;
+  String? get errorMessage => _$this._errorMessage;
+  set errorMessage(String? errorMessage) => _$this._errorMessage = errorMessage;
 
   InlineResponse200Builder() {
     InlineResponse200._initializeBuilder(this);
@@ -95,7 +95,7 @@ class InlineResponse200Builder
   }
 
   @override
-  void update(void Function(InlineResponse200Builder) updates) {
+  void update(void Function(InlineResponse200Builder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -109,7 +109,7 @@ class InlineResponse200Builder
               results: _results?.build(),
               errorMessage: errorMessage);
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'results';
         _results?.build();

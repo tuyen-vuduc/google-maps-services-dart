@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'nearest_roads_error_response.dart';
 
@@ -9,10 +9,10 @@ part of 'nearest_roads_error_response.dart';
 
 class _$NearestRoadsErrorResponse extends NearestRoadsErrorResponse {
   @override
-  final NearestRoadsError error;
+  final NearestRoadsError? error;
 
   factory _$NearestRoadsErrorResponse(
-          [void Function(NearestRoadsErrorResponseBuilder) updates]) =>
+          [void Function(NearestRoadsErrorResponseBuilder)? updates]) =>
       (new NearestRoadsErrorResponseBuilder()..update(updates)).build();
 
   _$NearestRoadsErrorResponse._({this.error}) : super._();
@@ -48,9 +48,9 @@ class _$NearestRoadsErrorResponse extends NearestRoadsErrorResponse {
 class NearestRoadsErrorResponseBuilder
     implements
         Builder<NearestRoadsErrorResponse, NearestRoadsErrorResponseBuilder> {
-  _$NearestRoadsErrorResponse _$v;
+  _$NearestRoadsErrorResponse? _$v;
 
-  NearestRoadsErrorBuilder _error;
+  NearestRoadsErrorBuilder? _error;
   NearestRoadsErrorBuilder get error =>
       _$this._error ??= new NearestRoadsErrorBuilder();
   set error(NearestRoadsErrorBuilder error) => _$this._error = error;
@@ -75,7 +75,7 @@ class NearestRoadsErrorResponseBuilder
   }
 
   @override
-  void update(void Function(NearestRoadsErrorResponseBuilder) updates) {
+  void update(void Function(NearestRoadsErrorResponseBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -86,7 +86,7 @@ class NearestRoadsErrorResponseBuilder
       _$result =
           _$v ?? new _$NearestRoadsErrorResponse._(error: _error?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'error';
         _error?.build();

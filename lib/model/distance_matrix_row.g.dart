@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// @dart=2.7
+
 
 part of 'distance_matrix_row.dart';
 
@@ -9,10 +9,10 @@ part of 'distance_matrix_row.dart';
 
 class _$DistanceMatrixRow extends DistanceMatrixRow {
   @override
-  final BuiltList<DistanceMatrixElement> elements;
+  final BuiltList<DistanceMatrixElement>? elements;
 
   factory _$DistanceMatrixRow(
-          [void Function(DistanceMatrixRowBuilder) updates]) =>
+          [void Function(DistanceMatrixRowBuilder)? updates]) =>
       (new DistanceMatrixRowBuilder()..update(updates)).build();
 
   _$DistanceMatrixRow._({this.elements}) : super._();
@@ -46,9 +46,9 @@ class _$DistanceMatrixRow extends DistanceMatrixRow {
 
 class DistanceMatrixRowBuilder
     implements Builder<DistanceMatrixRow, DistanceMatrixRowBuilder> {
-  _$DistanceMatrixRow _$v;
+  _$DistanceMatrixRow? _$v;
 
-  ListBuilder<DistanceMatrixElement> _elements;
+  ListBuilder<DistanceMatrixElement>? _elements;
   ListBuilder<DistanceMatrixElement> get elements =>
       _$this._elements ??= new ListBuilder<DistanceMatrixElement>();
   set elements(ListBuilder<DistanceMatrixElement> elements) =>
@@ -74,7 +74,7 @@ class DistanceMatrixRowBuilder
   }
 
   @override
-  void update(void Function(DistanceMatrixRowBuilder) updates) {
+  void update(void Function(DistanceMatrixRowBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
@@ -84,7 +84,7 @@ class DistanceMatrixRowBuilder
     try {
       _$result = _$v ?? new _$DistanceMatrixRow._(elements: _elements?.build());
     } catch (_) {
-      String _$failedField;
+      late String _$failedField;
       try {
         _$failedField = 'elements';
         _elements?.build();

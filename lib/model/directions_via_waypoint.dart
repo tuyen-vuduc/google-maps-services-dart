@@ -1,7 +1,7 @@
 //
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
-// @dart=2.7
+
 
 // ignore_for_file: unused_import
 
@@ -13,19 +13,16 @@ part 'directions_via_waypoint.g.dart';
 
 abstract class DirectionsViaWaypoint implements Built<DirectionsViaWaypoint, DirectionsViaWaypointBuilder> {
 
-    @nullable
     @BuiltValueField(wireName: r'location')
-    LatLngLiteral get location;
+    LatLngLiteral? get location;
 
     /// The index of the step containing the waypoint.
-    @nullable
     @BuiltValueField(wireName: r'step_index')
-    int get stepIndex;
+    int? get stepIndex;
 
     /// The position of the waypoint along the step's polyline, expressed as a ratio from 0 to 1.
-    @nullable
     @BuiltValueField(wireName: r'step_interpolation')
-    num get stepInterpolation;
+    num? get stepInterpolation;
 
     DirectionsViaWaypoint._();
 
@@ -45,9 +42,9 @@ class _$DirectionsViaWaypointSerializer implements StructuredSerializer<Directio
     final String wireName = r'DirectionsViaWaypoint';
 
     @override
-    Iterable<Object> serialize(Serializers serializers, DirectionsViaWaypoint object,
+    Iterable<Object?> serialize(Serializers serializers, DirectionsViaWaypoint object,
         {FullType specifiedType = FullType.unspecified}) {
-        final result = <Object>[];
+        final result = <Object?>[];
         if (object.location != null) {
             result
                 ..add(r'location')
@@ -70,13 +67,13 @@ class _$DirectionsViaWaypointSerializer implements StructuredSerializer<Directio
     }
 
     @override
-    DirectionsViaWaypoint deserialize(Serializers serializers, Iterable<Object> serialized,
+    DirectionsViaWaypoint deserialize(Serializers serializers, Iterable<Object?> serialized,
         {FullType specifiedType = FullType.unspecified}) {
         final result = DirectionsViaWaypointBuilder();
 
         final iterator = serialized.iterator;
         while (iterator.moveNext()) {
-            final key = iterator.current as String;
+            final key = iterator.current as String?;
             iterator.moveNext();
             final dynamic value = iterator.current;
             switch (key) {
@@ -86,11 +83,11 @@ class _$DirectionsViaWaypointSerializer implements StructuredSerializer<Directio
                     break;
                 case r'step_index':
                     result.stepIndex = serializers.deserialize(value,
-                        specifiedType: const FullType(int)) as int;
+                        specifiedType: const FullType(int)) as int?;
                     break;
                 case r'step_interpolation':
                     result.stepInterpolation = serializers.deserialize(value,
-                        specifiedType: const FullType(num)) as num;
+                        specifiedType: const FullType(num)) as num?;
                     break;
             }
         }
