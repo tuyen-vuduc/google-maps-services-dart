@@ -9,7 +9,6 @@ import 'package:dio/dio.dart';
 
 import 'package:built_collection/built_collection.dart';
 import 'package:googles_maps_services_dart/src/api_util.dart';
-import 'package:googles_maps_services_dart/src/model/nearest_roads_error_response.dart';
 import 'package:googles_maps_services_dart/src/model/nearest_roads_response.dart';
 import 'package:googles_maps_services_dart/src/model/snap_to_roads_response.dart';
 

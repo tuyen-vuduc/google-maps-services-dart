@@ -7,7 +7,6 @@ import 'dart:async';
 import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
-import 'package:googles_maps_services_dart/src/model/error_response.dart';
 import 'package:googles_maps_services_dart/src/model/geolocation_request.dart';
 import 'package:googles_maps_services_dart/src/model/geolocation_response.dart';
 
