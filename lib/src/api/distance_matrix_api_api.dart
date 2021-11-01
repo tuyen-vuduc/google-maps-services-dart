@@ -64,7 +64,7 @@ class DistanceMatrixAPIApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/maps/api/distanceMatrix/json';
+    final _path = r'/maps/api/distancematrix/json';
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

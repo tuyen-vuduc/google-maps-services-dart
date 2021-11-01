@@ -20,7 +20,7 @@ import 'package:google_maps_services_dart/src/api/street_view_api_api.dart';
 import 'package:google_maps_services_dart/src/api/time_zone_api_api.dart';
 
 class GooglesMapsServicesDart {
-  static const String basePath = r'https://www.googleapis.com';
+  static const String basePath = r'https://maps.googleapis.com';
 
   final Dio dio;
   final Serializers serializers;

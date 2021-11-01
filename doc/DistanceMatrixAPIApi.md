@@ -9,7 +9,7 @@ All URIs are relative to *https://www.googleapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distanceMatrix**](DistanceMatrixAPIApi.md#distancematrix) | **GET** /maps/api/distanceMatrix/json | 
+[**distanceMatrix**](DistanceMatrixAPIApi.md#distancematrix) | **GET** /maps/api/distancematrix/json | 
 
 
 # **distanceMatrix**

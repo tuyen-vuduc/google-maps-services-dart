@@ -26,7 +26,7 @@ If this Dart package is published to Github, please include the following in pub
 dependencies:
   google_maps_services_dart:
     git:
-      url: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+      url: https://github.com/tuyen-vuduc/google-maps-services-dart.git
       #ref: main
 ```
 
@@ -78,7 +78,7 @@ All URIs are relative to *https://www.googleapis.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 [*DirectionsAPIApi*](doc/DirectionsAPIApi.md) | [**directions**](doc/DirectionsAPIApi.md#directions) | **GET** /maps/api/directions/json | 
-[*DistanceMatrixAPIApi*](doc/DistanceMatrixAPIApi.md) | [**distanceMatrix**](doc/DistanceMatrixAPIApi.md#distancematrix) | **GET** /maps/api/distanceMatrix/json | 
+[*DistanceMatrixAPIApi*](doc/DistanceMatrixAPIApi.md) | [**distanceMatrix**](doc/DistanceMatrixAPIApi.md#distancematrix) | **GET** /maps/api/distancematrix/json | 
 [*ElevationAPIApi*](doc/ElevationAPIApi.md) | [**elevation**](doc/ElevationAPIApi.md#elevation) | **GET** /maps/api/elevation/json | 
 [*GeocodingAPIApi*](doc/GeocodingAPIApi.md) | [**geocode**](doc/GeocodingAPIApi.md#geocode) | **GET** /maps/api/geocode/json | 
 [*GeolocationAPIApi*](doc/GeolocationAPIApi.md) | [**geolocate**](doc/GeolocationAPIApi.md#geolocate) | **POST** /geolocation/v1/geolocate | 
