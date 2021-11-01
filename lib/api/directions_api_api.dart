@@ -2,15 +2,14 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
 
-import 'package:googles_maps_services_dart/model/directions_response.dart';
-import 'package:googles_maps_services_dart/model/travel_mode.dart';
+import 'package:google_maps_services_dart/model/directions_response.dart';
+import 'package:google_maps_services_dart/model/travel_mode.dart';
 
 class DirectionsAPIApi {
   final Dio _dio;

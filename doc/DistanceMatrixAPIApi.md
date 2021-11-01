@@ -1,8 +1,8 @@
-# googles_maps_services_dart.api.DistanceMatrixAPIApi
+# google_maps_services_dart.api.DistanceMatrixAPIApi
 
 ## Load the API package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 All URIs are relative to *https://www.googleapis.com*
@@ -21,7 +21,7 @@ The Distance Matrix API is a service that provides travel distance and time for 
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed

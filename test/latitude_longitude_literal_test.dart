@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/latitude_longitude_literal.dart';
+import 'package:google_maps_services_dart/model/latitude_longitude_literal.dart';
 import 'package:test/test.dart';
 
 // tests for LatitudeLongitudeLiteral
@@ -25,8 +25,5 @@ void main() {
     test('to test the property `longitude`', () async {
       // TODO
     });
-
-
   });
-
 }

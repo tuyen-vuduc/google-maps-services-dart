@@ -1,8 +1,8 @@
-# googles_maps_services_dart.api.PlacesAPIApi
+# google_maps_services_dart.api.PlacesAPIApi
 
 ## Load the API package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 All URIs are relative to *https://www.googleapis.com*
@@ -27,7 +27,7 @@ The Place Autocomplete service is a web service that returns place predictions i
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -92,7 +92,7 @@ A Find Place request takes a text input and returns a place. The input can be an
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -147,7 +147,7 @@ A Nearby Search lets you search for places within a specified area. You can refi
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -214,7 +214,7 @@ The Places API is a service that returns information about places using HTTP req
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -269,7 +269,7 @@ The Place Photo service, part of the Places API, is a read- only API that allows
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -320,7 +320,7 @@ The Query Autocomplete service can be used to provide a query prediction for tex
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -375,7 +375,7 @@ The Google Places API Text Search Service is a web service that returns informat
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed

@@ -4,23 +4,23 @@
 
 // ignore_for_file: unused_import
 
-library googles_maps_services_dart.api;
+library google_maps_services_dart.api;
 
 import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
-import 'package:googles_maps_services_dart/serializers.dart';
-import 'package:googles_maps_services_dart/auth/api_key_auth.dart';
-import 'package:googles_maps_services_dart/auth/basic_auth.dart';
-import 'package:googles_maps_services_dart/auth/oauth.dart';
-import 'package:googles_maps_services_dart/api/directions_api_api.dart';
-import 'package:googles_maps_services_dart/api/distance_matrix_api_api.dart';
-import 'package:googles_maps_services_dart/api/elevation_api_api.dart';
-import 'package:googles_maps_services_dart/api/geocoding_api_api.dart';
-import 'package:googles_maps_services_dart/api/geolocation_api_api.dart';
-import 'package:googles_maps_services_dart/api/places_api_api.dart';
-import 'package:googles_maps_services_dart/api/roads_api_api.dart';
-import 'package:googles_maps_services_dart/api/street_view_api_api.dart';
-import 'package:googles_maps_services_dart/api/time_zone_api_api.dart';
+import 'package:google_maps_services_dart/serializers.dart';
+import 'package:google_maps_services_dart/auth/api_key_auth.dart';
+import 'package:google_maps_services_dart/auth/basic_auth.dart';
+import 'package:google_maps_services_dart/auth/oauth.dart';
+import 'package:google_maps_services_dart/api/directions_api_api.dart';
+import 'package:google_maps_services_dart/api/distance_matrix_api_api.dart';
+import 'package:google_maps_services_dart/api/elevation_api_api.dart';
+import 'package:google_maps_services_dart/api/geocoding_api_api.dart';
+import 'package:google_maps_services_dart/api/geolocation_api_api.dart';
+import 'package:google_maps_services_dart/api/places_api_api.dart';
+import 'package:google_maps_services_dart/api/roads_api_api.dart';
+import 'package:google_maps_services_dart/api/street_view_api_api.dart';
+import 'package:google_maps_services_dart/api/time_zone_api_api.dart';
 
 final _defaultInterceptors = [
   OAuthInterceptor(),

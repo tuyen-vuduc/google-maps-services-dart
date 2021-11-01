@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_leg.dart';
+import 'package:google_maps_services_dart/model/directions_leg.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsLeg
@@ -78,8 +78,5 @@ void main() {
     test('to test the property `durationInTraffic`', () async {
       // TODO
     });
-
-
   });
-
 }

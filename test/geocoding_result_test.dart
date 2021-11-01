@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/geocoding_result.dart';
+import 'package:google_maps_services_dart/model/geocoding_result.dart';
 import 'package:test/test.dart';
 
 // tests for GeocodingResult
@@ -54,13 +54,10 @@ void main() {
       // TODO
     });
 
-    // Indicates that the geocoder did not return an exact match for the original request, though it was able to match part of the requested address. You may wish to examine the original request for misspellings and/or an incomplete address.  Partial matches most often occur for street addresses that do not exist within the locality you pass in the request. Partial matches may also be returned when a request matches two or more locations in the same locality. 
+    // Indicates that the geocoder did not return an exact match for the original request, though it was able to match part of the requested address. You may wish to examine the original request for misspellings and/or an incomplete address.  Partial matches most often occur for street addresses that do not exist within the locality you pass in the request. Partial matches may also be returned when a request matches two or more locations in the same locality.
     // bool partialMatch
     test('to test the property `partialMatch`', () async {
       // TODO
     });
-
-
   });
-
 }

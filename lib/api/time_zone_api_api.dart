@@ -2,29 +2,27 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
 
-import 'package:googles_maps_services_dart/model/time_zone_response.dart';
+import 'package:google_maps_services_dart/model/time_zone_response.dart';
 
 class TimeZoneAPIApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
 
   const TimeZoneAPIApi(this._dio, this._serializers);
 
-  /// 
   ///
-  /// The Time Zone API provides a simple interface to request the time zone for locations on the surface of the earth, as well as the time offset from UTC for each of those locations. You request the time zone information for a specific latitude/longitude pair and date. The API returns the name of that time zone, the time offset from UTC, and the daylight savings offset. 
+  ///
+  /// The Time Zone API provides a simple interface to request the time zone for locations on the surface of the earth, as well as the time offset from UTC for each of those locations. You request the time zone information for a specific latitude/longitude pair and date. The API returns the name of that time zone, the time offset from UTC, and the daylight savings offset.
   Future<Response<TimeZoneResponse>> timezone(
     String location,
-    num timestamp, { 
+    num timestamp, {
     String? language,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -101,5 +99,4 @@ class TimeZoneAPIApi {
       extra: _response.extra,
     );
   }
-
 }

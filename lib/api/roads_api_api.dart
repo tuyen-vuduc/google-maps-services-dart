@@ -2,7 +2,6 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
@@ -10,23 +9,22 @@ import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
 
 import 'package:built_collection/built_collection.dart';
-import 'package:googles_maps_services_dart/model/nearest_roads_error_response.dart';
-import 'package:googles_maps_services_dart/model/nearest_roads_response.dart';
-import 'package:googles_maps_services_dart/model/snap_to_roads_response.dart';
+import 'package:google_maps_services_dart/model/nearest_roads_error_response.dart';
+import 'package:google_maps_services_dart/model/nearest_roads_response.dart';
+import 'package:google_maps_services_dart/model/snap_to_roads_response.dart';
 
 class RoadsAPIApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
 
   const RoadsAPIApi(this._dio, this._serializers);
 
-  /// 
+  ///
   ///
   /// This service returns individual road segments for a given set of GPS coordinates. This services takes up to 100 GPS points and returns the closest road segment for each point. The points passed do not need to be part of a continuous path.
   Future<Response<NearestRoadsResponse>> nearestRoads(
-    BuiltList<String> points, { 
+    BuiltList<String> points, {
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -101,11 +99,11 @@ class RoadsAPIApi {
     );
   }
 
-  /// 
+  ///
   ///
   /// This service returns the best-fit road geometry for a given set of GPS coordinates. This service takes up to 100 GPS points collected along a route, and returns a similar set of data with the points snapped to the most likely roads the vehicle was traveling along. Optionally, you can request that the points be interpolated, resulting in a path that smoothly follows the geometry of the road.
   Future<Response<SnapToRoadsResponse>> snapToRoads(
-    BuiltList<String> path, { 
+    BuiltList<String> path, {
     bool? interpolate,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -181,5 +179,4 @@ class RoadsAPIApi {
       extra: _response.extra,
     );
   }
-
 }

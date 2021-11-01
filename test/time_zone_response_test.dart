@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/time_zone_response.dart';
+import 'package:google_maps_services_dart/model/time_zone_response.dart';
 import 'package:test/test.dart';
 
 // tests for TimeZoneResponse
@@ -48,8 +48,5 @@ void main() {
     test('to test the property `errorMessage`', () async {
       // TODO
     });
-
-
   });
-
 }

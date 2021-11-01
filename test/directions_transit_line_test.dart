@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_transit_line.dart';
+import 'package:google_maps_services_dart/model/directions_transit_line.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsTransitLine
@@ -60,8 +60,5 @@ void main() {
     test('to test the property `vehicle`', () async {
       // TODO
     });
-
-
   });
-
 }

@@ -83,7 +83,7 @@ doc/TimeZoneStatus.md
 doc/TimeZoneTextValueObject.md
 doc/TravelMode.md
 doc/WiFiAccessPoint.md
-lib/googles_maps_services_dart.dart
+lib/google_maps_services_dart.dart
 lib/src/api.dart
 lib/src/api/directions_api_api.dart
 lib/src/api/distance_matrix_api_api.dart

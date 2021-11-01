@@ -1,16 +1,16 @@
-generatorName: dart-dio
+generatorName: dart-dio-next
 outputDir: ./
 inputSpec: https://raw.githubusercontent.com/googlemaps/openapi-specification/main/dist/google-maps-platform-openapi3.yml
 additionalProperties:
-  artifactId: googles_maps_services_dart
+  artifactId: google_maps_services_dart
   serializableModel: "true"
   nullableFields: "true"
   pubAuthor: "tuyen_vuduc"
   pubAuthorEmail: "tuyenvd@newwave.com.vn"
   pubDescription: "Google Maps Services API Client for Dart"
   pubHomepage: "https://newwave.vn"
-  pubLibrary: googles_maps_services_dart
-  pubName: googles_maps_services_dart
+  pubLibrary: google_maps_services_dart
+  pubName: google_maps_services_dart
   pubVersion: 1.17.1
   sortModelPropertiesByRequiredFlag: "true"
   sortParamsByRequiredFlag: "true"

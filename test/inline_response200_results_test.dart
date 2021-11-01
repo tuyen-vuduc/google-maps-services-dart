@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/inline_response200_results.dart';
+import 'package:google_maps_services_dart/model/inline_response200_results.dart';
 import 'package:test/test.dart';
 
 // tests for InlineResponse200Results
@@ -28,8 +28,5 @@ void main() {
     test('to test the property `location`', () async {
       // TODO
     });
-
-
   });
-
 }

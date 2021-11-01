@@ -2,29 +2,27 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
 
-import 'package:googles_maps_services_dart/model/error_response.dart';
-import 'package:googles_maps_services_dart/model/geolocation_request.dart';
-import 'package:googles_maps_services_dart/model/geolocation_response.dart';
+import 'package:google_maps_services_dart/model/error_response.dart';
+import 'package:google_maps_services_dart/model/geolocation_request.dart';
+import 'package:google_maps_services_dart/model/geolocation_response.dart';
 
 class GeolocationAPIApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
 
   const GeolocationAPIApi(this._dio, this._serializers);
 
-  /// 
+  ///
   ///
   /// Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.  Communication is done over HTTPS using POST. Both request and response are formatted as JSON, and the content type of both is `application/json`.  You must specify a key in your request, included as the value of a`key` parameter. A `key` is your application's  API key. This key identifies your application for purposes of quota management. Learn how to [get a key](https://developers.google.com/maps/documentation/geolocation/get-api-key).
-  Future<Response<GeolocationResponse>> geolocate({ 
+  Future<Response<GeolocationResponse>> geolocate({
     GeolocationRequest? geolocationRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -60,7 +58,8 @@ class GeolocationAPIApi {
     dynamic _bodyData;
 
     const _type = FullType(GeolocationRequest);
-    _bodyData = _serializers.serialize(geolocationRequest, specifiedType: _type);
+    _bodyData =
+        _serializers.serialize(geolocationRequest, specifiedType: _type);
 
     final _response = await _dio.request<dynamic>(
       _request.path,
@@ -99,5 +98,4 @@ class GeolocationAPIApi {
       extra: _response.extra,
     );
   }
-
 }

@@ -1,8 +1,8 @@
-# googles_maps_services_dart.api.RoadsAPIApi
+# google_maps_services_dart.api.RoadsAPIApi
 
 ## Load the API package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 All URIs are relative to *https://www.googleapis.com*
@@ -22,7 +22,7 @@ This service returns individual road segments for a given set of GPS coordinates
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -69,7 +69,7 @@ This service returns the best-fit road geometry for a given set of GPS coordinat
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed

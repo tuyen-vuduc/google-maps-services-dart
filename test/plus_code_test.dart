@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/plus_code.dart';
+import 'package:google_maps_services_dart/model/plus_code.dart';
 import 'package:test/test.dart';
 
 // tests for PlusCode
@@ -25,8 +25,5 @@ void main() {
     test('to test the property `compoundCode`', () async {
       // TODO
     });
-
-
   });
-
 }

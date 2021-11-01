@@ -2,7 +2,6 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
@@ -11,12 +10,12 @@ import 'package:built_value/serializer.dart';
 
 import 'dart:typed_data';
 import 'package:built_collection/built_collection.dart';
-import 'package:googles_maps_services_dart/model/places_autocomplete_response.dart';
-import 'package:googles_maps_services_dart/model/places_details_response.dart';
-import 'package:googles_maps_services_dart/model/places_find_place_from_text_response.dart';
-import 'package:googles_maps_services_dart/model/places_nearby_search_response.dart';
-import 'package:googles_maps_services_dart/model/places_query_autocomplete_response.dart';
-import 'package:googles_maps_services_dart/model/places_text_search_response.dart';
+import 'package:google_maps_services_dart/model/places_autocomplete_response.dart';
+import 'package:google_maps_services_dart/model/places_details_response.dart';
+import 'package:google_maps_services_dart/model/places_find_place_from_text_response.dart';
+import 'package:google_maps_services_dart/model/places_nearby_search_response.dart';
+import 'package:google_maps_services_dart/model/places_query_autocomplete_response.dart';
+import 'package:google_maps_services_dart/model/places_text_search_response.dart';
 
 class PlacesAPIApi {
   final Dio _dio;

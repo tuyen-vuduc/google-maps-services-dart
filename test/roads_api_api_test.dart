@@ -5,10 +5,9 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/api.dart';
-import 'package:googles_maps_services_dart/api/roads_api_api.dart';
+import 'package:google_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api/roads_api_api.dart';
 import 'package:test/test.dart';
-
 
 /// tests for RoadsAPIApi
 void main() {
@@ -28,6 +27,5 @@ void main() {
     test('test snapToRoads', () async {
       // TODO
     });
-
   });
 }

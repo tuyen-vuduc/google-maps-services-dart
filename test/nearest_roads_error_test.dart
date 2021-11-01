@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/nearest_roads_error.dart';
+import 'package:google_maps_services_dart/model/nearest_roads_error.dart';
 import 'package:test/test.dart';
 
 // tests for NearestRoadsError
@@ -31,8 +31,5 @@ void main() {
     test('to test the property `status`', () async {
       // TODO
     });
-
-
   });
-
 }

@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/place_autocomplete_structured_format.dart';
+import 'package:google_maps_services_dart/model/place_autocomplete_structured_format.dart';
 import 'package:test/test.dart';
 
 // tests for PlaceAutocompleteStructuredFormat
@@ -37,8 +37,5 @@ void main() {
     test('to test the property `secondaryTextMatchedSubstrings`', () async {
       // TODO
     });
-
-
   });
-
 }

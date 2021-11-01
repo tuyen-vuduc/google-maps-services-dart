@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_route.dart';
+import 'package:google_maps_services_dart/model/directions_route.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsRoute
@@ -58,8 +58,5 @@ void main() {
     test('to test the property `fare`', () async {
       // TODO
     });
-
-
   });
-
 }

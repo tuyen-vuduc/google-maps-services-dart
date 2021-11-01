@@ -1,8 +1,8 @@
-# googles_maps_services_dart.model.DirectionsViaWaypoint
+# google_maps_services_dart.model.DirectionsViaWaypoint
 
 ## Load the model package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 ## Properties

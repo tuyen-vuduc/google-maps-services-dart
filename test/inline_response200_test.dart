@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/inline_response200.dart';
+import 'package:google_maps_services_dart/model/inline_response200.dart';
 import 'package:test/test.dart';
 
 // tests for InlineResponse200
@@ -24,13 +24,10 @@ void main() {
       // TODO
     });
 
-    // When the service returns a status code other than `OK<`, there may be an additional `error_message` field within the response object. This field contains more detailed information about thereasons behind the given status code. This field is not always returned, and its content is subject to change. 
+    // When the service returns a status code other than `OK<`, there may be an additional `error_message` field within the response object. This field contains more detailed information about thereasons behind the given status code. This field is not always returned, and its content is subject to change.
     // String errorMessage
     test('to test the property `errorMessage`', () async {
       // TODO
     });
-
-
   });
-
 }

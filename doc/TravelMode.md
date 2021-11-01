@@ -1,8 +1,8 @@
-# googles_maps_services_dart.model.TravelMode
+# google_maps_services_dart.model.TravelMode
 
 ## Load the model package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 ## Properties

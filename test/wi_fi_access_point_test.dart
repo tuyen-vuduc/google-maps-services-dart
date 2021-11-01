@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/wi_fi_access_point.dart';
+import 'package:google_maps_services_dart/model/wi_fi_access_point.dart';
 import 'package:test/test.dart';
 
 // tests for WiFiAccessPoint
@@ -43,8 +43,5 @@ void main() {
     test('to test the property `channel`', () async {
       // TODO
     });
-
-
   });
-
 }

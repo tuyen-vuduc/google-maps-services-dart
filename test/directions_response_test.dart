@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_response.dart';
+import 'package:google_maps_services_dart/model/directions_response.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsResponse
@@ -25,7 +25,7 @@ void main() {
       // TODO
     });
 
-    // Contains an array with details about the geocoding of origin, destination and waypoints. Elements in the geocoded_waypoints array correspond, by their zero-based position, to the origin, the waypoints in the order they are specified, and the destination.  These details will not be present for waypoints specified as textual latitude/longitude values if the service returns no results. This is because such waypoints are only reverse geocoded to obtain their representative address after a route has been found. An empty JSON object will occupy the corresponding places in the geocoded_waypoints array. 
+    // Contains an array with details about the geocoding of origin, destination and waypoints. Elements in the geocoded_waypoints array correspond, by their zero-based position, to the origin, the waypoints in the order they are specified, and the destination.  These details will not be present for waypoints specified as textual latitude/longitude values if the service returns no results. This is because such waypoints are only reverse geocoded to obtain their representative address after a route has been found. An empty JSON object will occupy the corresponding places in the geocoded_waypoints array.
     // BuiltList<DirectionsGeocodedWaypoint> geocodedWaypoints
     test('to test the property `geocodedWaypoints`', () async {
       // TODO
@@ -37,13 +37,10 @@ void main() {
       // TODO
     });
 
-    // When the service returns a status code other than `OK`, there may be an additional `error_message` field within the response object. This field contains more detailed information about thereasons behind the given status code. This field is not always returned, and its content is subject to change. 
+    // When the service returns a status code other than `OK`, there may be an additional `error_message` field within the response object. This field contains more detailed information about thereasons behind the given status code. This field is not always returned, and its content is subject to change.
     // String errorMessage
     test('to test the property `errorMessage`', () async {
       // TODO
     });
-
-
   });
-
 }

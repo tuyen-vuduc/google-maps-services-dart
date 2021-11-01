@@ -1,8 +1,8 @@
-# googles_maps_services_dart.model.PlaceAutocompleteMatchedSubstring
+# google_maps_services_dart.model.PlaceAutocompleteMatchedSubstring
 
 ## Load the model package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 ## Properties

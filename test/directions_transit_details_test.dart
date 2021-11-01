@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_transit_details.dart';
+import 'package:google_maps_services_dart/model/directions_transit_details.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsTransitDetails
@@ -62,8 +62,5 @@ void main() {
     test('to test the property `tripShortName`', () async {
       // TODO
     });
-
-
   });
-
 }

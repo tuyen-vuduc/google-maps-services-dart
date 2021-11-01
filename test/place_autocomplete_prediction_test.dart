@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/place_autocomplete_prediction.dart';
+import 'package:google_maps_services_dart/model/place_autocomplete_prediction.dart';
 import 'package:test/test.dart';
 
 // tests for PlaceAutocompletePrediction
@@ -49,13 +49,10 @@ void main() {
       // TODO
     });
 
-    // Contains an array of types that apply to this place. For example: `[ \"political\", \"locality\" ]` or `[ \"establishment\", \"geocode\", \"beauty_salon\" ]`. The array can contain multiple values. Learn more about [Place types](https://developers.google.com/maps/documentation/places/web-service/supported_types). 
+    // Contains an array of types that apply to this place. For example: `[ \"political\", \"locality\" ]` or `[ \"establishment\", \"geocode\", \"beauty_salon\" ]`. The array can contain multiple values. Learn more about [Place types](https://developers.google.com/maps/documentation/places/web-service/supported_types).
     // BuiltList<String> types
     test('to test the property `types`', () async {
       // TODO
     });
-
-
   });
-
 }

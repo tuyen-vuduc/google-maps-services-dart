@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/place_opening_hours_period_detail.dart';
+import 'package:google_maps_services_dart/model/place_opening_hours_period_detail.dart';
 import 'package:test/test.dart';
 
 // tests for PlaceOpeningHoursPeriodDetail
@@ -25,8 +25,5 @@ void main() {
     test('to test the property `time`', () async {
       // TODO
     });
-
-
   });
-
 }

@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/text_value_object.dart';
+import 'package:google_maps_services_dart/model/text_value_object.dart';
 import 'package:test/test.dart';
 
 // tests for TextValueObject
@@ -25,8 +25,5 @@ void main() {
     test('to test the property `value`', () async {
       // TODO
     });
-
-
   });
-
 }

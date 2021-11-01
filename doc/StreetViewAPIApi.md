@@ -1,8 +1,8 @@
-# googles_maps_services_dart.api.StreetViewAPIApi
+# google_maps_services_dart.api.StreetViewAPIApi
 
 ## Load the API package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 All URIs are relative to *https://www.googleapis.com*
@@ -22,7 +22,7 @@ The Street View Static API lets you embed a static (non-interactive) Street View
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -87,7 +87,7 @@ The Street View Static API metadata requests provide data about Street View pano
 
 ### Example
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 // TODO Configure API key authorization: ApiKeyAuth
 //defaultApiClient.getAuthentication<ApiKeyAuth>('ApiKeyAuth').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed

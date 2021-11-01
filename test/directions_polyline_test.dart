@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/directions_polyline.dart';
+import 'package:google_maps_services_dart/model/directions_polyline.dart';
 import 'package:test/test.dart';
 
 // tests for DirectionsPolyline
@@ -19,8 +19,5 @@ void main() {
     test('to test the property `points`', () async {
       // TODO
     });
-
-
   });
-
 }

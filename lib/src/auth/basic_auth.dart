@@ -5,7 +5,7 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:googles_maps_services_dart/src/auth/auth.dart';
+import 'package:google_maps_services_dart/src/auth/auth.dart';
 
 class BasicAuthInfo {
   final String username;
@@ -22,12 +22,17 @@ class BasicAuthInterceptor extends AuthInterceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) {
-    final metadataAuthInfo = getAuthInfo(options, (secure) => (secure['type'] == 'http' && secure['scheme'] == 'basic') || secure['type'] == 'basic');
+    final metadataAuthInfo = getAuthInfo(
+        options,
+        (secure) =>
+            (secure['type'] == 'http' && secure['scheme'] == 'basic') ||
+            secure['type'] == 'basic');
     for (final info in metadataAuthInfo) {
       final authName = info['name'] as String;
       final basicAuthInfo = authInfo[authName];
       if (basicAuthInfo != null) {
-        final basicAuth = 'Basic ${base64Encode(utf8.encode('${basicAuthInfo.username}:${basicAuthInfo.password}'))}';
+        final basicAuth =
+            'Basic ${base64Encode(utf8.encode('${basicAuthInfo.username}:${basicAuthInfo.password}'))}';
         options.headers['Authorization'] = basicAuth;
         break;
       }

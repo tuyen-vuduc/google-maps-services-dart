@@ -1,8 +1,8 @@
-# googles_maps_services_dart.model.ErrorDetail
+# google_maps_services_dart.model.ErrorDetail
 
 ## Load the model package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 ## Properties

@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/place.dart';
+import 'package:google_maps_services_dart/model/place.dart';
 import 'package:test/test.dart';
 
 // tests for Place
@@ -26,13 +26,13 @@ void main() {
       // TODO
     });
 
-    // Indicates the operational status of the place, if it is a business. If no data exists, `business_status` is not returned. 
+    // Indicates the operational status of the place, if it is a business. If no data exists, `business_status` is not returned.
     // String businessStatus
     test('to test the property `businessStatus`', () async {
       // TODO
     });
 
-    // A string containing the human-readable address of this place.  Often this address is equivalent to the postal address. Note that some countries, such as the United Kingdom, do not allow distribution of true postal addresses due to licensing restrictions.  The formatted address is logically composed of one or more address components. For example, the address \"111 8th Avenue, New York, NY\" consists of the following components: \"111\" (the street number), \"8th Avenue\" (the route), \"New York\" (the city) and \"NY\" (the US state).  Do not parse the formatted address programmatically. Instead you should use the individual address components, which the API response includes in addition to the formatted address field.       
+    // A string containing the human-readable address of this place.  Often this address is equivalent to the postal address. Note that some countries, such as the United Kingdom, do not allow distribution of true postal addresses due to licensing restrictions.  The formatted address is logically composed of one or more address components. For example, the address \"111 8th Avenue, New York, NY\" consists of the following components: \"111\" (the street number), \"8th Avenue\" (the route), \"New York\" (the city) and \"NY\" (the US state).  Do not parse the formatted address programmatically. Instead you should use the individual address components, which the API response includes in addition to the formatted address field.
     // String formattedAddress
     test('to test the property `formattedAddress`', () async {
       // TODO
@@ -107,7 +107,7 @@ void main() {
       // TODO
     });
 
-    // The price level of the place, on a scale of 0 to 4. The exact amount indicated by a specific value will vary from region to region. Price levels are interpreted as follows: - 0 Free - 1 Inexpensive - 2 Moderate - 3 Expensive - 4 Very Expensive 
+    // The price level of the place, on a scale of 0 to 4. The exact amount indicated by a specific value will vary from region to region. Price levels are interpreted as follows: - 0 Free - 1 Inexpensive - 2 Moderate - 3 Expensive - 4 Very Expensive
     // num priceLevel
     test('to test the property `priceLevel`', () async {
       // TODO
@@ -161,7 +161,7 @@ void main() {
       // TODO
     });
 
-    // For establishment (`types:[\"establishment\", ...])` results only, the `vicinity` field contains a simplified address for the place, including the street name, street number, and locality, but not the province/state, postal code, or country.  For all other results, the `vicinity` field contains the name of the narrowest political (`types:[\"political\", ...]`) feature that is present in the address of the result.  This content is meant to be read as-is. Do not programmatically parse the formatted address. 
+    // For establishment (`types:[\"establishment\", ...])` results only, the `vicinity` field contains a simplified address for the place, including the street name, street number, and locality, but not the province/state, postal code, or country.  For all other results, the `vicinity` field contains the name of the narrowest political (`types:[\"political\", ...]`) feature that is present in the address of the result.  This content is meant to be read as-is. Do not programmatically parse the formatted address.
     // String vicinity
     test('to test the property `vicinity`', () async {
       // TODO
@@ -172,8 +172,5 @@ void main() {
     test('to test the property `website`', () async {
       // TODO
     });
-
-
   });
-
 }

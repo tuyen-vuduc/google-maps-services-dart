@@ -2,7 +2,6 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-
 // ignore_for_file: unused_import
 
 import 'dart:async';
@@ -10,21 +9,20 @@ import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
 
 import 'dart:typed_data';
-import 'package:googles_maps_services_dart/model/street_view_response.dart';
+import 'package:google_maps_services_dart/model/street_view_response.dart';
 
 class StreetViewAPIApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
 
   const StreetViewAPIApi(this._dio, this._serializers);
 
-  /// 
   ///
-  /// The Street View Static API lets you embed a static (non-interactive) Street View panorama or thumbnail into your web page, without the use of JavaScript. The viewport is defined with URL parameters sent through a standard HTTP request, and is returned as a static image. 
+  ///
+  /// The Street View Static API lets you embed a static (non-interactive) Street View panorama or thumbnail into your web page, without the use of JavaScript. The viewport is defined with URL parameters sent through a standard HTTP request, and is returned as a static image.
   Future<Response<Uint8List>> streetView(
-    String size, { 
+    String size, {
     num? fov,
     num? heading,
     String? location,
@@ -114,10 +112,10 @@ class StreetViewAPIApi {
     );
   }
 
-  /// 
   ///
-  /// The Street View Static API metadata requests provide data about Street View panoramas. Using the metadata, you can find out if a Street View image is available at a given location, as well as getting programmatic access to the latitude and longitude, the panorama ID, the date the photo was taken, and the copyright information for the image. Accessing this metadata allows you to customize error behavior in your application. 
-  Future<Response<StreetViewResponse>> streetViewMetadata({ 
+  ///
+  /// The Street View Static API metadata requests provide data about Street View panoramas. Using the metadata, you can find out if a Street View image is available at a given location, as well as getting programmatic access to the latitude and longitude, the panorama ID, the date the photo was taken, and the copyright information for the image. Accessing this metadata allows you to customize error behavior in your application.
+  Future<Response<StreetViewResponse>> streetViewMetadata({
     num? heading,
     String? location,
     String? pano,
@@ -208,5 +206,4 @@ class StreetViewAPIApi {
       extra: _response.extra,
     );
   }
-
 }

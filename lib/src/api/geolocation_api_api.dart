@@ -7,11 +7,10 @@ import 'dart:async';
 import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
-import 'package:googles_maps_services_dart/src/model/geolocation_request.dart';
-import 'package:googles_maps_services_dart/src/model/geolocation_response.dart';
+import 'package:google_maps_services_dart/src/model/geolocation_request.dart';
+import 'package:google_maps_services_dart/src/model/geolocation_response.dart';
 
 class GeolocationAPIApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
@@ -32,7 +31,7 @@ class GeolocationAPIApi {
   ///
   /// Returns a [Future] containing a [Response] with a [GeolocationResponse] as data
   /// Throws [DioError] if API call or serialization fails
-  Future<Response<GeolocationResponse>> geolocate({ 
+  Future<Response<GeolocationResponse>> geolocate({
     GeolocationRequest? geolocationRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -66,11 +65,12 @@ class GeolocationAPIApi {
 
     try {
       const _type = FullType(GeolocationRequest);
-      _bodyData = geolocationRequest == null ? null : _serializers.serialize(geolocationRequest, specifiedType: _type);
-
-    } catch(error, stackTrace) {
+      _bodyData = geolocationRequest == null
+          ? null
+          : _serializers.serialize(geolocationRequest, specifiedType: _type);
+    } catch (error, stackTrace) {
       throw DioError(
-         requestOptions: _options.compose(
+        requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
@@ -96,7 +96,6 @@ class GeolocationAPIApi {
         _response.data!,
         specifiedType: _responseType,
       ) as GeolocationResponse;
-
     } catch (error, stackTrace) {
       throw DioError(
         requestOptions: _response.requestOptions,
@@ -117,5 +116,4 @@ class GeolocationAPIApi {
       extra: _response.extra,
     );
   }
-
 }

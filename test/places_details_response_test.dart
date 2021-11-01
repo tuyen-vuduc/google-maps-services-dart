@@ -5,7 +5,7 @@
 
 // ignore_for_file: unused_import
 
-import 'package:googles_maps_services_dart/model/places_details_response.dart';
+import 'package:google_maps_services_dart/model/places_details_response.dart';
 import 'package:test/test.dart';
 
 // tests for PlacesDetailsResponse
@@ -30,13 +30,10 @@ void main() {
       // TODO
     });
 
-    // When the service returns additional information about the request specification, there may be an additional `info_messages` field within the response object. This field is only returned for successful requests. It may not always be returned, and its content is subject to change. 
+    // When the service returns additional information about the request specification, there may be an additional `info_messages` field within the response object. This field is only returned for successful requests. It may not always be returned, and its content is subject to change.
     // BuiltList<String> infoMessages
     test('to test the property `infoMessages`', () async {
       // TODO
     });
-
-
   });
-
 }

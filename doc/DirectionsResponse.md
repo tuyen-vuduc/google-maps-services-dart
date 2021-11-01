@@ -1,8 +1,8 @@
-# googles_maps_services_dart.model.DirectionsResponse
+# google_maps_services_dart.model.DirectionsResponse
 
 ## Load the model package
 ```dart
-import 'package:googles_maps_services_dart/api.dart';
+import 'package:google_maps_services_dart/api.dart';
 ```
 
 ## Properties
